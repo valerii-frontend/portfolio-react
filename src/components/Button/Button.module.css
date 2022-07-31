@@ -1,0 +1,46 @@
+.button {
+	display: inline-flex;
+	place-items: center;
+
+	position: relative;
+	overflow: hidden;
+
+	padding: 0.5em 1em;
+
+	background-color: var(--primary);
+	color: var(--light);
+	font-size: 18px;
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	cursor: pointer;
+}
+.button strong {
+	position: absolute;
+	transform: translateX(-150%);
+}
+
+.button:hover,
+.button:hover span,
+.button:hover strong,
+.button strong,
+.button span {
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.button:active {
+	transform: translateY(5px);
+	box-shadow: none;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: var(--primary-hover);
+	box-shadow: 0 5px 0 0 var(--light);
+	transition: 0.3s;
+}
+.button:hover strong {
+	transform: translateX(0%);
+}
+
+.button:hover span {
+	transform: translateX(150%);
+}

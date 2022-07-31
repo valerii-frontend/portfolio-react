@@ -1,0 +1,21 @@
+.header {
+	background-color: var(--dark);
+	padding: 1rem 0;
+}
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 389.98px) {
+	.contact {
+		font-size: 0;
+		padding: 0.5rem 1rem;
+	}
+	.contact:after {
+		content: "@";
+		font-weight: bold;
+		font-size: 1.25rem;
+	}
+}
