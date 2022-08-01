@@ -4,17 +4,19 @@ import Modal from "./components/Modal/Modal";
 import Container from "./components/Container/Container";
 import Main from "./components/Main/Main";
 import Button from "./components/Button/Button";
+import { useState } from "react";
 
 function App(props) {
+	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className='App'>
 			<Header />
 			<Main>
 				<Container>
-					<Button>Open cards</Button>
+					<Button onClick={() => setIsOpen(true)}>Open cards</Button>
 				</Container>
 			</Main>
-			<Modal>cards modal</Modal>
+			{isOpen && <Modal show={setIsOpen}>cards modal</Modal>}
 		</div>
 	);
 }
