@@ -5,6 +5,7 @@ import Container from "./components/Container/Container";
 import Main from "./components/Main/Main";
 import Button from "./components/Button/Button";
 import { useState } from "react";
+import { CardImg } from "./assets/Images";
 
 function App(props) {
 	const [isOpenCardsModal, setIsOpenCardsModal] = useState(false);
@@ -15,7 +16,13 @@ function App(props) {
 			<Header />
 			<Main>
 				<Container>
-					<Button onClick={() => setIsOpenCardsModal(true)}>Cards accordion</Button>
+					<div className='nnn'>
+						<div className='mmm'>
+							<CardImg />
+						</div>
+						<Button onClick={() => setIsOpenCardsModal(true)}>Preview</Button>
+					</div>
+
 					<Button onClick={() => setIsOpenCubesModal(true)}>Cubes animation</Button>
 					<Button onClick={() => setIsOpenBlurModal(true)}>Blur loading</Button>
 				</Container>
