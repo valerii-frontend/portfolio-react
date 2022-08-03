@@ -7,7 +7,11 @@ export default function Modal(props) {
 			<div className={styles.close} onClick={() => props.show(false)}>
 				✖
 			</div>
-			<div className={styles.body}>{props.children}</div>
+			<div className={styles.body}>
+				<iframe
+					src={`https://valerii-frontend.github.io/portfolio/dist/${props.title}.html`}
+					title={props.title}></iframe>
+			</div>
 		</div>
 	);
 }

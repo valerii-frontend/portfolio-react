@@ -7,16 +7,22 @@ import Button from "./components/Button/Button";
 import { useState } from "react";
 
 function App(props) {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpenCardsModal, setIsOpenCardsModal] = useState(false);
+	const [isOpenCubesModal, setIsOpenCubesModal] = useState(false);
+	const [isOpenBlurModal, setIsOpenBlurModal] = useState(false);
 	return (
 		<div className='App'>
 			<Header />
 			<Main>
 				<Container>
-					<Button onClick={() => setIsOpen(true)}>Open cards</Button>
+					<Button onClick={() => setIsOpenCardsModal(true)}>Cards accordion</Button>
+					<Button onClick={() => setIsOpenCubesModal(true)}>Cubes animation</Button>
+					<Button onClick={() => setIsOpenBlurModal(true)}>Blur loading</Button>
 				</Container>
 			</Main>
-			{isOpen && <Modal show={setIsOpen}>cards modal</Modal>}
+			{isOpenCardsModal && <Modal show={setIsOpenCardsModal} title='cards'></Modal>}
+			{isOpenCubesModal && <Modal show={setIsOpenCubesModal} title='cubes'></Modal>}
+			{isOpenBlurModal && <Modal show={setIsOpenBlurModal} title='blur'></Modal>}
 		</div>
 	);
 }
