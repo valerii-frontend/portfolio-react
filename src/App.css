@@ -15,9 +15,15 @@
 	flex: 0 0 25%;
 	text-align: center;
 	position: relative;
+	padding: 0 10px;
 }
 .nnn button {
 	position: absolute;
 	bottom: 4px;
 	left: 10px;
+}
+
+.kkk {
+	display: flex;
+	margin: 0 -10px;
 }

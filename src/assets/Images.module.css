@@ -6,4 +6,9 @@
 	left: 0;
 	object-fit: cover;
 	object-position: center;
+	transition: 1s ease-in;
+}
+.image:hover {
+	transition: 1s ease-out;
+	transform: scale(1.1);
 }
