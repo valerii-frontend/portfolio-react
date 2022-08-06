@@ -7,21 +7,18 @@ const Model = (props) => {
 	return (
 		<div className={styles.model}>
 			<model-viewer
-				enable-pan
 				src={gbl}
-				ar
-				ar-modes='webxr scene-viewer quick-look'
 				camera-controls
 				poster={poster}
 				shadow-intensity='0.55'
 				environment-image={light}
 				shadow-softness='0.8'
-				camera-orbit='91deg 90deg 18.00m'
+				camera-orbit='91deg 90deg 12.50m'
 				exposure='0.6'
 				auto-rotate
 				camera-target='-6.201m 6.17m 1.8m'
-				min-camera-orbit='auto 60deg 18.00m'
-				max-camera-orbit='auto 120deg 18.00m'>
+				min-camera-orbit='auto 60deg 12.50m'
+				max-camera-orbit='auto 120deg 18.50m'>
 				<button
 					className={styles.hotspot}
 					slot='hotspot-1'
