@@ -1,6 +1,6 @@
 import styles from "./Model.module.css";
 import gbl from "./portfolio.glb";
-import poster from "./poster1.png";
+import poster from "./poster.png";
 import light from "./light.hdr";
 
 const Model = (props) => {
@@ -20,8 +20,8 @@ const Model = (props) => {
 				exposure='0.6'
 				auto-rotate
 				camera-target='-6.201m 6.17m 1.8m'
-				min-camera-orbit='auto 60deg 12.00m'
-				max-camera-orbit='auto 120deg 20.00m'>
+				min-camera-orbit='auto 60deg 18.00m'
+				max-camera-orbit='auto 120deg 18.00m'>
 				<button
 					className={styles.hotspot}
 					slot='hotspot-1'
