@@ -1,0 +1,23 @@
+.swiper {
+	height: calc(100vh - 2rem);
+}
+.slider {
+	flex: 0 0 20%;
+	max-width: 20%;
+	position: relative;
+}
+.slide {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 48px;
+}
+.slide p {
+	background-color: var(--dark);
+	height: 100%;
+	width: 100%;
+	color: var(--light);
+	text-align: center;
+	padding: 1rem;
+}

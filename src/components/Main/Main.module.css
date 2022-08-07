@@ -1,4 +1,13 @@
 .main {
-	flex: 1 1 auto;
 	background: var(--grey);
+	transform: translateY(2rem);
+}
+.row {
+	display: flex;
+}
+.col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }

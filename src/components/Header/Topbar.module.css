@@ -1,0 +1,23 @@
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0.5rem;
+	background-color: #282c34;
+	height: 2rem;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.controls {
+	display: flex;
+}
+.control {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: var(--light);
+}
