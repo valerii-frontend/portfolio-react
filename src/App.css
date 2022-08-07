@@ -6,6 +6,12 @@
 	-ms-user-select: none;
 	user-select: none;
 }
+.App {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
 
 .swiper-slide.swiper-slide-active {
 	opacity: 0;

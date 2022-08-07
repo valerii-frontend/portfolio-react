@@ -5,7 +5,7 @@ import Tabs from "./Tabs";
 
 export default function Header() {
 	return (
-		<header className={styles.header}>
+		<header className={`${styles.header} header`}>
 			<Topbar />
 			<Tabs />
 		</header>

@@ -1,6 +1,10 @@
 .model {
 	flex: 0 0 60%;
 	max-width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 .model model-viewer {
 	position: absolute;

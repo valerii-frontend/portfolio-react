@@ -1,12 +1,4 @@
 .main {
-	transform: translateY(4rem);
-}
-.row {
+	flex: 1 1 auto;
 	display: flex;
-}
-.col {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
 }
