@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Tabs.module.css";
+
 import reactIcon from "./react-icon.svg";
 import aboutIcon from "./note-text.svg";
 import libIcon from "./folder.svg";
@@ -28,7 +29,7 @@ export default function Tabs() {
 				<li>
 					<a href='/contact'>
 						<img src={contactIcon} alt='user contact icon' />
-						Contact.tel
+						contact.tel
 					</a>
 				</li>
 			</ul>

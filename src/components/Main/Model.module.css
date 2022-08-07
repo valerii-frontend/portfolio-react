@@ -47,7 +47,7 @@
 }
 
 .hotspot {
-	background: rgba(255, 255, 255, 0);
+	background: transparent;
 	border: 0;
 	box-sizing: border-box;
 	cursor: pointer;
@@ -57,15 +57,11 @@
 	width: 64px;
 }
 
-/* .hotspot:not([data-visible]) {
-	background: transparent;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	box-shadow: none;
-	height: 16px;
+.hotspot:not([data-visible]) {
+	display: none;
 	pointer-events: none;
-	width: 16px;
 	transition: 0.3s;
-} */
+}
 
 .hotspot:hover .hotspotText {
 	transition: 0.3s linear;
@@ -95,7 +91,7 @@
 }
 
 .hotspot:not([data-visible]) > * {
-	opacity: 0;
+	display: none;
 	pointer-events: none;
 	transform: translateY(calc(-50% + 4px));
 	transition: transform 0.3s, opacity 0.3s;

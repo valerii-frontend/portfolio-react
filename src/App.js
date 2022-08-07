@@ -8,7 +8,9 @@ function App(props) {
 		<div className='App'>
 			<Header />
 			<Main />
-			<Taskbar />
+			<Taskbar>
+				<span>vscode</span> <span>√ Prettier</span>
+			</Taskbar>
 		</div>
 	);
 }
