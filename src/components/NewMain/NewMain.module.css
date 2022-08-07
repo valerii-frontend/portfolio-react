@@ -109,20 +109,15 @@
 .hotspot:hover {
 	background: rgba(255, 255, 255, 0.7);
 }
-.hotspot:hover .hotspotText {
-	transition: 0.3s;
-	opacity: 1;
-}
 
-.hotspot > * {
+.hotspot:hover .hotspotText {
+	transition: 0.5s linear;
 	opacity: 1;
-	transform: translateY(-50%);
-	transition: 0.3s;
+	transform: translateY(0%);
 }
 
 .hotspotText {
 	background: #fff;
-	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 	color: rgba(0, 0, 0, 0.8);
 	opacity: 0;
@@ -130,12 +125,16 @@
 	font-size: 18px;
 	font-weight: 700;
 	left: calc(100% + 1em);
-	max-width: 128px;
 	overflow-wrap: break-word;
 	padding: 0.5em 1em;
 	position: absolute;
-	top: 50%;
+	transform: translateY(-25%);
+	transition: 0.5s linear;
+	top: 0;
 	width: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .hotspot:not([data-visible]) > * {
@@ -143,4 +142,22 @@
 	pointer-events: none;
 	transform: translateY(calc(-50% + 4px));
 	transition: transform 0.3s, opacity 0.3s;
+}
+
+.toggle {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 18px;
+	z-index: 10;
+}
+.toggle input {
+	width: 18px;
+	height: 18px;
+	margin-right: 7px;
+}
+.toggle input,
+.toggle label {
+	cursor: pointer;
 }
