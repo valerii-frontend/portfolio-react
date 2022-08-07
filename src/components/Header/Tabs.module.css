@@ -1,0 +1,19 @@
+.tabs {
+	max-width: 60%;
+	margin: 0 auto;
+	height: 2rem;
+}
+.tabs ul {
+	display: flex;
+}
+.tabs li {
+	width: 128px;
+	border-right: 1px solid black;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.tabs a {
+	color: var(--text);
+}

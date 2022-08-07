@@ -1,14 +1,17 @@
 .topbar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding-left: 0.5rem;
 	background-color: #282c34;
 	height: 2rem;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
+.topbar img {
+	flex: 0 0 24px;
+	max-width: 24px;
+	height: 24px;
+}
+
 .controls {
 	display: flex;
 }
