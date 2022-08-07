@@ -1,5 +1,5 @@
 .swiper {
-	height: calc(100vh - 2rem);
+	height: calc(100vh - 4rem);
 }
 .slider {
 	flex: 0 0 20%;
@@ -14,7 +14,7 @@
 	font-size: 48px;
 }
 .slide p {
-	background-color: var(--dark);
+	background-color: var(--bg);
 	height: 100%;
 	width: 100%;
 	color: var(--light);

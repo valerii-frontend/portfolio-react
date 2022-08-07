@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap");
 :root {
-	--primary: #0071e3;
+	/* --primary: #0071e3;
 	--primary-hover: #2282e2;
 	--primary-rgb: 0, 113, 227;
 	--primary-hover-rgb: 34, 130, 226;
 	--dark: #333333;
+	--light: #fbfbfd; */
+	--code-color: #89c379;
+	--code-color-02: #e5c07b;
+	--code-color-03: #e06c75;
+	--code-color-04: #ffd71b;
+	--code-color-05: #c678dd;
+	--code-color-06: #56b6b9;
+	--text: #a3b0b7;
+	--text-active: #d7dae0;
+	--text-disabled: #72767f;
+	--bg: #282c34;
+	--sidebar: #21252b;
+	--tab-active: #383e4a;
 	--grey: #cccccc;
-	--light: #fbfbfd;
 }
 *,
 *::before,
@@ -44,7 +56,7 @@ body {
 	font-size: 14px;
 	line-height: 1;
 	height: 100%;
-	background-color: var(--light);
+	background: var(--sidebar);
 	font-family: Roboto;
 }
 input[type="text"],

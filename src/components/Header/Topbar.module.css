@@ -19,5 +19,11 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 1.5rem;
-	color: var(--light);
+	color: var(--text);
+	transition: 0.3 linear;
+}
+.control:hover {
+	color: var(--text-active);
+	transition: 0.3 linear;
+	cursor: pointer;
 }

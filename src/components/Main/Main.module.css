@@ -1,6 +1,5 @@
 .main {
-	background: var(--grey);
-	transform: translateY(2rem);
+	transform: translateY(4rem);
 }
 .row {
 	display: flex;
