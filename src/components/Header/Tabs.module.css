@@ -1,10 +1,10 @@
 .tabs {
 	max-width: 60%;
 	margin: 0 auto;
-	height: 2rem;
 }
 .tabs ul {
 	display: flex;
+	box-shadow: 0 2px 0 0 var(--bg);
 }
 .tabs li {
 	width: 128px;
@@ -12,8 +12,27 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 0;
+	color: var(--text);
 }
 
 .tabs a {
-	color: var(--text);
+	color: inherit;
+	display: flex;
+	align-items: flex-end;
+}
+.tabs a img {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.tabs li:hover {
+	background-color: #33373b;
+}
+.tabs li.active {
+	background-color: var(--tab-active);
+}
+.tabs li.active a {
+	color: var(--text-active);
 }

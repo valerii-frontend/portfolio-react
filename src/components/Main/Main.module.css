@@ -1,4 +1,13 @@
-.main {
+.row {
 	flex: 1 1 auto;
 	display: flex;
+}
+.info {
+	flex: 0 0 20%;
+	max-width: 20%;
+	position: relative;
+}
+.sidebar {
+	flex: 0 0 20%;
+	background: var(--bg);
 }

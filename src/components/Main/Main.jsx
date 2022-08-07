@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import styles from "./Main.module.css";
+import React, { useState } from "react";
+import layout from "./Main.module.css";
 import model from "./Model.module.css";
 import slider from "./Slider.module.css";
 import sidebar from "./Sidebar.module.css";
@@ -19,9 +19,9 @@ export default function Main(props) {
 	const [pointToggle, setPointToggle] = useState(false);
 
 	return (
-		<main className={styles.main}>
-			<div className={sidebar.sidebar}>sidebar</div>
-			<div className={model.model}>
+		<main className={layout.row}>
+			<div className={`${layout.sidebar} ${sidebar.sidebar}`}>sidebar</div>
+			<div className={`${layout.model} ${model.model}`}>
 				<div className={model.toggle}>
 					<input id='toggle' type='checkbox' onClick={() => setPointToggle((p) => !p)} />
 					<label htmlFor='toggle'>Show hints</label>
@@ -29,6 +29,8 @@ export default function Main(props) {
 				<model-viewer
 					src={gbl}
 					camera-controls
+					disable-zoom
+					quick-look
 					poster={poster}
 					shadow-intensity='0.55'
 					environment-image={light}
@@ -50,6 +52,7 @@ export default function Main(props) {
 								<div className={model.hotspotText}>HTML</div>
 							</button>
 							<button
+								onClick={() => slideTo(6)}
 								className={model.hotspot}
 								slot='hotspot-4'
 								data-position='-9.094204530873458m 6.0490378236066205m 5.0031171996522374m'
@@ -193,16 +196,15 @@ export default function Main(props) {
 					</div>
 				</model-viewer>
 			</div>
-			<div className={slider.slider}>
+			<div className={`${layout.info} ${slider.slider}`}>
 				<Swiper
 					onSwiper={setSwiper}
-					freeMode={true}
 					className={slider.swiper}
 					spaceBetween={0}
 					slidesPerView={1}
 					modules={[Autoplay]}
 					autoplay
-					speed={1000}
+					speed={500}
 					loop>
 					<SwiperSlide className={slider.slide} data-swiper-autoplay='5000'>
 						<p>HTML</p>

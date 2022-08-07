@@ -47,20 +47,17 @@
 }
 
 .hotspot {
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: 32px;
+	background: rgba(255, 255, 255, 0);
 	border: 0;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
 	cursor: pointer;
-	height: 16px;
-	padding: 8px;
+	height: 64px;
 	position: relative;
 	transition: all 0.3s;
-	width: 16px;
+	width: 64px;
 }
 
-.hotspot:not([data-visible]) {
+/* .hotspot:not([data-visible]) {
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, 0.3);
 	box-shadow: none;
@@ -68,21 +65,18 @@
 	pointer-events: none;
 	width: 16px;
 	transition: 0.3s;
-}
-.hotspot:hover {
-	background: rgba(255, 255, 255, 0.7);
-}
+} */
 
 .hotspot:hover .hotspotText {
-	transition: 0.5s linear;
+	transition: 0.3s linear;
 	opacity: 1;
 	transform: translateY(0%);
 }
 
 .hotspotText {
-	background: var(--primary);
+	background: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-	color: var(--light);
+	color: var(--bg);
 	opacity: 0;
 	font-family: Futura, Helvetica Neue, sans-serif;
 	font-size: 18px;
@@ -92,7 +86,7 @@
 	padding: 0.5em 1em;
 	position: absolute;
 	transform: translateY(-25%);
-	transition: 0.5s linear;
+	transition: 0.3s linear;
 	top: 0;
 	width: max-content;
 	display: flex;
@@ -110,7 +104,7 @@
 .toggle {
 	display: flex;
 	position: absolute;
-	bottom: 1rem;
+	bottom: 0;
 	right: 0;
 	font-size: 18px;
 	z-index: 10;
