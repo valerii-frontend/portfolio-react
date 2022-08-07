@@ -5,14 +5,13 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import styles from "./Slider.module.css";
 
-export default function Slider() {
-	const [swiperRef, setSwiperRef] = useState(null);
-	const slideTo = (index) => {
-		swiperRef.slideTo(index, 0);
-	};
+export default function Slider(props) {
+	const [swiper, setSwiper] = useState(null);
+	const slideTo = (i) => swiper.slideTo(i, 0);
+
 	return (
 		<Swiper
-			onSwiper={setSwiperRef}
+			onSwiper={setSwiper}
 			freeMode={true}
 			className={styles.slider}
 			spaceBetween={0}
@@ -22,10 +21,7 @@ export default function Slider() {
 			speed={1000}
 			loop>
 			<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-				<p>
-					slide1
-					<button onClick={() => slideTo(5)}>goto3</button>
-				</p>
+				<p>slide1</p>
 			</SwiperSlide>
 			<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
 				<p>slide2</p>

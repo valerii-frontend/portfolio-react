@@ -29,15 +29,19 @@
 	margin: 0 -10px;
 }
 
-.modelRow {
-	display: flex;
-	min-height: 90vh;
+.swiper-slide.swiper-slide-active {
+	opacity: 0;
+	animation: opacity 1s linear 1 forwards !important;
+	transition: opacity 0.5s !important;
 }
-.modelCol {
-	flex: 0 0 50%;
-	max-width: 50%;
-	min-height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.swiper-slide {
+	transition: opacity 0.5s !important;
 }

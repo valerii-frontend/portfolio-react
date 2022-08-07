@@ -1,13 +1,14 @@
+import { useState, useEffect } from "react";
 import "./App.css";
+
 import Header from "./components/Header/Header";
 import Modal from "./components/Modal/Modal";
 import Container from "./components/Container/Container";
-import Main from "./components/Main/Main";
 import Button from "./components/Button/Button";
-import { useState } from "react";
+
 import { CardImg, BlurImg, CubesImg } from "./assets/Images";
-import Model from "./components/Model/Model";
-import Slider from "./components/Slider/Slider";
+
+import NewMain from "./components/NewMain/NewMain";
 
 function App(props) {
 	const [isOpenCardsModal, setIsOpenCardsModal] = useState(false);
@@ -17,15 +18,7 @@ function App(props) {
 	return (
 		<div className='App'>
 			<Header />
-			<Main>
-				<div className='modelRow'>
-					<div className='modelCol'>
-						<Model />
-					</div>
-					<div className='modelCol'>
-						<Slider />
-					</div>
-				</div>
+			<NewMain>
 				<Container>
 					<div className='row'>
 						<div className='col'>
@@ -48,7 +41,8 @@ function App(props) {
 						</div>
 					</div>
 				</Container>
-			</Main>
+			</NewMain>
+
 			{isOpenCardsModal && <Modal show={setIsOpenCardsModal} title='cards'></Modal>}
 			{isOpenCubesModal && <Modal show={setIsOpenCubesModal} title='cubes'></Modal>}
 			{isOpenBlurModal && <Modal show={setIsOpenBlurModal} title='blur'></Modal>}
