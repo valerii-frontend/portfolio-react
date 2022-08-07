@@ -1,5 +1,9 @@
 .main {
-	flex: 1 1 auto;
+	position: fixed;
+	width: 100%;
+	height: calc(100% - 51px);
+	top: 51px;
+	left: 0;
 	background: var(--grey);
 }
 .slide {
@@ -11,36 +15,34 @@
 	padding: 1rem;
 }
 .slider {
-	height: 100%;
+	height: calc(100vh - 52px);
 }
 
 .slide p {
-	background-color: #fff;
+	background-color: var(--dark);
 	height: 100%;
 	width: 100%;
+	color: var(--light);
+	text-align: center;
+	padding: 1rem;
 }
 
 .row {
 	display: flex;
-	min-height: 90vh;
 }
 .col {
-	flex: 0 0 50%;
-	max-width: 50%;
-	min-height: 100%;
+	flex: 0 0 30%;
+	max-width: 30%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.model {
-	margin: 0;
-	padding: 0;
-	padding-bottom: 100%;
 	position: relative;
-	width: 100%;
 }
 
+.model.col {
+	flex: 0 0 70%;
+	max-width: 70%;
+}
 .model model-viewer {
 	position: absolute;
 	top: 0;

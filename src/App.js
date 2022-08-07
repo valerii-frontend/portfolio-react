@@ -19,7 +19,7 @@ function App(props) {
 		<div className='App'>
 			<Header />
 			<NewMain>
-				<Container>
+				{/* <Container>
 					<div className='row'>
 						<div className='col'>
 							<div className='item'>
@@ -40,7 +40,7 @@ function App(props) {
 							</div>
 						</div>
 					</div>
-				</Container>
+				</Container> */}
 			</NewMain>
 
 			{isOpenCardsModal && <Modal show={setIsOpenCardsModal} title='cards'></Modal>}
