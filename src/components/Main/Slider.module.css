@@ -1,6 +1,11 @@
 .swiper {
 	height: 100%;
 }
+.slider {
+	flex: 0 0 20%;
+	max-width: 20%;
+	position: relative;
+}
 .slide {
 	height: 100%;
 	display: flex;
