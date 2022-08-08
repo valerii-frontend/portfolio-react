@@ -9,7 +9,18 @@ function App(props) {
 			<Header />
 			<Main />
 			<Taskbar>
-				<span>vscode</span> <span>√ Prettier</span>
+				<div>
+					<span>vscode</span>
+					<span>&nbsp;&nbsp;&nbsp;🗘&nbsp;&nbsp;&nbsp;</span>
+					<span>⮾&nbsp;&nbsp;&nbsp;</span>
+					<span>△&nbsp;&nbsp;&nbsp;</span>
+				</div>
+				<div>
+					<span>Tab Size: 2&nbsp;&nbsp;UTF-8&nbsp;&nbsp;LF</span>
+					<span>&nbsp;&nbsp;&nbsp;{`{ } JavaScript React`}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span>⫚ Go Live&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span>√ Prettier</span>
+				</div>
 			</Taskbar>
 		</div>
 	);

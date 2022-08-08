@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Tabs.module.css";
 
-import reactIcon from "./react-icon.svg";
-import aboutIcon from "./note-text.svg";
-import libIcon from "./folder.svg";
-import contactIcon from "./user.svg";
+import reactIcon from "./icons/react-icon.svg";
+import aboutIcon from "./icons/note-text.svg";
+import libIcon from "./icons/folder.svg";
+import contactIcon from "./icons/user.svg";
 
 export default function Tabs() {
 	return (
