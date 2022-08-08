@@ -6,6 +6,116 @@ import styles from "./Model.module.css";
 
 export default function Model({ slideTo }) {
 	const [pointToggle, setPointToggle] = useState(false);
+	const hotSpotButtons = [
+		{
+			position: "-6.45m 6.46m 5.85m",
+			normal: "0m -1.34m 1.00m",
+			text: "HTML5",
+			id: 1,
+		},
+		{
+			position: "-9.60m 6.40m 5.00m",
+			normal: "-0.70m 1.08m 0.70m",
+			text: "Microsoft Visual Studio Code",
+			id: 2,
+		},
+		{
+			position: "-10.58m 6.55m 1.55m",
+			normal: "-1m 0m 0m",
+			text: "TypeScript",
+			id: 3,
+		},
+		{
+			position: "-9.20m 6.40m -1.08m",
+			normal: "-0.70m 2.61m -0.70m",
+			text: "Bootstrap",
+			id: 4,
+		},
+		{
+			position: "-6.25m 6.28m -2.82m",
+			normal: "-4.37m 1.34m -1.00m",
+			text: "CSS3",
+			id: 5,
+		},
+		{
+			position: "-3.20m 6.50m -1.71m",
+			normal: "0.70m 4.90m -0.70m",
+			text: "JetBrains PHP Storm",
+			id: 6,
+		},
+		{
+			position: "-2.00m 6.40m 1.61m",
+			normal: "1m 0m 0m",
+			text: "JavaScript",
+			id: 7,
+		},
+		{
+			position: "-3.25m 6.40m 4.94m",
+			normal: "0.70m -1.91m 0.70m",
+			text: "SASS",
+			id: 8,
+		},
+		{
+			position: "-4.93m 3.73m 4.82m",
+			normal: "0.40m -0.47m 0.80m",
+			text: "Gulp.js",
+			id: 9,
+		},
+		{
+			position: "-2.86m 4.13m 0.17m",
+			normal: "0.78m -0.47m -0.40m",
+			text: "React",
+			id: 10,
+		},
+		{
+			position: "-8.83m 3.62m 3.58m",
+			normal: "-0.70m -0.60m 0.40m",
+			text: " Adobe Photoshop",
+			id: 11,
+		},
+		{
+			position: "-7.77m 4.14m -1.96m",
+			normal: "-0.38m -0.56m -0.73m",
+			text: "Figma",
+			id: 12,
+		},
+		{
+			position: "-6.11m 2.50m 1.73m",
+			normal: "0.80m 0.00m -0.60m",
+			text: "BEM methodology",
+			id: 13,
+		},
+		{
+			position: "-7.50m 9.70m -1.65m",
+			normal: "-0.27m 0.77m -0.57m",
+			text: "GitHub",
+			id: 14,
+		},
+		{
+			position: "-3.60m 9.56m 0.30m",
+			normal: "0.66m 0.70m -0.24m",
+			text: "GitLAB",
+			id: 15,
+		},
+		{
+			position: "-5.58m 9.93m 4.02m",
+			normal: "0.34m 0.61m 0.71m",
+			text: "npm",
+			id: 16,
+		},
+		{
+			position: "-9.20m 9.65m 2.48m",
+			normal: "-0.66m 0.70m 0.24m",
+			text: "git bash console",
+			id: 17,
+		},
+		{
+			position: "-6.40m 10.33m 1.74m",
+			normal: "0.75m 0.64m -0.15m",
+			text: "Chrome dev.tools",
+			id: 18,
+		},
+	];
 
 	return (
 		<div className={styles.model}>
@@ -28,172 +138,19 @@ export default function Model({ slideTo }) {
 				camera-target='-6.201m 6.17m 1.8m'
 				min-camera-orbit='auto 60deg 12.50m'
 				max-camera-orbit='auto 120deg 18.50m'>
-				{pointToggle && (
-					<>
+				{pointToggle &&
+					hotSpotButtons.map((btn) => (
 						<button
-							onClick={() => slideTo(1)}
+							onClick={() => slideTo(btn.id)}
 							className={styles.hotspot}
-							slot='hotspot-1'
-							data-position='-6.45m 6.46m 5.85m'
-							data-normal='0m -1.34m 1.00m'
+							key={btn.id}
+							slot={`hotspot-${btn.id}`}
+							data-position={btn.position}
+							data-normal={btn.normal}
 							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>HTML5</div>
+							<div className={styles.hotspotText}>{btn.text}</div>
 						</button>
-						<button
-							onClick={() => slideTo(2)}
-							className={styles.hotspot}
-							slot='hotspot-2'
-							data-position='-9.60m 6.40m 5.00m'
-							data-normal='-0.70m 1.08m 0.70m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Microsoft Visual Studio Code</div>
-						</button>
-						<button
-							onClick={() => slideTo(3)}
-							className={styles.hotspot}
-							slot='hotspot-3'
-							data-position='-10.58m 6.55m 1.55m'
-							data-normal='-1m 0m 0m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>TypeScript</div>
-						</button>
-						<button
-							onClick={() => slideTo(4)}
-							className={styles.hotspot}
-							slot='hotspot-4'
-							data-position='-9.20m 6.40m -1.08m'
-							data-normal='-0.70m 2.61m -0.70m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Bootstrap</div>
-						</button>
-						<button
-							onClick={() => slideTo(5)}
-							className={styles.hotspot}
-							slot='hotspot-5'
-							data-position='-6.25m 6.28m -2.82m'
-							data-normal='-4.37m 1.34m -1.00m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>CSS3</div>
-						</button>
-						<button
-							onClick={() => slideTo(6)}
-							className={styles.hotspot}
-							slot='hotspot-6'
-							data-position='-3.20m 6.50m -1.71m'
-							data-normal='0.70m 4.90m -0.70m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>JetBrains PHP Storm</div>
-						</button>
-						<button
-							onClick={() => slideTo(7)}
-							className={styles.hotspot}
-							slot='hotspot-7'
-							data-position='-2.00m 6.40m 1.61m'
-							data-normal='1m 0m 0m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>JavaScript</div>
-						</button>
-						<button
-							onClick={() => slideTo(8)}
-							className={styles.hotspot}
-							slot='hotspot-8'
-							data-position='-3.25m 6.40m 4.94m'
-							data-normal='0.70m -1.91m 0.70m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>SASS</div>
-						</button>
-						<button
-							onClick={() => slideTo(9)}
-							className={styles.hotspot}
-							slot='hotspot-9'
-							data-position='-4.93m 3.73m 4.82m'
-							data-normal='0.40m -0.47m 0.80m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Gulp.js</div>
-						</button>
-						<button
-							onClick={() => slideTo(10)}
-							className={styles.hotspot}
-							slot='hotspot-10'
-							data-position='-2.86m 4.13m 0.17m'
-							data-normal='0.78m -0.47m -0.40m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>React</div>
-						</button>
-						<button
-							onClick={() => slideTo(11)}
-							className={styles.hotspot}
-							slot='hotspot-11'
-							data-position='-7.77m 4.14m -1.96m'
-							data-normal='-0.38m -0.56m -0.73m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Figma</div>
-						</button>
-						<button
-							onClick={() => slideTo(12)}
-							className={styles.hotspot}
-							slot='hotspot-12'
-							data-position='-8.83m 3.62m 3.58m'
-							data-normal='-0.70m -0.60m 0.40m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Adobe Photoshop</div>
-						</button>
-						<button
-							onClick={() => slideTo(13)}
-							className={styles.hotspot}
-							slot='hotspot-13'
-							data-position='-6.11m 2.50m 1.73m'
-							data-normal='0.80m 0.00m -0.60m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>BEM methodology</div>
-						</button>
-						<button
-							onClick={() => slideTo(14)}
-							className={styles.hotspot}
-							slot='hotspot-14'
-							data-position='-7.50m 9.70m -1.65m'
-							data-normal='-0.27m 0.77m -0.57m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>GitHub</div>
-						</button>
-						<button
-							onClick={() => slideTo(15)}
-							className={styles.hotspot}
-							slot='hotspot-15'
-							data-position='-3.60m 9.56m 0.30m'
-							data-normal='0.66m 0.70m -0.24m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>GitLab</div>
-						</button>
-						<button
-							onClick={() => slideTo(16)}
-							className={styles.hotspot}
-							slot='hotspot-16'
-							data-position='-5.58m 9.93m 4.02m'
-							data-normal='0.34m 0.61m 0.71m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Node pack manager</div>
-						</button>
-						<button
-							onClick={() => slideTo(17)}
-							className={styles.hotspot}
-							slot='hotspot-17'
-							data-position='-9.20m 9.65m 2.48m'
-							data-normal='-0.66m 0.70m 0.24m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Git bash</div>
-						</button>
-						<button
-							onClick={() => slideTo(18)}
-							className={styles.hotspot}
-							slot='hotspot-18'
-							data-position='-6.40m 10.33m 1.74m'
-							data-normal='0.75m 0.64m -0.15m'
-							data-visibility-attribute='visible'>
-							<div className={styles.hotspotText}>Chrome dev.tools</div>
-						</button>
-					</>
-				)}
+					))}
 
 				<div className={`${styles["progress-bar"]} ${styles.hide}`} slot='progress-bar'>
 					<div className={styles["update-bar"]}></div>

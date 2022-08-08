@@ -5,9 +5,7 @@ import Slider from "../Slider/Slider";
 
 export default function Main(props) {
 	const [swiperEl, setSwiperEl] = useState(1);
-	const slideTo = (index) => {
-		swiperEl.slideTo(index, 500);
-	};
+	const slideTo = (index) => swiperEl.slideTo(index, 500);
 
 	return (
 		<main className={main.main}>
