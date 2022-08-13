@@ -1,10 +1,13 @@
 .tabs {
-	max-width: 60%;
 	margin: 0 auto;
+	background: var(--sidebar);
+	position: relative;
 }
 .tabs ul {
 	display: flex;
 	box-shadow: 0 2px 0 0 var(--bg);
+	max-width: 60%;
+	margin: 0 auto;
 }
 .tabs li {
 	width: 128px;

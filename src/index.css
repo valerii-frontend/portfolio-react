@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap");
 :root {
-	/* --primary: #0071e3;
-	--primary-hover: #2282e2;
-	--primary-rgb: 0, 113, 227;
-	--primary-hover-rgb: 34, 130, 226;
-	--dark: #333333;
-	--light: #fbfbfd; */
 	--code-color: #89c379;
 	--code-color-02: #e5c07b;
 	--code-color-03: #e06c75;
@@ -17,6 +11,7 @@
 	--text-disabled: #72767f;
 	--bg: #282c34;
 	--sidebar: #21252b;
+	--sidebar-icons: #2f333d;
 	--tab-active: #383e4a;
 	--grey: #cccccc;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import gbl from "./portfolio.glb";
-import poster from "./poster.png";
+import poster from "./poster2.png";
 import light from "./light.hdr";
 import styles from "./Model.module.css";
 
