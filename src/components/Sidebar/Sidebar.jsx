@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
 	return (
@@ -13,7 +14,7 @@ export default function Sidebar() {
 					<span className={`${styles.blocksIcon} ${styles.icon}`}></span>
 				</div>
 				<div className={styles.bottom}>
-					<span className={`${styles.userIcon} ${styles.icon}`}></span>
+					<Link to='/about' className={`${styles.userIcon} ${styles.icon}`}></Link>
 					<span className={`${styles.settingsIcon} ${styles.icon}`}></span>
 				</div>
 			</div>

@@ -11,7 +11,12 @@ import Home from "./pages/Home";
 function App(props) {
 	return (
 		<BrowserRouter>
-			<div className='App'>
+			<div
+				className='App'
+				onContextMenu={(e) => {
+					e.preventDefault();
+					console.log("menu");
+				}}>
 				<Header />
 				<Routes>
 					<Route path='/' element={<Home />} exact />
