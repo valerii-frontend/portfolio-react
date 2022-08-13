@@ -12,6 +12,9 @@
 	min-height: 100vh;
 	overflow: hidden;
 }
+.page {
+	flex: 1 1 auto;
+}
 
 .swiper-slide.swiper-slide-active {
 	opacity: 0;

@@ -1,28 +1,27 @@
 import "./App.css";
-import Main from "./components/Main/Main";
+import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import Taskbar from "./components/Taskbar/Taskbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contacts from "./pages/Contacts";
+import Works from "./pages/Works";
+import About from "./pages/About";
 
 function App(props) {
 	return (
-		<div className='App'>
-			<Header />
-			<Main />
-			<Taskbar>
-				<div>
-					<span>vscode</span>
-					<span>&nbsp;&nbsp;&nbsp;🗘&nbsp;&nbsp;&nbsp;</span>
-					<span>⮾&nbsp;&nbsp;&nbsp;</span>
-					<span>△&nbsp;&nbsp;&nbsp;</span>
-				</div>
-				<div>
-					<span>Tab Size: 2&nbsp;&nbsp;UTF-8&nbsp;&nbsp;LF</span>
-					<span>&nbsp;&nbsp;&nbsp;{`{ } JavaScript React`}&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<span>⫚ Go Live&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<span>√ Prettier</span>
-				</div>
-			</Taskbar>
-		</div>
+		<BrowserRouter>
+			<div className='App'>
+				<Header />
+				<Routes>
+					<Route path='/' element={<Home />} exact />
+					<Route path='/contacts' element={<Contacts />} exact />
+					<Route path='/works' element={<Works />} exact />
+					<Route path='/about' element={<About />} exact />
+				</Routes>
+
+				<Taskbar />
+			</div>
+		</BrowserRouter>
 	);
 }
 

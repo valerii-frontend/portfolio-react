@@ -31,9 +31,9 @@
 .tabs li:hover {
 	background-color: #33373b;
 }
-.tabs li.active {
+.active {
 	background-color: var(--tab-active);
 }
-.tabs li.active a {
+.active a {
 	color: var(--text-active);
 }
