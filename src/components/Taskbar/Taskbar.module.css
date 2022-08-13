@@ -7,3 +7,9 @@
 	align-items: center;
 	padding: 0.25rem 1rem;
 }
+.taskbar div {
+	display: flex;
+}
+.taskbar span {
+	padding: 0 0.5rem;
+}

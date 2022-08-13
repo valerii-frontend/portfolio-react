@@ -1,20 +1,23 @@
 import React from "react";
 import styles from "./Taskbar.module.css";
 
-export default function Taskbar({ children }) {
+export default function Taskbar() {
 	return (
 		<div className={styles.taskbar}>
 			<div>
 				<span>vscode</span>
-				<span>&nbsp;&nbsp;&nbsp;🗘&nbsp;&nbsp;&nbsp;</span>
-				<span>⮾&nbsp;&nbsp;&nbsp;</span>
-				<span>△&nbsp;&nbsp;&nbsp;</span>
+				<span>🗘</span>
+				<span>⮾ 0</span>
+				<span>⚠ 0</span>
 			</div>
 			<div>
-				<span>Tab Size: 2&nbsp;&nbsp;UTF-8&nbsp;&nbsp;LF</span>
-				<span>&nbsp;&nbsp;&nbsp;{`{ } JavaScript React`}&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				<span>⫚ Go Live&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span>Tab Size: 2</span>
+				<span>UTF-8</span>
+				<span>CLRF</span>
+				<span>{`{ } JavaScript React`}</span>
+				<span>⫚ Go Live</span>
 				<span>√ Prettier</span>
+				<span style={{ filter: "grayscale(1)" }}>🔔</span>
 			</div>
 		</div>
 	);
