@@ -5,12 +5,14 @@ import reactIcon from "./icons/react-icon.svg";
 import aboutIcon from "./icons/note-text.svg";
 import libIcon from "./icons/folder.svg";
 import contactIcon from "./icons/user.svg";
+import ControlBar from "./ControlsBar";
 
 export default function Tabs() {
 	const { pathname } = useLocation();
 
 	return (
 		<nav className={styles.tabs}>
+			<ControlBar />
 			<ul>
 				<li className={pathname === "/" ? styles.active : null}>
 					<NavLink to={"/"}>
