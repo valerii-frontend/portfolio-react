@@ -1,0 +1,120 @@
+.folder {
+	flex: 1 1 auto;
+	color: var(--text);
+}
+/* all lines */
+.folder li,
+.folder p {
+	cursor: pointer;
+	display: flex;
+	align-items: flex-end;
+	height: 24px;
+	line-height: 24px;
+}
+.folder li:hover,
+.folder p:hover {
+	background-color: var(--tab-active);
+}
+/* open close states */
+.skills .open:after {
+	background: url("../../assets/icons/folder-dist-open.svg") center/contain no-repeat;
+}
+.skills .close:after {
+	background: url("../../assets/icons/folder-dist.svg") center/contain no-repeat;
+}
+
+.open::before {
+	background: url("./icons/chevron-down.svg") center/contain no-repeat;
+}
+.close::before {
+	background: url("./icons/chevron-right.svg") center/contain no-repeat;
+}
+
+/* for all folders */
+.folder p {
+	width: 100%;
+	height: 24px;
+	padding-left: 55px;
+	position: relative;
+}
+.folder p:before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	height: 16px;
+	width: 16px;
+}
+.folder p:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 30px;
+	height: 20px;
+	width: 20px;
+}
+.folder li {
+	padding-left: 65px;
+	position: relative;
+}
+
+.folder li:before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 40px;
+	height: 20px;
+	width: 20px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* filse icons */
+.html:before {
+	background-image: url("../../assets/icons/html.svg");
+}
+.html:after {
+	content: ".html";
+}
+.css:before {
+	background-image: url("../../assets/icons/css.svg");
+}
+.css:after {
+	content: ".css";
+}
+.js:before {
+	background-image: url("../../assets/icons/javascript.svg");
+}
+.js:after {
+	content: ".js";
+}
+.bs:before {
+	background-image: url("../../assets/icons/bootstrap.svg");
+}
+.bs:after {
+	content: ".min.css";
+}
+.bem:before {
+	background-image: url("../../assets/icons/bem.svg");
+}
+.bem:after {
+	content: ".min.scss";
+}
+.scss:before {
+	background-image: url("../../assets/icons/sass.svg");
+}
+.scss:after {
+	content: ".scss";
+}
+.ts:before {
+	background-image: url("../../assets/icons/typescript.svg");
+}
+.ts:after {
+	content: ".ts";
+}
+.jsx:before {
+	background-image: url("../../assets/icons/react.svg");
+}
+.jsx:after {
+	content: ".jsx";
+}

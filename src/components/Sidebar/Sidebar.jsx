@@ -1,24 +1,25 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
-import { Link } from "react-router-dom";
+import IconsBar from "./IconsBar";
+import Folder from "./Folder";
 
 export default function Sidebar() {
+	const skills = [
+		{ name: "HTML", icon: "html" },
+		{ name: "CSS", icon: "css" },
+		{ name: "Bootstrap", icon: "bs" },
+		{ name: "BEM", icon: "bem" },
+		{ name: "SASS", icon: "scss" },
+		{ name: "JavaScript", icon: "js" },
+		{ name: "TypeScript", icon: "ts" },
+		{ name: "React", icon: "jsx" },
+	];
 	return (
 		<div className={styles.sidebar}>
-			<div className={styles.icons}>
-				<div className={styles.top}>
-					<span className={`${styles.filesIcon} ${styles.icon}`}></span>
-					<span className={`${styles.searchIcon} ${styles.icon}`}></span>
-					<span className={`${styles.gitIcon} ${styles.icon}`}></span>
-					<span className={`${styles.bugIcon} ${styles.icon}`}></span>
-					<span className={`${styles.blocksIcon} ${styles.icon}`}></span>
-				</div>
-				<div className={styles.bottom}>
-					<Link to='/about' className={`${styles.userIcon} ${styles.icon}`}></Link>
-					<span className={`${styles.settingsIcon} ${styles.icon}`}></span>
-				</div>
+			<IconsBar />
+			<div style={{ flex: 1 }}>
+				<Folder items={skills} title='skills' />
 			</div>
-			<div className={styles.files}></div>
 		</div>
 	);
 }
