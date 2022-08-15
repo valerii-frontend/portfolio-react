@@ -15,19 +15,52 @@
 .folder p:hover {
 	background-color: var(--tab-active);
 }
+.list {
+	position: relative;
+}
+.list:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 17px;
+	height: 100%;
+	width: 1px;
+	background-color: var(--text);
+	opacity: 0.3;
+}
 /* open close states */
 .skills .open:after {
-	background: url("../../assets/icons/folder-dist-open.svg") center/contain no-repeat;
+	background-image: url("../../assets/icons/folder-public-open.svg");
 }
 .skills .close:after {
-	background: url("../../assets/icons/folder-dist.svg") center/contain no-repeat;
+	background-image: url("../../assets/icons/folder-public.svg");
+}
+.apps .open:after {
+	background-image: url("../../assets/icons/folder-app-open.svg");
+}
+.apps .close:after {
+	background-image: url("../../assets/icons/folder-app.svg");
+}
+.tools .open:after {
+	background-image: url("../../assets/icons/folder-config-open.svg");
+}
+.tools .close:after {
+	background-image: url("../../assets/icons/folder-config.svg");
 }
 
 .open::before {
-	background: url("./icons/chevron-down.svg") center/contain no-repeat;
+	background-image: url("./icons/chevron-down.svg");
 }
 .close::before {
-	background: url("./icons/chevron-right.svg") center/contain no-repeat;
+	background-image: url("./icons/chevron-right.svg");
+}
+.open::before,
+.open::after,
+.close::before,
+.close::after {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* for all folders */
@@ -95,10 +128,10 @@
 	content: ".min.css";
 }
 .bem:before {
-	background-image: url("../../assets/icons/bem.svg");
+	background-image: url("../../assets/icons/css-map.svg");
 }
 .bem:after {
-	content: ".min.scss";
+	content: ".map.css";
 }
 .scss:before {
 	background-image: url("../../assets/icons/sass.svg");
@@ -117,4 +150,70 @@
 }
 .jsx:after {
 	content: ".jsx";
+}
+.figma:before {
+	background-image: url("../../assets/icons/figma.svg");
+}
+.figma:after {
+	content: ".fig";
+}
+.psd:before {
+	background-image: url("../../assets/icons/psd.svg");
+}
+.psd:after {
+	content: ".psd";
+}
+.gimp:before {
+	background-image: url("../../assets/icons/gimp.svg");
+}
+.gimp:after {
+	content: ".png";
+}
+.vscode:before {
+	background-image: url("../../assets/icons/vscode.svg");
+}
+.vscode:after {
+	content: ".exe";
+}
+.web:before {
+	background-image: url("../../assets/icons/webstorm.svg");
+}
+.web:after {
+	content: ".exe";
+}
+.php:before {
+	background-image: url("../../assets/icons/phpStorm.svg");
+}
+.php:after {
+	content: ".exe";
+}
+.gh:before {
+	background-image: url("../../assets/icons/github-inverted.svg");
+}
+.gh:after {
+	content: ".com";
+}
+.gl:before {
+	background-image: url("../../assets/icons/gitlab.svg");
+}
+.gl:after {
+	content: ".com";
+}
+.npm:before {
+	background-image: url("../../assets/icons/npm.svg");
+}
+.npm:after {
+	content: ".js.com";
+}
+.gulp:before {
+	background-image: url("../../assets/icons/gulp.svg");
+}
+.gulp:after {
+	content: ".js";
+}
+.chrome:before {
+	background-image: url("../../assets/icons/chrome.svg");
+}
+.chrome:after {
+	content: ".dev.exe";
 }

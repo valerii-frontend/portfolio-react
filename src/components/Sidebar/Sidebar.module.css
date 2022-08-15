@@ -3,3 +3,6 @@
 	display: flex;
 	background: var(--sidebar);
 }
+.files {
+	flex: 1 1 auto;
+}

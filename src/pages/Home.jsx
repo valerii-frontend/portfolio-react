@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import Model from "../components/Model/Model";
 import Slider from "../components/Slider/Slider";
 import Sidebar from "../components/Sidebar/Sidebar";
+import HomeSidebar from "../components/Sidebar/HomeSidebar";
 
 export default function Main() {
 	const [swiperEl, setSwiperEl] = useState(1);
@@ -10,7 +11,9 @@ export default function Main() {
 
 	return (
 		<main className={styles.main}>
-			<Sidebar />
+			<Sidebar>
+				<HomeSidebar />
+			</Sidebar>
 			<Model slideTo={slideTo} />
 			<Slider setSwiperEl={setSwiperEl} />
 		</main>

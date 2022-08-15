@@ -11,7 +11,7 @@ export default function Folder({ children, title, items }) {
 				{title}
 			</p>
 			{isOpen && (
-				<ul className={styles.files}>
+				<ul className={styles.list}>
 					{items.map((item) => (
 						<li key={item.name} className={styles[`${item.icon}`]}>
 							{item.name}
