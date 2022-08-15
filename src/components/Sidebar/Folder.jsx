@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Folder.module.css";
 
-export default function Folder({ children, title, items }) {
+export default function Folder({ children, title, items, slideTo }) {
 	const [isOpen, setIsOpen] = useState(true);
 	const folderToggleHandler = () => setIsOpen((p) => !p);
 
@@ -13,7 +13,7 @@ export default function Folder({ children, title, items }) {
 			{isOpen && (
 				<ul className={styles.list}>
 					{items.map((item) => (
-						<li key={item.name} className={styles[`${item.icon}`]}>
+						<li key={item.name} className={styles[`${item.icon}`]} onClick={() => slideTo(item.slide)}>
 							{item.name}
 						</li>
 					))}

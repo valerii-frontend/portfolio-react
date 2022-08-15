@@ -167,7 +167,7 @@
 	background-image: url("../../assets/icons/gimp.svg");
 }
 .gimp:after {
-	content: ".png";
+	content: ".xcf";
 }
 .vscode:before {
 	background-image: url("../../assets/icons/vscode.svg");
@@ -179,19 +179,25 @@
 	background-image: url("../../assets/icons/webstorm.svg");
 }
 .web:after {
-	content: ".exe";
+	content: ".lnk";
 }
 .php:before {
 	background-image: url("../../assets/icons/phpStorm.svg");
 }
 .php:after {
-	content: ".exe";
+	content: ".bin";
 }
 .gh:before {
 	background-image: url("../../assets/icons/github-inverted.svg");
 }
 .gh:after {
 	content: ".com";
+}
+.git:before {
+	background-image: url("../../assets/icons/git.svg");
+}
+.git:after {
+	content: ".ignore";
 }
 .gl:before {
 	background-image: url("../../assets/icons/gitlab.svg");
@@ -203,7 +209,7 @@
 	background-image: url("../../assets/icons/npm.svg");
 }
 .npm:after {
-	content: ".js.com";
+	content: ".run.start";
 }
 .gulp:before {
 	background-image: url("../../assets/icons/gulp.svg");

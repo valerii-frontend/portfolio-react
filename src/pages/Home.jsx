@@ -12,7 +12,7 @@ export default function Main() {
 	return (
 		<main className={styles.main}>
 			<Sidebar>
-				<HomeSidebar />
+				<HomeSidebar slideTo={slideTo} />
 			</Sidebar>
 			<Model slideTo={slideTo} />
 			<Slider setSwiperEl={setSwiperEl} />
