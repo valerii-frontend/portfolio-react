@@ -1,5 +1,6 @@
 import React from "react";
 import Folder from "./Folder";
+import md from "../../assets/icons/markdown.svg";
 
 export default function HomeSidebar({ slideTo }) {
 	const skills = [
@@ -33,6 +34,22 @@ export default function HomeSidebar({ slideTo }) {
 			<Folder items={skills} slideTo={slideTo} title='skills' />
 			<Folder items={apps} slideTo={slideTo} title='apps' />
 			<Folder items={tools} slideTo={slideTo} title='tools' />
+			<p
+				style={{
+					cursor: "pointer",
+					display: "flex",
+					alignItems: "flex-end",
+					height: "24px",
+					lineHeight: "24px",
+					paddingLeft: "35px",
+					color: "var(--text)",
+					backgroundImage: `url(${md})`,
+					backgroundPosition: "10px 0",
+					backgroundRepeat: "no-repeat",
+					marginTop: "5px",
+				}}>
+				README.MD
+			</p>
 		</>
 	);
 }

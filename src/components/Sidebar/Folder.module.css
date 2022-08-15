@@ -2,7 +2,7 @@
 	flex: 1 1 auto;
 	color: var(--text);
 }
-/* all lines */
+/* all lines paddings and hover */
 .folder li,
 .folder p {
 	cursor: pointer;
@@ -15,6 +15,7 @@
 .folder p:hover {
 	background-color: var(--tab-active);
 }
+/* vertical line */
 .list {
 	position: relative;
 }
@@ -47,7 +48,7 @@
 .tools .close:after {
 	background-image: url("../../assets/icons/folder-config.svg");
 }
-
+/* arrows folder state */
 .open::before {
 	background-image: url("./icons/chevron-down.svg");
 }
@@ -62,8 +63,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
-/* for all folders */
+/* global folders style */
 .folder p {
 	width: 100%;
 	height: 24px;
@@ -102,7 +102,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-/* filse icons */
+/* icons for files and apps */
 .html:before {
 	background-image: url("../../assets/icons/html.svg");
 }
