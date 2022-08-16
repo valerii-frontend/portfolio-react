@@ -31,29 +31,29 @@
 }
 /* open close states */
 .skills .open:after {
-	background-image: url("../../assets/icons/folder-public-open.svg");
+	background-image: url("../../assets/icons-files/folder-public-open.svg");
 }
 .skills .close:after {
-	background-image: url("../../assets/icons/folder-public.svg");
+	background-image: url("../../assets/icons-files/folder-public.svg");
 }
 .apps .open:after {
-	background-image: url("../../assets/icons/folder-app-open.svg");
+	background-image: url("../../assets/icons-files/folder-app-open.svg");
 }
 .apps .close:after {
-	background-image: url("../../assets/icons/folder-app.svg");
+	background-image: url("../../assets/icons-files/folder-app.svg");
 }
 .tools .open:after {
-	background-image: url("../../assets/icons/folder-config-open.svg");
+	background-image: url("../../assets/icons-files/folder-config-open.svg");
 }
 .tools .close:after {
-	background-image: url("../../assets/icons/folder-config.svg");
+	background-image: url("../../assets/icons-files/folder-config.svg");
 }
 /* arrows folder state */
 .open::before {
-	background-image: url("./icons/chevron-down.svg");
+	background-image: url("../../assets/icons-sidebar/chevron-down.svg");
 }
 .close::before {
-	background-image: url("./icons/chevron-right.svg");
+	background-image: url("../../assets/icons-sidebar/chevron-right.svg");
 }
 .open::before,
 .open::after,
@@ -104,121 +104,121 @@
 }
 /* icons for files and apps */
 .html:before {
-	background-image: url("../../assets/icons/html.svg");
+	background-image: url("../../assets/icons-files/html.svg");
 }
 .html:after {
 	content: ".html";
 }
 .css:before {
-	background-image: url("../../assets/icons/css.svg");
+	background-image: url("../../assets/icons-files/css.svg");
 }
 .css:after {
 	content: ".css";
 }
 .js:before {
-	background-image: url("../../assets/icons/javascript.svg");
+	background-image: url("../../assets/icons-files/javascript.svg");
 }
 .js:after {
 	content: ".js";
 }
 .bs:before {
-	background-image: url("../../assets/icons/bootstrap.svg");
+	background-image: url("../../assets/icons-files/bootstrap.svg");
 }
 .bs:after {
 	content: ".min.css";
 }
 .bem:before {
-	background-image: url("../../assets/icons/css-map.svg");
+	background-image: url("../../assets/icons-files/css-map.svg");
 }
 .bem:after {
 	content: ".map.css";
 }
 .scss:before {
-	background-image: url("../../assets/icons/sass.svg");
+	background-image: url("../../assets/icons-files/sass.svg");
 }
 .scss:after {
 	content: ".scss";
 }
 .ts:before {
-	background-image: url("../../assets/icons/typescript.svg");
+	background-image: url("../../assets/icons-files/typescript.svg");
 }
 .ts:after {
 	content: ".ts";
 }
 .jsx:before {
-	background-image: url("../../assets/icons/react.svg");
+	background-image: url("../../assets/icons-files/react.svg");
 }
 .jsx:after {
 	content: ".jsx";
 }
 .figma:before {
-	background-image: url("../../assets/icons/figma.svg");
+	background-image: url("../../assets/icons-files/figma.svg");
 }
 .figma:after {
 	content: ".fig";
 }
 .psd:before {
-	background-image: url("../../assets/icons/psd.svg");
+	background-image: url("../../assets/icons-files/psd.svg");
 }
 .psd:after {
 	content: ".psd";
 }
 .gimp:before {
-	background-image: url("../../assets/icons/gimp.svg");
+	background-image: url("../../assets/icons-files/gimp.svg");
 }
 .gimp:after {
 	content: ".xcf";
 }
 .vscode:before {
-	background-image: url("../../assets/icons/vscode.svg");
+	background-image: url("../../assets/icons-files/vscode.svg");
 }
 .vscode:after {
 	content: ".exe";
 }
 .web:before {
-	background-image: url("../../assets/icons/webstorm.svg");
+	background-image: url("../../assets/icons-files/webstorm.svg");
 }
 .web:after {
 	content: ".lnk";
 }
 .php:before {
-	background-image: url("../../assets/icons/phpStorm.svg");
+	background-image: url("../../assets/icons-files/phpStorm.svg");
 }
 .php:after {
 	content: ".bin";
 }
 .gh:before {
-	background-image: url("../../assets/icons/github-inverted.svg");
+	background-image: url("../../assets/icons-files/github-inverted.svg");
 }
 .gh:after {
 	content: ".com";
 }
 .git:before {
-	background-image: url("../../assets/icons/git.svg");
+	background-image: url("../../assets/icons-files/git.svg");
 }
 .git:after {
 	content: ".ignore";
 }
 .gl:before {
-	background-image: url("../../assets/icons/gitlab.svg");
+	background-image: url("../../assets/icons-files/gitlab.svg");
 }
 .gl:after {
 	content: ".com";
 }
 .npm:before {
-	background-image: url("../../assets/icons/npm.svg");
+	background-image: url("../../assets/icons-files/npm.svg");
 }
 .npm:after {
 	content: ".run.start";
 }
 .gulp:before {
-	background-image: url("../../assets/icons/gulp.svg");
+	background-image: url("../../assets/icons-files/gulp.svg");
 }
 .gulp:after {
 	content: ".js";
 }
 .chrome:before {
-	background-image: url("../../assets/icons/chrome.svg");
+	background-image: url("../../assets/icons-files/chrome.svg");
 }
 .chrome:after {
 	content: ".dev.exe";

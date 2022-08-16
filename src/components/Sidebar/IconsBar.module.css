@@ -42,7 +42,7 @@
 	margin-bottom: 1rem;
 }
 .filesIcon {
-	background-image: url("./icons/files.svg");
+	background-image: url("../../assets/icons-sidebar/files.svg");
 	border-left: 3px solid var(--text-active);
 	opacity: 1;
 }
@@ -55,24 +55,24 @@
 	cursor: not-allowed;
 }
 .searchIcon {
-	background-image: url("./icons/search.svg");
+	background-image: url("../../assets/icons-sidebar/search.svg");
 }
 .gitIcon {
-	background-image: url("./icons/git.svg");
+	background-image: url("../../assets/icons-sidebar/git.svg");
 }
 .bugIcon {
-	background-image: url("./icons/bug.svg");
+	background-image: url("../../assets/icons-sidebar/bug.svg");
 }
 .blocksIcon {
-	background-image: url("./icons/blocks.svg");
+	background-image: url("../../assets/icons-sidebar/blocks.svg");
 }
 .userIcon {
-	background-image: url("./icons/user.svg");
+	background-image: url("../../assets/icons-sidebar/user.svg");
 	opacity: 0.6;
 }
 .userIcon:hover {
 	opacity: 1;
 }
 .settingsIcon {
-	background-image: url("./icons/settings.svg");
+	background-image: url("../../assets/icons-sidebar/settings.svg");
 }

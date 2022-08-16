@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./ControlBar.module.css";
-import newFile from "./icons/new-file.svg";
-import newFolder from "./icons/new-folder.svg";
-import refresh from "./icons/refresh.svg";
-import collapse from "./icons/collapse-all.svg";
-import moreIcon from "./icons/more.svg";
+import newFile from "../../assets/icons-header/new-file.svg";
+import newFolder from "../../assets/icons-header/new-folder.svg";
+import refresh from "../../assets/icons-header/refresh.svg";
+import collapse from "../../assets/icons-header/collapse-all.svg";
+import moreIcon from "../../assets/icons-header/more.svg";
 
 export default function ControlBar() {
 	return (
