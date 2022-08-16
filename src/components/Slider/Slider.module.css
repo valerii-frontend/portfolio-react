@@ -14,11 +14,11 @@
 	padding: 1rem;
 }
 .slide h2 {
-	padding-left: 68px;
-	font-size: 48px;
+	padding-left: 50px;
+	font-size: 30px;
 	margin-bottom: 20px;
-	background-position: 10px center;
-	background-size: contain;
+	background-position: 10px top;
+	background-size: 30px;
 	background-repeat: no-repeat;
 }
 
@@ -37,4 +37,16 @@
 /* icons */
 .html {
 	background-image: url("../../assets/icons/html.svg");
+}
+.css {
+	background-image: url("../../assets/icons/css.svg");
+}
+.vs {
+	background-image: url("../../assets/icons/vscode.svg");
+}
+.ts {
+	background-image: url("../../assets/icons/typescript.svg");
+}
+.bs {
+	background-image: url("../../assets/icons/bootstrap.svg");
 }
