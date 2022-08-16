@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Tabs.module.css";
 import { NavLink, useLocation } from "react-router-dom";
-import reactIcon from "./icons/react-icon.svg";
-import aboutIcon from "./icons/note-text.svg";
-import libIcon from "./icons/folder.svg";
-import contactIcon from "./icons/user.svg";
+import reactIcon from "../../assets/icons/react-icon.svg";
+import aboutIcon from "../../assets/icons/note-text.svg";
+import libIcon from "../../assets/icons/folder.svg";
+import contactIcon from "../../assets/icons/contacts.svg";
 import ControlBar from "./ControlsBar";
 
 export default function Tabs() {

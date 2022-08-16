@@ -42,7 +42,7 @@
 	margin-bottom: 1rem;
 }
 .filesIcon {
-	background-image: url("../../assets/icons-sidebar/files.svg");
+	background-image: url("../../assets/icons/files.svg");
 	border-left: 3px solid var(--text-active);
 	opacity: 1;
 }
@@ -55,24 +55,24 @@
 	cursor: not-allowed;
 }
 .searchIcon {
-	background-image: url("../../assets/icons-sidebar/search.svg");
+	background-image: url("../../assets/icons/search.svg");
 }
 .gitIcon {
-	background-image: url("../../assets/icons-sidebar/git.svg");
+	background-image: url("../../assets/icons/git-branch.svg");
 }
 .bugIcon {
-	background-image: url("../../assets/icons-sidebar/bug.svg");
+	background-image: url("../../assets/icons/bug.svg");
 }
 .blocksIcon {
-	background-image: url("../../assets/icons-sidebar/blocks.svg");
+	background-image: url("../../assets/icons/blocks.svg");
 }
 .userIcon {
-	background-image: url("../../assets/icons-sidebar/user.svg");
+	background-image: url("../../assets/icons/account.svg");
 	opacity: 0.6;
 }
 .userIcon:hover {
 	opacity: 1;
 }
 .settingsIcon {
-	background-image: url("../../assets/icons-sidebar/settings.svg");
+	background-image: url("../../assets/icons/settings.svg");
 }
