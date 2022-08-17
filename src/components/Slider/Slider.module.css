@@ -50,3 +50,21 @@
 .bs {
 	background-image: url("../../assets/icons/bootstrap.svg");
 }
+.php {
+	background-image: url("../../assets/icons/phpStorm.svg");
+}
+.js {
+	background-image: url("../../assets/icons/javascript.svg");
+}
+.sass {
+	background-image: url("../../assets/icons/sass.svg");
+}
+.gulp {
+	background-image: url("../../assets/icons/gulp.svg");
+}
+.react {
+	background-image: url("../../assets/icons/react.svg");
+}
+.figma {
+	background-image: url("../../assets/icons/figma.svg");
+}

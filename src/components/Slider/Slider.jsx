@@ -18,8 +18,7 @@ export default function Slider({ setSwiperEl }) {
 		for the appearance of the document.`,
 			p3: `I have good knowledge of working with HTML, popular attributes, and tags. As well as building clean and
 		semantic code using modern practices`,
-			p4: `Now it is less often necessary to use pure HTML, the layout is increasingly being taken over by libraries
-		and frameworks`,
+			p4: `I use HTML to build understandable structures and reusable blocks`,
 		},
 		{
 			name: "Visual Studio Code",
@@ -27,7 +26,7 @@ export default function Slider({ setSwiperEl }) {
 			p1: `Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. `,
 			p2: `It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET).`,
 			p3: `Great editor, I use it for most of my projects. Has a built-in terminal and a very big extensions library for different tasks and languages`,
-			p4: `I use a set of my own snippets for the convenience of writing code. Also, the settings are always synchronized and saved in the profile linked to the github`,
+			p4: `Otherwise I have a set of my own snippets for the convenience of writing code. Also, the settings are always synchronized and saved in the profile linked to the github`,
 		},
 		{
 			name: "Type Script",
@@ -53,6 +52,54 @@ export default function Slider({ setSwiperEl }) {
 			p3: `Not one project can do without the use of styles, I have excellent experience in using CSS, knowledge of various types of selectors, pseudo-classes, pseudo-elements, transition, animation and transformations`,
 			p4: `I mostly write in pure CSS in small projects or React using modules. Sometimes I use variables and the CSS reset kit for removing default browsers styles`,
 		},
+		{
+			name: "PHP Storm",
+			icon: "php",
+			p1: `Make the most of the cutting edge front-end technologies, such as HTML 5, CSS, Sass, Less, Stylus, CoffeeScript, TypeScript, Emmet, and JavaScript, with refactorings, debugging, and unit testing available.`,
+			p2: `See the changes instantly in the browser thanks to Live Edit.`,
+			p3: `At my job we use this IDE for our e-commerce project. We have set up auto-deploy to a personal server for each developer. There is also built-in access to the FTP server, which makes the process of data exchange easier.`,
+			p4: `PHPstorm has a built-in system for quick indexing and advanced project search, which helps development`,
+		},
+		{
+			name: "JavaScript(ES6+)",
+			icon: "js",
+			p1: `Often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior,often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.`,
+			p2: `JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.`,
+			p3: `This is my primary programming language. I use native JavaScript and sometimes jQuery library at my job to create new functionality and refactor old one.`,
+			p4: `For the algorithm and problem solves practice in JavaScript I use popular services like the CodeWars, LeetCode, CodeSignal`,
+		},
+		{
+			name: "SASS(SCSS)",
+			icon: "sass",
+			p1: `Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.`,
+			p2: `SassScript provides the following mechanisms: variables, nesting, mixins, and selector inheritance.`,
+			p3: `I use it in almost every project. Which helps me keep the styles in order and structure the components.`,
+			p4: `Improves the readability of the style sheet especially when combined with the BEM methodology. I often use imports, variables, in my template I have several mixins for more creation better responsive view`,
+		},
+		{
+			name: "Gulp.js",
+			icon: "gulp",
+			p1: `Gulp is an open-source JavaScript toolkit used as a streaming build system (similar to a more package-focused Make) in front-end web development.`,
+			p2: `It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks involved in web development like minification, concatenation, cache busting, unit testing, linting, optimization, etc.`,
+			p3: `I use it for build my HTML/SCSS/JS projects. It helps me to reduce the weight of the project, clean up the styles, convert SCSS to CSS`,
+			p4: `I also use media query grouping, file merging, which helps to separate and structure the project during development`,
+		},
+		{
+			name: "React",
+			icon: "react",
+			p1: `React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.`,
+			p2: `React can be used as a base in the development of single-page, mobile, or server-rendered applications with frameworks like Next.js.`,
+			p3: `I use the latest versions of react with functional components, hooks, CSS modules`,
+			p4: `As well in my projects I practice various popular tools such as router, transition group. Also, I'm experimenting with MongoDB, Firebase, Next.Js and TypeScript using along with React`,
+		},
+		{
+			name: "Figma",
+			icon: "figma",
+			p1: `Figma is a collaborative browser-based interface design tool, with additional offline features enabled by desktop applications for macOS and Windows. The Figma mobile app for Android and iOS allows viewing and interacting with Figma prototypes in real-time on mobile and tablet devices.`,
+			p2: `The feature set of Figma focuses on user interface and user experience design, with an emphasis on real-time collaboration,[1] utilising a variety of vector graphics editor and prototyping tools.`,
+			p3: `I'm using Figma at developer level to open UI mockups for later development. Sometimes I use Figma to create simple vector graphics for use in my projects.`,
+			p4: `Figma greatly simplifies development by providing extensive information about colors, fonts, and other interface styles.`,
+		},
 	];
 
 	return (
@@ -75,24 +122,6 @@ export default function Slider({ setSwiperEl }) {
 						<p className={styles.me}>{slide.p4}</p>
 					</SwiperSlide>
 				))}
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>PHP STORM</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>JS</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>SASS</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>Gulp</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>React</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>Figma</p>
-				</SwiperSlide>
 				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
 					<p>PS</p>
 				</SwiperSlide>
