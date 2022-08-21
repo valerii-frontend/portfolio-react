@@ -68,3 +68,24 @@
 .figma {
 	background-image: url("../../assets/icons/figma.svg");
 }
+.ps {
+	background-image: url("../../assets/icons/photoshop.svg");
+}
+.bem {
+	background-image: url("../../assets/icons/bem.svg");
+}
+.gh {
+	background-image: url("../../assets/icons/github.svg");
+}
+.gl {
+	background-image: url("../../assets/icons/gitlab.svg");
+}
+.npm {
+	background-image: url("../../assets/icons/npm.svg");
+}
+.git {
+	background-image: url("../../assets/icons/git-console.svg");
+}
+.chrome {
+	background-image: url("../../assets/icons/chrome.svg");
+}

@@ -93,12 +93,68 @@ export default function Slider({ setSwiperEl }) {
 			p4: `As well in my projects I practice various popular tools such as router, transition group. Also, I'm experimenting with MongoDB, Firebase, Next.Js and TypeScript using along with React`,
 		},
 		{
+			name: "Photoshop/Gimp",
+			icon: "ps",
+			p1: `Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.`,
+			p2: `GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks.`,
+			p3: `Sometimes I use graphics editors to optimize images, correct color or crop the size.`,
+			p4: `I know the basic tools, such as a stamp, various brushes, filling. Simple basic things that every developer should own`,
+		},
+		{
 			name: "Figma",
 			icon: "figma",
 			p1: `Figma is a collaborative browser-based interface design tool, with additional offline features enabled by desktop applications for macOS and Windows. The Figma mobile app for Android and iOS allows viewing and interacting with Figma prototypes in real-time on mobile and tablet devices.`,
 			p2: `The feature set of Figma focuses on user interface and user experience design, with an emphasis on real-time collaboration,[1] utilising a variety of vector graphics editor and prototyping tools.`,
 			p3: `I'm using Figma at developer level to open UI mockups for later development. Sometimes I use Figma to create simple vector graphics for use in my projects.`,
 			p4: `Figma greatly simplifies development by providing extensive information about colors, fonts, and other interface styles.`,
+		},
+		{
+			name: "BEM",
+			icon: "bem",
+			p1: `BEM (Block, Element, Modifier) is a component-based approach to web development. The idea behind it is to divide the user interface into independent blocks.`,
+			p2: `methodology BEM was invented at Yandex to develop sites which should be launched fast and supported for a long time. It helps to create extendable and reusable interface components.`,
+			p3: `This makes interface development easy and fast even with a complex UI, and it allows reuse of existing code without copying and pasting.`,
+			p4: `I combine the BEM methodology with the SASS preprocessor to write reusable components and create a clear project structure`,
+		},
+		{
+			name: "GitHub",
+			icon: "gh",
+			p1: `GitHub, Inc., is an Internet hosting service for software development and version control using Git.`,
+			p2: `It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.`,
+			p3: `It is commonly used to host open source software development projects`,
+			p4: `I use GitHub to store my personal pet projects and to host them on GitHub pages service`,
+		},
+		{
+			name: "GitLab",
+			icon: "gl",
+			p1: `GitLab Inc. is an open-core company that provides GitLab, a DevOps software package that combines the ability to develop, secure, and operate software in a single application.`,
+			p2: `Since its founding, GitLab has been centered around remote work`,
+			p3: `In my work, we use GitLab to store the repository of our main e-commerce project. As well we have some pages of documentation and additional project info`,
+			p4: `To work with the project, we use the ticket system and Trunk Based Development approach with separate developers servers for each team member`,
+		},
+		{
+			name: "NPM",
+			icon: "npm",
+			p1: `npm, Inc., is a company founded in 2014. It was acquired by GitHub, a subsidiary of Microsoft, in 2020. The company maintains the npm package manager for Node.js and the npm Registry, which hosts software packages and version control based on Git.`,
+			p2: `Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe.`,
+			p3: `The free npm Registry has become the center of JavaScript code sharing, and with more than one million packages, the largest software registry in the world.`,
+			p4: `I use npm to install dependencies in my project that enhance features, improve development, and make the project better`,
+		},
+		{
+			name: "git",
+			icon: "git",
+			p1: `Git is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).`,
+			p2: `Git was originally authored by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.`,
+			p3: `I use git along with the git bash console in my day job and when creating my pet projects in my spare time.`,
+			p4: `I know and use the basic commands for working with the repository, but if necessary, I can always find the information I need in the official documentation on git-scm.com`,
+		},
+		{
+			name: "Chrome DevTools",
+			icon: "chrome",
+			p1: `Google Chrome is a cross-platform web browser developed by Google. Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser.`,
+			p2: `DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster.`,
+			p3: `I use it to simulate mobile devices, testing responsive viewport mode. I also use various tools to check and improve performance, as well as find and fix bugs in my code.`,
+			p4: `As well I use React Developer Tools. This is a Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies in the Chrome Developer Tools.`,
 		},
 	];
 
@@ -122,27 +178,6 @@ export default function Slider({ setSwiperEl }) {
 						<p className={styles.me}>{slide.p4}</p>
 					</SwiperSlide>
 				))}
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>PS</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>BEM</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>GitHub</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>GitLab</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>npm</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>bash</p>
-				</SwiperSlide>
-				<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
-					<p>chrome</p>
-				</SwiperSlide>
 			</Swiper>
 		</div>
 	);
