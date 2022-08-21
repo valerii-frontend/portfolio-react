@@ -54,6 +54,24 @@
 .react .close:after {
 	background-image: url("../../assets/icons/folder-react-components.svg");
 }
+.library .open:after {
+	background-image: url("../../assets/icons/folder-components-open.svg");
+}
+.library .close:after {
+	background-image: url("../../assets/icons/folder-components.svg");
+}
+.static .open:after {
+	background-image: url("../../assets/icons/folder-github-open.svg");
+}
+.static .close:after {
+	background-image: url("../../assets/icons/folder-github.svg");
+}
+.games .open:after {
+	background-image: url("../../assets/icons/folder-javascript-open.svg");
+}
+.games .close:after {
+	background-image: url("../../assets/icons/folder-javascript.svg");
+}
 /* arrows folder state */
 .open::before {
 	background-image: url("../../assets/icons/chevron-down.svg");

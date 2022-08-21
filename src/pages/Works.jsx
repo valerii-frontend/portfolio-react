@@ -4,12 +4,14 @@ import WorksSidebar from "../components/Sidebar/WorksSidebar";
 import styles from "./Works.module.css";
 
 export default function Works() {
-	const initObj = { chess: false, food: false, post: false, city: false };
+	const initObj = { chess: false, food: false, post: false, city: false, library: false, "15": false };
 	const iframeLinks = [
 		{ name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
 		{ name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
 		{ name: "post", link: "https://valerii-frontend.github.io/react-practice/" },
 		{ name: "city", link: "https://nextjs-cities.vercel.app/" },
+		{ name: "library", link: "https://valerii-frontend.github.io/library/dist/" },
+		{ name: "15", link: "https://valerii-frontend.github.io/15game/" },
 	];
 
 	const [modal, setModal] = useState(initObj);
