@@ -1,11 +1,10 @@
 import React from "react";
 import Folder from "./Folder";
 
-export default function Works({ slideTo, modal, setModal, initObj }) {
+export default function Works({ slideTo, modal, setModal }) {
 	const modalHandler = (e) => {
-		setModal((p) => {
-			p = { ...initObj };
-			return (p = { ...p, [e]: true });
+		setModal(() => {
+			return { [e]: true };
 		});
 	};
 

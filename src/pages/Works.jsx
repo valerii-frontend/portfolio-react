@@ -4,7 +4,6 @@ import WorksSidebar from "../components/Sidebar/WorksSidebar";
 import styles from "./Works.module.css";
 
 export default function Works() {
-	const initObj = { chess: false, food: false, post: false, city: false, library: false, "15": false };
 	const iframeLinks = [
 		{ name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
 		{ name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
@@ -31,12 +30,11 @@ export default function Works() {
 		{ name: "pig", link: "https://valerii-frontend.github.io/a_pig_game/" },
 		{ name: "casino", link: "https://valerii-frontend.github.io/OutComeBet-casino/" },
 	];
-
-	const [modal, setModal] = useState(initObj);
+	const [modal, setModal] = useState({});
 	return (
 		<div className={styles.works}>
 			<Sidebar>
-				<WorksSidebar setModal={setModal} modal={modal} initObj={initObj} />
+				<WorksSidebar setModal={setModal} modal={modal} />
 			</Sidebar>
 			<div className={styles.worksWindow}>
 				<h2>⬅ Choose project to view</h2>
@@ -44,7 +42,7 @@ export default function Works() {
 					(item) =>
 						modal[item.name] && (
 							<div className={styles.modal} key={item.name}>
-								<div onClick={() => setModal(initObj)} className={styles.modalClose}>
+								<div onClick={() => setModal({})} className={styles.modalClose}>
 									✖
 								</div>
 								<iframe src={item.link} title={item.name}></iframe>
