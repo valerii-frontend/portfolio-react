@@ -13,17 +13,20 @@
 	right: 0;
 	width: 40px;
 	height: 40px;
-	background: rgba(0, 0, 0, 0.5);
-	font-size: 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
+	background-color: var(--color-active);
 	opacity: 0.5;
+	color: white;
+	font-size: 2rem;
+	transition: 0.3s;
 }
 .modalClose:hover {
 	opacity: 1;
+	background-color: orangered;
 	cursor: pointer;
+	transition: 0.3s;
 }
 
 .modal iframe {

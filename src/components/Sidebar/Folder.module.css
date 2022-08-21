@@ -60,17 +60,23 @@
 .library .close:after {
 	background-image: url("../../assets/icons/folder-components.svg");
 }
-.static .open:after {
-	background-image: url("../../assets/icons/folder-github-open.svg");
+.web-sites .open:after {
+	background-image: url("../../assets/icons/folder-web-open.svg");
 }
-.static .close:after {
-	background-image: url("../../assets/icons/folder-github.svg");
+.web-sites .close:after {
+	background-image: url("../../assets/icons/folder-web.svg");
 }
 .games .open:after {
-	background-image: url("../../assets/icons/folder-javascript-open.svg");
+	background-image: url("../../assets/icons/folder-games-open.svg");
 }
 .games .close:after {
-	background-image: url("../../assets/icons/folder-javascript.svg");
+	background-image: url("../../assets/icons/folder-games.svg");
+}
+.api .open:after {
+	background-image: url("../../assets/icons/folder-api-open.svg");
+}
+.api .close:after {
+	background-image: url("../../assets/icons/folder-api.svg");
 }
 /* arrows folder state */
 .open::before {

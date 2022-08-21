@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Folder.module.css";
 
 export default function Folder({ children, title, items, slideTo, modalToggle }) {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	const folderToggleHandler = () => setIsOpen((p) => !p);
 
 	return (
