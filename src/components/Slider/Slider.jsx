@@ -5,7 +5,7 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-export default function Slider({ setSwiperEl }) {
+function Slider({ setSwiperEl }) {
 	const sliderContent = [
 		{
 			name: "HTML5",
@@ -167,7 +167,7 @@ export default function Slider({ setSwiperEl }) {
 				slidesPerView={1}
 				modules={[Autoplay]}
 				autoplay
-				speed={500}
+				speed={1000}
 				loop>
 				{sliderContent.map((slide) => (
 					<SwiperSlide className={styles.slide} data-swiper-autoplay='5000' key={slide.name}>
@@ -182,3 +182,4 @@ export default function Slider({ setSwiperEl }) {
 		</div>
 	);
 }
+export default Slider;

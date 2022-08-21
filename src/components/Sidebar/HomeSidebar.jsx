@@ -2,7 +2,7 @@ import React from "react";
 import Folder from "./Folder";
 import styles from "./HomeSidebar.module.css";
 
-export default function HomeSidebar({ slideTo }) {
+export default function HomeSidebar({ slideTo, setIsReadme, isReadme }) {
 	const skills = [
 		{ name: "HTML", icon: "html", slide: 1 },
 		{ name: "CSS", icon: "css", slide: 5 },
@@ -34,7 +34,9 @@ export default function HomeSidebar({ slideTo }) {
 			<Folder items={skills} slideTo={slideTo} title='skills' />
 			<Folder items={apps} slideTo={slideTo} title='apps' />
 			<Folder items={tools} slideTo={slideTo} title='tools' />
-			<p className={styles.readme}>README.md</p>
+			<p className={`${styles.readme} ${isReadme ? styles.active : ""}`} onClick={() => setIsReadme(true)}>
+				README.md
+			</p>
 		</>
 	);
 }

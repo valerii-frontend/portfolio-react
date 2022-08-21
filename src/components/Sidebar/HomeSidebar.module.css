@@ -23,3 +23,7 @@
 	width: 20px;
 	background: url("../../assets/icons/markdown.svg") center/contain no-repeat;
 }
+.active {
+	outline: 1px solid var(--color-active);
+	background-color: var(--bg);
+}
