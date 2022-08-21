@@ -48,6 +48,12 @@
 .tools .close:after {
 	background-image: url("../../assets/icons/folder-config.svg");
 }
+.react .open:after {
+	background-image: url("../../assets/icons/folder-react-components-open.svg");
+}
+.react .close:after {
+	background-image: url("../../assets/icons/folder-react-components.svg");
+}
 /* arrows folder state */
 .open::before {
 	background-image: url("../../assets/icons/chevron-down.svg");

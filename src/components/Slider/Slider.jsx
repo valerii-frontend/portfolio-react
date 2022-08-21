@@ -170,7 +170,7 @@ export default function Slider({ setSwiperEl }) {
 				speed={500}
 				loop>
 				{sliderContent.map((slide) => (
-					<SwiperSlide className={styles.slide} data-swiper-autoplay='5000'>
+					<SwiperSlide className={styles.slide} data-swiper-autoplay='5000' key={slide.name}>
 						<h2 className={styles[`${slide.icon}`]}>{slide.name}</h2>
 						<p>{slide.p1}</p>
 						<p>{slide.p2}</p>
