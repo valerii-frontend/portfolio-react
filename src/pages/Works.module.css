@@ -6,6 +6,7 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: var(--bg);
 }
 .modalClose {
 	position: absolute;
@@ -34,6 +35,20 @@
 	height: 100%;
 	background: var(--text);
 }
+.fullScreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.mobile iframe {
+	max-width: 390px;
+}
+.mobile {
+	display: flex;
+	justify-content: center;
+}
 .worksWindow {
 	width: 100%;
 	position: relative;
@@ -43,4 +58,26 @@
 	color: var(--text);
 	margin: 30px;
 	position: absolute;
+}
+.modalControls {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0.5rem;
+	font-size: 1.25rem;
+}
+.modalControl {
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+.modalControl input {
+	width: 16px;
+	flex: 0 0 16px;
+	height: 16px;
+	margin-right: 0.5rem;
+}
+.modalControl label {
+	cursor: pointer;
 }

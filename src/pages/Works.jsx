@@ -4,6 +4,12 @@ import WorksSidebar from "../components/Sidebar/WorksSidebar";
 import styles from "./Works.module.css";
 
 export default function Works() {
+	const [full, setFull] = useState(false);
+	const [mobile, setMobile] = useState(false);
+
+	const fullScreenToggle = () => setFull((p) => !p);
+	const mobileToggle = () => setMobile((p) => !p);
+
 	const iframeLinks = [
 		{ name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
 		{ name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
@@ -29,6 +35,11 @@ export default function Works() {
 		{ name: "css-night", link: "https://valerii-frontend.github.io/City-animation/" },
 		{ name: "pig", link: "https://valerii-frontend.github.io/a_pig_game/" },
 		{ name: "casino", link: "https://valerii-frontend.github.io/OutComeBet-casino/" },
+		{ name: "cubes", link: "https://valerii-frontend.github.io/library/dist/cubes.html" },
+		{ name: "scroll", link: "https://valerii-frontend.github.io/library/dist/scroll.html" },
+		{ name: "blur", link: "https://valerii-frontend.github.io/library/dist/blur.html" },
+		{ name: "cards", link: "https://valerii-frontend.github.io/library/dist/cards.html" },
+		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
 	];
 	const [modal, setModal] = useState({});
 	return (
@@ -41,9 +52,21 @@ export default function Works() {
 				{iframeLinks.map(
 					(item) =>
 						modal[item.name] && (
-							<div className={styles.modal} key={item.name}>
+							<div
+								className={`${styles.modal} ${full ? styles.fullScreen : ""} ${mobile ? styles.mobile : ""}`}
+								key={item.name}>
 								<div onClick={() => setModal({})} className={styles.modalClose}>
 									✖
+								</div>
+								<div className={styles.modalControls}>
+									<div className={styles.modalControl}>
+										<input type='checkbox' id='fullscreen' value={full} onChange={fullScreenToggle} />
+										<label htmlFor='fullscreen'>fullscreen</label>
+									</div>
+									<div className={styles.modalControl}>
+										<input type='checkbox' id='mobile' value={mobile} onChange={mobileToggle} />
+										<label htmlFor='mobile'>mobile view</label>
+									</div>
 								</div>
 								<iframe src={item.link} title={item.name}></iframe>
 							</div>

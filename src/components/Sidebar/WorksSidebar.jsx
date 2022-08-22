@@ -21,6 +21,11 @@ export default function Works({ slideTo, modal, setModal }) {
 		{ name: "dashboard-theme-swicher", icon: "js", modal: "dashboard" },
 		{ name: "full-page-slider", icon: "js", modal: "f-slider" },
 		{ name: "vertical-slider", icon: "js", modal: "v-slider" },
+		{ name: "cubes-css-animation", icon: "css", modal: "cubes" },
+		{ name: "search-input-toggle", icon: "js", modal: "search" },
+		{ name: "scroll-block-animation", icon: "js", modal: "scroll" },
+		{ name: "blur-preloader", icon: "js", modal: "blur" },
+		{ name: "custom-accordion-cards", icon: "js", modal: "cards" },
 	];
 
 	const games = [

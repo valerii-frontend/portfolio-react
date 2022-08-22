@@ -17,7 +17,6 @@ export default function Taskbar() {
 				<span>{`{ } JavaScript React`}</span>
 				<span>⫚ Go Live</span>
 				<span>√ Prettier</span>
-				<span style={{ filter: "grayscale(1)" }}>🔔</span>
 			</div>
 		</div>
 	);
