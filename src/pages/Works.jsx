@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import WorksSidebar from "../components/Sidebar/WorksSidebar";
+import Toggle from "../components/Toggle/Toggle";
 import styles from "./Works.module.css";
 
 export default function Works() {
@@ -96,14 +97,12 @@ export default function Works() {
 									✖
 								</div>
 								<div className={styles.modalControls}>
-									<div className={styles.modalControl}>
-										<input type='checkbox' id='fullscreen' value={full} onChange={fullScreenToggle} />
-										<label htmlFor='fullscreen'>fullscreen</label>
-									</div>
-									<div className={styles.modalControl}>
-										<input type='checkbox' id='mobile' value={mobile} onChange={mobileToggle} />
-										<label htmlFor='mobile'>mobile view</label>
-									</div>
+									<Toggle id='fullscreen' onClick={fullScreenToggle}>
+										fullscreen
+									</Toggle>
+									<Toggle id='mobile' onClick={mobileToggle}>
+										mobile view
+									</Toggle>
 								</div>
 								<iframe src={item.link} title={item.name}></iframe>
 							</div>
