@@ -3,6 +3,7 @@ import gbl from "./portfolio.glb";
 import poster from "./poster2.png";
 import light from "./light.hdr";
 import styles from "./Model.module.css";
+import Toggle from "../Toggle/Toggle";
 
 export default function Model({ slideTo }) {
 	const [pointToggle, setPointToggle] = useState(false);
@@ -119,10 +120,9 @@ export default function Model({ slideTo }) {
 
 	return (
 		<div className={styles.model}>
-			<div className={styles.toggle}>
-				<input id='toggle' type='checkbox' onClick={() => setPointToggle((p) => !p)} />
-				<label htmlFor='toggle'>Show hints</label>
-			</div>
+			<Toggle onClick={() => setPointToggle((p) => !p)} id='toggleHint'>
+				Show hints
+			</Toggle>
 			<model-viewer
 				src={gbl}
 				camera-controls

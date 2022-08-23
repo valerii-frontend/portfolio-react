@@ -62,5 +62,8 @@
 	color: var(--code-color-03);
 }
 .portfolio {
+	color: var(--text);
+}
+.appClass {
 	color: var(--code-color-02);
 }

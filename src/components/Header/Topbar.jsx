@@ -10,6 +10,9 @@ export default function Topbar() {
 				ValeriiLozghachov <span className={styles.props}>ref</span>
 				<span className={styles.equals}>=</span>
 				<span className={styles.portfolio}>portfolio</span>
+				<span className={styles.props}> className</span>
+				<span className={styles.equals}>=</span>
+				<span className={styles.appClass}>"App"</span>
 			</code>
 			<div className={styles.controls}>
 				<span className={styles.control}>—</span>
