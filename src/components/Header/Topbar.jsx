@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Topbar.module.css";
 import vscode from "../../assets/icons/vscode-icon.svg";
+import Toggle from "../Toggle/Toggle";
 
 export default function Topbar() {
 	return (
@@ -14,11 +15,9 @@ export default function Topbar() {
 				<span className={styles.equals}>=</span>
 				<span className={styles.appClass}>"App"</span>
 			</code>
-			<div className={styles.controls}>
-				<span className={styles.control}>—</span>
-				<span className={styles.control}>&#10064;</span>
-				<span className={styles.control}>✖</span>
-			</div>
+			<Toggle id='theme' onClick={() => {}} className={styles.toggle}>
+				☀ <span>☾</span>
+			</Toggle>
 		</div>
 	);
 }

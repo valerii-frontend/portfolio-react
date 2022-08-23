@@ -67,3 +67,9 @@
 .appClass {
 	color: var(--code-color-02);
 }
+.toggle {
+	font-weight: 700;
+}
+.toggle span {
+	transform: translateX(-74px);
+}

@@ -120,7 +120,7 @@ export default function Model({ slideTo }) {
 
 	return (
 		<div className={styles.model}>
-			<Toggle onClick={() => setPointToggle((p) => !p)} id='toggleHint'>
+			<Toggle onClick={() => setPointToggle((p) => !p)} id='toggleHint' className={styles.toggle}>
 				Show hints
 			</Toggle>
 			<model-viewer
