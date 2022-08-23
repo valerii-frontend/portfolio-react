@@ -30,3 +30,37 @@
 	transition: 0.3 linear;
 	cursor: pointer;
 }
+.name {
+	color: var(--code-color-06);
+}
+
+.name:before,
+.name::after {
+	color: var(--text);
+}
+.portfolio:after,
+.portfolio::before {
+	color: var(--code-color-06);
+}
+.name:before {
+	content: "< ";
+}
+.name:after {
+	content: " />";
+}
+.portfolio:after {
+	content: "}";
+}
+.portfolio::before {
+	content: "{";
+}
+
+.props {
+	color: var(--code-color-01);
+}
+.equals {
+	color: var(--code-color-03);
+}
+.portfolio {
+	color: var(--code-color-02);
+}

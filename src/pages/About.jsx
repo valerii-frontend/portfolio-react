@@ -1,11 +1,11 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
-import styles from "./Works.module.css";
+import styles from "./About.module.css";
 export default function About() {
 	return (
-		<div className={styles.works}>
+		<div className={styles.about}>
 			<Sidebar />
-			<div>About</div>
+			<h1>About</h1>
 		</div>
 	);
 }

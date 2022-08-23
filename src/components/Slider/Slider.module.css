@@ -20,18 +20,18 @@
 	background-position: 10px top;
 	background-size: 30px;
 	background-repeat: no-repeat;
+	color: var(--code-color-04);
 }
 
 .slide p {
 	font-size: 18px;
 	line-height: 150%;
-	color: var(--light);
 	text-indent: 20px;
 	margin-bottom: 15px;
 }
 
 .slide .me {
-	color: white;
+	color: var(--code-color-01);
 }
 
 /* icons */

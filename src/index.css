@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap");
 :root {
-	--code-color: #89c379;
+	--code-color-01: #89c379;
 	--code-color-02: #e5c07b;
 	--code-color-03: #e06c75;
 	--code-color-04: #ffd71b;
 	--code-color-05: #c678dd;
-	--code-color-06: #56b6b9;
+	--code-color-06: #56afef;
 	--text: #a3b0b7;
 	--text-active: #d7dae0;
 	--text-disabled: #72767f;

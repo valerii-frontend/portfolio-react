@@ -86,15 +86,15 @@
 	bottom: 0;
 	color: var(--text);
 }
-.info h2 {
+.info h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1.5rem;
 	color: var(--code-color-03);
 }
-.info h3 {
+.info h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
-	color: var(--code-color);
+	color: var(--code-color-01);
 }
 .info li,
 .info p {
@@ -106,10 +106,10 @@
 	font-size: 1.5rem;
 	line-height: 150%;
 }
-.info h4 {
+.info h3 {
 	font-size: 1.5rem;
 	line-height: 150%;
-	color: var(--code-color-05);
+	color: var(--code-color-06);
 }
 .info li span {
 	color: var(--code-color-02);

@@ -48,8 +48,8 @@ export default function Works() {
 			</Sidebar>
 			<div className={styles.worksWindow}>
 				<div className={styles.info}>
-					<h2>⬅ Choose a project to preview</h2>
-					<h3>react</h3>
+					<h1>⬅ Choose a project to preview</h1>
+					<h2>react</h2>
 					<ul>
 						<li>
 							<span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route,
@@ -67,24 +67,24 @@ export default function Works() {
 							fetching data from it. React hooks, MongoDB.
 						</li>
 					</ul>
-					<h3>library</h3>
+					<h2>library</h2>
 					<p>
 						A simple set of various small tasks and components written by me for practice using vanilla javascript,
 						html, scss and css. In the future, for practice, I would like to rewrite the library in React
 					</p>
-					<h3>games</h3>
+					<h2>games</h2>
 					<p>Games written in vanilla Javascript with a simple,unique design</p>
-					<h3>api</h3>
+					<h2>api</h2>
 					<p>
 						Small apps with vanilla Javascript, simple design and an idea to practice working with api using open source
 						free api.
 					</p>
-					<h3>web-sites</h3>
+					<h2>web-sites</h2>
 					<p>
 						Static pages built with Gulp.js using SCSS,HTML and Javascript. All pages have support for popular browsers
 						and responsive web design for devices of different screen sizes.
 					</p>
-					<h4>You can see the source code on my github</h4>
+					<h3>You can see the source code on my github</h3>
 				</div>
 				{iframeLinks.map(
 					(item) =>

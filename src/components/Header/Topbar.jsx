@@ -6,6 +6,11 @@ export default function Topbar() {
 	return (
 		<div className={styles.topbar}>
 			<img src={vscode} alt='vs code logo icon' />
+			<code className={styles.name}>
+				ValeriiLozghachov <span className={styles.props}>ref</span>
+				<span className={styles.equals}>=</span>
+				<span className={styles.portfolio}>portfolio</span>
+			</code>
 			<div className={styles.controls}>
 				<span className={styles.control}>—</span>
 				<span className={styles.control}>&#10064;</span>
