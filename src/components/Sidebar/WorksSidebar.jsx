@@ -26,6 +26,7 @@ export default function Works({ slideTo, modal, setModal }) {
 		{ name: "scroll-block-animation", icon: "js", modal: "scroll" },
 		{ name: "blur-preloader", icon: "js", modal: "blur" },
 		{ name: "custom-accordion-cards", icon: "js", modal: "cards" },
+		{ name: "progresive-steps", icon: "js", modal: "steps" },
 	];
 
 	const games = [
@@ -35,12 +36,10 @@ export default function Works({ slideTo, modal, setModal }) {
 	];
 
 	const sites = [
-		{ name: "apartments-viewer", icon: "html", modal: "melody" },
 		{ name: "auto-posting-service", icon: "html", modal: "posting" },
 		{ name: "casino-promo", icon: "html", modal: "casino" },
 		{ name: "constraction-company", icon: "html", modal: "arteo" },
 		{ name: "design-studio", icon: "html", modal: "design" },
-		{ name: "fuel-company", icon: "html", modal: "gaz" },
 		{ name: "gate-sellers-parts", icon: "html", modal: "came" },
 		{ name: "meat-products", icon: "html", modal: "lesniczowka" },
 		{ name: "protective-barriers", icon: "html", modal: "anter" },

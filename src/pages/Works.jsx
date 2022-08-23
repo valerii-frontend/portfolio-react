@@ -19,7 +19,6 @@ export default function Works() {
 		{ name: "15", link: "https://valerii-frontend.github.io/15game/" },
 		{ name: "posting", link: "https://valerii-frontend.github.io/Landing_page--Aspgroup/" },
 		{ name: "lesniczowka", link: "https://valerii-frontend.github.io/lesniczowka/" },
-		{ name: "gaz", link: "https://valerii-frontend.github.io/gazPetrol/" },
 		{ name: "arteo", link: "https://valerii-frontend.github.io/arteo-dev/" },
 		{ name: "anter", link: "https://valerii-frontend.github.io/AnterSystem/" },
 		{ name: "design", link: "https://valerii-frontend.github.io/Corporate_website--ilyin_studio/" },
@@ -27,7 +26,6 @@ export default function Works() {
 		{ name: "countries", link: "https://vl-countries.netlify.app/" },
 		{ name: "came", link: "https://valerii-frontend.github.io/Landing_page--Came-gates/" },
 		{ name: "dashboard", link: "https://valerii-frontend.github.io/dashboardToogle/" },
-		{ name: "melody", link: "https://valerii-frontend.github.io/melody/" },
 		{ name: "v-slider", link: "https://valerii-frontend.github.io/verticalSlider/" },
 		{ name: "f-slider", link: "https://valerii-frontend.github.io/pureJsSlider/" },
 		{ name: "paint", link: "https://valerii-frontend.github.io/DrawingApp/" },
@@ -39,6 +37,7 @@ export default function Works() {
 		{ name: "scroll", link: "https://valerii-frontend.github.io/library/dist/scroll.html" },
 		{ name: "blur", link: "https://valerii-frontend.github.io/library/dist/blur.html" },
 		{ name: "cards", link: "https://valerii-frontend.github.io/library/dist/cards.html" },
+		{ name: "steps", link: "https://valerii-frontend.github.io/library/dist/steps.html" },
 		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
 	];
 	const [modal, setModal] = useState({});
@@ -48,7 +47,45 @@ export default function Works() {
 				<WorksSidebar setModal={setModal} modal={modal} />
 			</Sidebar>
 			<div className={styles.worksWindow}>
-				<h2>⬅ Choose project to view</h2>
+				<div className={styles.info}>
+					<h2>⬅ Choose a project to preview</h2>
+					<h3>react</h3>
+					<ul>
+						<li>
+							<span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route,
+							hooks, fake authorization with pretty design and interesting logic.
+						</li>
+						<li>
+							<span>chess-game</span> - the chess board game, using react, typescript
+						</li>
+						<li>
+							<span>healthy-food</span> - simple food ordering service, with cart logic, form validation and simulation
+							of order payment. React hooks, transition group, firebase database storage.
+						</li>
+						<li>
+							<span>poland-cities</span> - simple project with oportunities to add a new post to external database and
+							fetching data from it. React hooks, MongoDB.
+						</li>
+					</ul>
+					<h3>library</h3>
+					<p>
+						A simple set of various small tasks and components written by me for practice using vanilla javascript,
+						html, scss and css. In the future, for practice, I would like to rewrite the library in React
+					</p>
+					<h3>games</h3>
+					<p>Games written in vanilla Javascript with a simple,unique design</p>
+					<h3>api</h3>
+					<p>
+						Small apps with vanilla Javascript, simple design and an idea to practice working with api using open source
+						free api.
+					</p>
+					<h3>web-sites</h3>
+					<p>
+						Static pages built with Gulp.js using SCSS,HTML and Javascript. All pages have support for popular browsers
+						and responsive web design for devices of different screen sizes.
+					</p>
+					<h4>You can see the source code on my github</h4>
+				</div>
 				{iframeLinks.map(
 					(item) =>
 						modal[item.name] && (

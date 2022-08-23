@@ -98,7 +98,7 @@ function Slider({ setSwiperEl }) {
 			p1: `Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.`,
 			p2: `GIMP is a free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks.`,
 			p3: `Sometimes I use graphics editors to optimize images, correct color or crop the size.`,
-			p4: `I know the basic tools, such as a stamp, various brushes, filling. Simple basic things that every developer should own`,
+			p4: `I know the basic tools, such as a stamp, various brushes, filling,adjusting color, saturation and hue. Simple basic things that every developer should own`,
 		},
 		{
 			name: "Figma",

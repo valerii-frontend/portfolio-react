@@ -53,12 +53,6 @@
 	width: 100%;
 	position: relative;
 }
-.worksWindow h2 {
-	font-size: 48px;
-	color: var(--text);
-	margin: 30px;
-	position: absolute;
-}
 .modalControls {
 	position: absolute;
 	top: 0;
@@ -80,4 +74,44 @@
 }
 .modalControl label {
 	cursor: pointer;
+}
+
+/* INFO */
+.info {
+	position: absolute;
+	padding: 30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: var(--text);
+}
+.info h2 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	color: var(--code-color-03);
+}
+.info h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: var(--code-color);
+}
+.info li,
+.info p {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+}
+.info p {
+	font-size: 1.5rem;
+	line-height: 150%;
+}
+.info h4 {
+	font-size: 1.5rem;
+	line-height: 150%;
+	color: var(--code-color-05);
+}
+.info li span {
+	color: var(--code-color-02);
+	font-size: 1.5rem;
 }
