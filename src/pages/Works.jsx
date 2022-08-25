@@ -40,12 +40,24 @@ export default function Works() {
 		{ name: "cards", link: "https://valerii-frontend.github.io/library/dist/cards.html" },
 		{ name: "steps", link: "https://valerii-frontend.github.io/library/dist/steps.html" },
 		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
+		{ name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
 	];
 	const [modal, setModal] = useState({});
 	return (
 		<div className={styles.works}>
 			<Sidebar>
-				<WorksSidebar setModal={setModal} modal={modal} />
+				<WorksSidebar setModal={setModal} modal={modal}>
+					{modal && (
+						<div className={styles.modalControls}>
+							<Toggle id='fullscreen' onClick={fullScreenToggle}>
+								fullscreen
+							</Toggle>
+							<Toggle id='mobile' onClick={mobileToggle}>
+								mobile view
+							</Toggle>
+						</div>
+					)}
+				</WorksSidebar>
 			</Sidebar>
 			<div className={styles.worksWindow}>
 				<div className={styles.info}>
@@ -95,14 +107,6 @@ export default function Works() {
 								key={item.name}>
 								<div onClick={() => setModal({})} className={styles.modalClose}>
 									✖
-								</div>
-								<div className={styles.modalControls}>
-									<Toggle id='fullscreen' onClick={fullScreenToggle}>
-										fullscreen
-									</Toggle>
-									<Toggle id='mobile' onClick={mobileToggle}>
-										mobile view
-									</Toggle>
 								</div>
 								<iframe src={item.link} title={item.name}></iframe>
 							</div>

@@ -4,7 +4,7 @@
 	z-index: 10;
 	padding: 0.5rem;
 	color: var(--text-active);
-	text-shadow: 2px 2px 2px var(--sidebar);
+	text-shadow: 0 0 3px var(--sidebar), 0 0 10px black;
 	position: relative;
 }
 .toggle label {
@@ -35,7 +35,7 @@
 	border-radius: 18px;
 	background-color: var(--text-active);
 	margin-right: 0.5rem;
-	box-shadow: 2px 2px 2px var(--sidebar);
+	box-shadow: 0 0 5px 1px var(--sidebar);
 }
 .toggle label:after {
 	content: "";

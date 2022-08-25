@@ -55,12 +55,12 @@
 }
 .modalControls {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: 1.5rem;
 	padding: 0.5rem;
 	font-size: 1.25rem;
-	background-color: var(--bg);
 	display: flex;
+	flex-direction: column;
+	background-color: rgba(var(--bg), 20%);
 }
 .modalControl {
 	margin-bottom: 0.5rem;

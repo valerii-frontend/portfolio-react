@@ -1,7 +1,7 @@
 import React from "react";
 import Folder from "./Folder";
 
-export default function Works({ slideTo, modal, setModal }) {
+export default function Works({ slideTo, modal, setModal, children }) {
 	const modalHandler = (e) => {
 		setModal(() => {
 			return { [e]: true };
@@ -27,6 +27,7 @@ export default function Works({ slideTo, modal, setModal }) {
 		{ name: "blur-preloader", icon: "js", modal: "blur" },
 		{ name: "custom-accordion-cards", icon: "js", modal: "cards" },
 		{ name: "progresive-steps", icon: "js", modal: "steps" },
+		{ name: "loader", icon: "css", modal: "loader" },
 	];
 
 	const games = [
@@ -56,6 +57,7 @@ export default function Works({ slideTo, modal, setModal }) {
 			<Folder items={games} title='games' modalToggle={modalHandler} />
 			<Folder items={api} title='api' modalToggle={modalHandler} />
 			<Folder items={sites} title='web-sites' modalToggle={modalHandler} />
+			{children}
 		</>
 	);
 }
