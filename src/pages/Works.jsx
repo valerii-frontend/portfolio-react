@@ -44,7 +44,7 @@ export default function Works() {
 	];
 	const [modal, setModal] = useState({});
 	return (
-		<div className={styles.works}>
+		<main className={styles.works}>
 			<Sidebar>
 				<WorksSidebar setModal={setModal} modal={modal}>
 					{modal && (
@@ -113,6 +113,6 @@ export default function Works() {
 						)
 				)}
 			</div>
-		</div>
+		</main>
 	);
 }

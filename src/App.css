@@ -12,7 +12,9 @@
 	min-height: 100vh;
 	overflow: hidden;
 	background: var(--bg);
+	animation: load calc(var(--delay) * 2) linear calc(var(--loadDelay)) 1 both;
 }
+
 .page {
 	flex: 1 1 auto;
 }
@@ -22,11 +24,67 @@
 	animation: opacity 1s linear 1 forwards !important;
 	transition: opacity 0.5s !important;
 }
+
+.titlesWrap {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	transform: translate(-50%);
+}
+.titles {
+	text-shadow: 0 0 5px black;
+	animation: titlesUp var(--animDuration) var(--animDelay) both, titlesDown var(--animDuration) var(--fadeOut) forwards;
+}
+.titles h1 {
+	font-size: 5rem;
+	color: white;
+}
+.titles h2 {
+	font-size: 2rem;
+	font-style: italic;
+	margin-top: 10px;
+	color: var(--code-color-04);
+	animation: titlesUp var(--animDuration) var(--animDelay) both;
+}
+
+@keyframes titlesUp {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes titlesDown {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		pointer-events: none;
+		display: none;
+		transform: translateY(-100%);
+	}
+}
 @keyframes opacity {
 	from {
 		opacity: 0;
 	}
 	to {
+		opacity: 1;
+	}
+}
+@keyframes load {
+	from {
+		clip-path: circle(10.4% at 50% 50%);
+		opacity: 0;
+	}
+	to {
+		clip-path: circle(200% at 50% 50%);
 		opacity: 1;
 	}
 }
