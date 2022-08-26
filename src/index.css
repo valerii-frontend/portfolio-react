@@ -7,6 +7,8 @@
 	--code-color-05: #c678dd; /*  css numbers */
 	--code-color-06: #56afef; /*  react components */
 	--color-topbar: #282c34;
+	--color-title-shadow: #000;
+	--color-title: #fff;
 	--text: #a3b0b7;
 	--text-active: #d7dae0;
 	--text-disabled: #72767f;
@@ -17,6 +19,7 @@
 	--tab-hover: #33373b;
 	--grey: #cccccc;
 	--color-active: #42a5f5;
+	--icon-color: #c5c5c5;
 	--delay: 500ms;
 	--animDuration: calc(2 * var(--delay));
 	--animDelay: calc(var(--delay) / 2);
@@ -30,6 +33,8 @@
 	--code-color-04: #0431fb; /*  js,css parentesis */
 	--code-color-05: #588658; /*  css numbers */
 	--code-color-06: #9e0000; /*  react components */
+	--color-title: rgb(27, 27, 27);
+	--color-title-shadow: grey;
 	--bg: #ffffff; /*  main bg */
 	--sidebar: #f3f3f3;
 	--sidebar-icons: #e0e0e0;
@@ -37,7 +42,9 @@
 	--tab-hover: #e8f8ff;
 	--text: #333;
 	--text-active: #000;
-	--color-topbar: E5E5E5;
+	--color-topbar: #e5e5e5;
+	--icon-color: #333;
+	background: var(--bg);
 }
 *,
 *::before,

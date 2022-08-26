@@ -34,12 +34,12 @@
 	pointer-events: none;
 }
 .titles {
-	text-shadow: 0 0 5px black;
+	text-shadow: 0 0 5px var(--color-title-shadow);
 	animation: titlesUp var(--animDuration) var(--animDelay) both, titlesDown var(--animDuration) var(--fadeOut) forwards;
 }
 .titles h1 {
 	font-size: 5rem;
-	color: white;
+	color: var(--color-title);
 }
 .titles h2 {
 	font-size: 2rem;
