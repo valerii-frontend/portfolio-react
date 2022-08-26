@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import gbl from "./portfolio.glb";
-import poster from "./poster2.png";
+import poster from "./poster.png";
+import posterLight from "./poster-light.jpg";
 import light from "./light.hdr";
 import styles from "./Model.module.css";
 import Toggle from "../Toggle/Toggle";
+import { ThemeSwitch } from "../../context";
 
 export default function Model({ slideTo }) {
 	const [pointToggle, setPointToggle] = useState(false);
+	const { themeSwitch } = useContext(ThemeSwitch);
+
 	const hotSpotButtons = [
 		{
 			position: "-6.45m 6.46m 5.85m",
@@ -128,7 +132,7 @@ export default function Model({ slideTo }) {
 				camera-controls
 				disable-zoom
 				quick-look
-				poster={poster}
+				poster={themeSwitch ? poster : posterLight}
 				shadow-intensity='0.55'
 				environment-image={light}
 				shadow-softness='0.8'

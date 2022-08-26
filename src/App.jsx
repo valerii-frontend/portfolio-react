@@ -18,6 +18,7 @@ function App() {
 		<ThemeSwitch.Provider
 			value={{
 				setThemeSwitch,
+				themeSwitch,
 			}}>
 			<BrowserRouter>
 				<div className={`App ${themeSwitch ? "" : "light"}`} onContextMenu={(e) => e.preventDefault()}>
