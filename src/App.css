@@ -31,6 +31,7 @@
 	left: 50%;
 	z-index: 999;
 	transform: translate(-50%);
+	pointer-events: none;
 }
 .titles {
 	text-shadow: 0 0 5px black;
@@ -65,7 +66,6 @@
 	}
 	to {
 		opacity: 0;
-		pointer-events: none;
 		display: none;
 		transform: translateY(-100%);
 	}

@@ -15,7 +15,7 @@
 	--tab-active: #383e4a;
 	--grey: #cccccc;
 	--color-active: #42a5f5;
-	--delay: 1000ms;
+	--delay: 500ms;
 	--animDuration: calc(2 * var(--delay));
 	--animDelay: calc(var(--delay) / 2);
 	--fadeOut: calc(var(--animDuration) + var(--animDelay) * 2);
