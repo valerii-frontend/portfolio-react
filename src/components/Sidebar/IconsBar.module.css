@@ -35,16 +35,26 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 2rem;
-	background-position: center;
-	background-size: 36px;
-	background-repeat: no-repeat;
+	mask-position: center;
+	mask-size: 36px;
+	mask-repeat: no-repeat;
 	opacity: 0.3;
 	margin-bottom: 1rem;
+	background-color: var(--text);
 }
 .filesIcon {
-	background-image: url("../../assets/icons/files.svg");
-	border-left: 3px solid var(--text-active);
+	mask-image: url("../../assets/icons/files.svg");
 	opacity: 1;
+	position: relative;
+}
+.filesIcon:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-left: 3px solid var(--text-active);
 }
 .settingsIcon,
 .searchIcon,
@@ -55,24 +65,24 @@
 	cursor: not-allowed;
 }
 .searchIcon {
-	background-image: url("../../assets/icons/search.svg");
+	mask-image: url("../../assets/icons/search.svg");
 }
 .gitIcon {
-	background-image: url("../../assets/icons/git-branch.svg");
+	mask-image: url("../../assets/icons/git-branch.svg");
 }
 .bugIcon {
-	background-image: url("../../assets/icons/bug.svg");
+	mask-image: url("../../assets/icons/bug.svg");
 }
 .blocksIcon {
-	background-image: url("../../assets/icons/blocks.svg");
+	mask-image: url("../../assets/icons/blocks.svg");
 }
 .userIcon {
-	background-image: url("../../assets/icons/account.svg");
+	mask-image: url("../../assets/icons/account.svg");
 	opacity: 0.6;
 }
 .userIcon:hover {
 	opacity: 1;
 }
 .settingsIcon {
-	background-image: url("../../assets/icons/settings.svg");
+	mask-image: url("../../assets/icons/settings.svg");
 }

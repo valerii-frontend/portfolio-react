@@ -3,27 +3,48 @@
 	margin-left: 48px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	text-transform: uppercase;
 	color: var(--text);
 	padding: 0 10px;
 }
-.filesControl img {
+.filesControl span {
 	max-width: 20px;
 	height: 20px;
+	flex: 0 0 20px;
 	margin-right: 10px;
 	border-radius: 3px;
 	cursor: pointer;
+	background-color: var(--text);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
 }
-.filesControl img:hover {
-	background-color: var(--tab-active);
+.filesControl span:hover {
+	background-color: #fff;
 }
-.filesControl img:last-child {
+.filesControl span:last-child {
 	margin-right: 0px;
 }
-.filesControl span {
-	margin-right: 5px;
+.filesControl strong {
+	margin-right: 10px;
+	font-weight: normal;
 }
 .filesControl > div {
 	display: flex;
+}
+
+.newFile {
+	mask-image: url("../../assets/icons/new-file.svg");
+}
+.newFolder {
+	mask-image: url("../../assets/icons/new-folder.svg");
+}
+.refresh {
+	mask-image: url("../../assets/icons/refresh.svg");
+}
+.collapse {
+	mask-image: url("../../assets/icons/collapse-all.svg");
+}
+.more {
+	mask-image: url("../../assets/icons/more.svg");
 }

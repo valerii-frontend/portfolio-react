@@ -80,10 +80,12 @@
 }
 /* arrows folder state */
 .open::before {
-	background-image: url("../../assets/icons/chevron-down.svg");
+	background-color: var(--text);
+	mask-image: url("../../assets/icons/chevron-down.svg");
 }
 .close::before {
-	background-image: url("../../assets/icons/chevron-right.svg");
+	background-color: var(--text);
+	mask-image: url("../../assets/icons/chevron-right.svg");
 }
 .open::before,
 .open::after,

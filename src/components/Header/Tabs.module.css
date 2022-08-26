@@ -10,7 +10,7 @@
 }
 .tabs li {
 	width: 128px;
-	border-right: 1px solid black;
+	border-right: 1px solid var(--sidebar-icons);
 	height: 100%;
 	display: flex;
 	align-items: center;
