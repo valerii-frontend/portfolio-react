@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 0.5rem;
-	background-color: #282c34;
+	background-color: var(--color-topbar);
 	height: 2rem;
 }
 .topbar img {

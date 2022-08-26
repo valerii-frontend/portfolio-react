@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap");
 :root {
-	--code-color-01: #89c379;
-	--code-color-02: #e5c07b;
-	--code-color-03: #e06c75;
-	--code-color-04: #ffd71b;
-	--code-color-05: #c678dd;
-	--code-color-06: #56afef;
+	--code-color-01: #89c379; /*  css class name*/
+	--code-color-02: #e5c07b; /*  html class name*/
+	--code-color-03: #e06c75; /*  html tag name, css tag name*/
+	--code-color-04: #ffd71b; /*  js,css parentesis */
+	--code-color-05: #c678dd; /*  css numbers */
+	--code-color-06: #56afef; /*  react components */
+	--color-topbar: #282c34;
 	--text: #a3b0b7;
 	--text-active: #d7dae0;
 	--text-disabled: #72767f;
-	--bg: #282c34;
+	--bg: #282c34; /*  main bg */
 	--sidebar: #21252b;
 	--sidebar-icons: #2f333d;
 	--tab-active: #383e4a;
+	--tab-hover: #33373b;
 	--grey: #cccccc;
 	--color-active: #42a5f5;
 	--delay: 500ms;
@@ -20,6 +22,22 @@
 	--animDelay: calc(var(--delay) / 2);
 	--fadeOut: calc(var(--animDuration) + var(--animDelay) * 2);
 	--loadDelay: calc(var(--fadeOut) + var(--delay));
+}
+#root {
+	--code-color-01: #b05300; /*  css class name*/
+	--code-color-02: #0000ff; /*  html class name*/
+	--code-color-03: #800000; /*  html tag name, css tag name*/
+	--code-color-04: #0431fb; /*  js,css parentesis */
+	--code-color-05: #588658; /*  css numbers */
+	--code-color-06: #9e0000; /*  react components */
+	--bg: #ffffff; /*  main bg */
+	--sidebar: #f3f3f3;
+	--sidebar-icons: #e0e0e0;
+	--tab-active: #ffffff;
+	--tab-hover: #e8f8ff;
+	--text: #333;
+	--text-active: #000;
+	--color-topbar: E5E5E5;
 }
 *,
 *::before,

@@ -31,7 +31,7 @@
 	margin-right: 8px;
 }
 .tabs li:hover {
-	background-color: #33373b;
+	background-color: var(--tab-hover);
 }
 .active {
 	background-color: var(--tab-active);
