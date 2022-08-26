@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Topbar.module.css";
 import vscode from "../../assets/icons/vscode-icon.svg";
 import Toggle from "../Toggle/Toggle";
+import { ThemeSwitch } from "../../context";
 
 export default function Topbar() {
+	const { setThemeSwitch } = useContext(ThemeSwitch);
+
 	return (
 		<div className={styles.topbar}>
 			<img src={vscode} alt='vs code logo icon' />
@@ -15,7 +18,7 @@ export default function Topbar() {
 				<span className={styles.equals}>=</span>
 				<span className={styles.appClass}>"App"</span>
 			</code>
-			<Toggle id='theme' onClick={() => {}} className={styles.toggle}>
+			<Toggle id='toggle' onClick={() => setThemeSwitch((p) => !p)} className={styles.toggle}>
 				☀ <span>☾</span>
 			</Toggle>
 		</div>

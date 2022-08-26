@@ -15,7 +15,6 @@ export default function Taskbar() {
 				<span>UTF-8</span>
 				<span>CLRF</span>
 				<span>{`{ } JavaScript React`}</span>
-				<span>⫚ Go Live</span>
 				<span>√ Prettier</span>
 			</div>
 		</div>

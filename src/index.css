@@ -26,7 +26,7 @@
 	--fadeOut: calc(var(--animDuration) + var(--animDelay) * 2);
 	--loadDelay: calc(var(--fadeOut) + var(--delay));
 }
-#root.light {
+.App.light {
 	--code-color-01: #b05300; /*  css class name*/
 	--code-color-02: #0000ff; /*  html class name*/
 	--code-color-03: #800000; /*  html tag name, css tag name*/

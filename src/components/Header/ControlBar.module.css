@@ -20,7 +20,7 @@
 	mask-position: center;
 }
 .filesControl span:hover {
-	background-color: #fff;
+	background-color: var(--color-title);
 }
 .filesControl span:last-child {
 	margin-right: 0px;
