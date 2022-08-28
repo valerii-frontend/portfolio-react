@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "../components/Modal/Modal";
 import Sidebar from "../components/Sidebar/Sidebar";
 import WorksSidebar from "../components/Sidebar/WorksSidebar";
 import Toggle from "../components/Toggle/Toggle";
@@ -48,7 +49,48 @@ export default function Works() {
 		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
 		{ name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
 	];
-
+	const textInfo = (
+		<>
+			<h1>⬅ Choose a project to preview</h1>
+			<h2>react</h2>
+			<ul>
+				<li>
+					<span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route, hooks,
+					fake authorization with pretty design and interesting logic.
+				</li>
+				<li>
+					<span>chess-game</span> - the chess board game, using react, typescript
+				</li>
+				<li>
+					<span>healthy-food</span> - simple food ordering service, with cart logic, form validation and simulation of
+					order payment. React hooks, transition group, firebase database storage.
+				</li>
+				<li>
+					<span>poland-cities</span> - simple project with oportunities to add a new post to external database and
+					fetching data from it. React hooks, MongoDB.
+				</li>
+			</ul>
+			<h2>library</h2>
+			<p>
+				A simple set of various small tasks and components written by me for practice using vanilla javascript, html,
+				scss and css. In the future, for practice, I would like to rewrite the library in React
+			</p>
+			<h2>games</h2>
+			<p>Games written in vanilla Javascript with a simple,unique design</p>
+			<h2>api</h2>
+			<p>
+				Small apps with vanilla Javascript, simple design and an idea to practice working with api using open source
+				free api.
+			</p>
+			<h2>web-sites</h2>
+			<p>
+				Static pages built with Gulp.js using SCSS,HTML and Javascript. All pages have support for popular browsers and
+				responsive web design for devices of different screen sizes.
+			</p>
+			<h3>You can see the source code on my github</h3>
+		</>
+	);
+	const toggleClassNames = `${full ? styles.fullScreen : ""} ${mobile ? styles.mobile : ""}`;
 	return (
 		<main className={styles.works}>
 			<Sidebar>
@@ -66,56 +108,13 @@ export default function Works() {
 				</WorksSidebar>
 			</Sidebar>
 			<div className={styles.worksWindow}>
-				<div className={styles.info}>
-					<h1>⬅ Choose a project to preview</h1>
-					<h2>react</h2>
-					<ul>
-						<li>
-							<span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route,
-							hooks, fake authorization with pretty design and interesting logic.
-						</li>
-						<li>
-							<span>chess-game</span> - the chess board game, using react, typescript
-						</li>
-						<li>
-							<span>healthy-food</span> - simple food ordering service, with cart logic, form validation and simulation
-							of order payment. React hooks, transition group, firebase database storage.
-						</li>
-						<li>
-							<span>poland-cities</span> - simple project with oportunities to add a new post to external database and
-							fetching data from it. React hooks, MongoDB.
-						</li>
-					</ul>
-					<h2>library</h2>
-					<p>
-						A simple set of various small tasks and components written by me for practice using vanilla javascript,
-						html, scss and css. In the future, for practice, I would like to rewrite the library in React
-					</p>
-					<h2>games</h2>
-					<p>Games written in vanilla Javascript with a simple,unique design</p>
-					<h2>api</h2>
-					<p>
-						Small apps with vanilla Javascript, simple design and an idea to practice working with api using open source
-						free api.
-					</p>
-					<h2>web-sites</h2>
-					<p>
-						Static pages built with Gulp.js using SCSS,HTML and Javascript. All pages have support for popular browsers
-						and responsive web design for devices of different screen sizes.
-					</p>
-					<h3>You can see the source code on my github</h3>
-				</div>
+				<div className={styles.info}>{textInfo}</div>
 				{iframeLinks.map(
 					(item) =>
 						modal[item.name] && (
-							<div
-								className={`${styles.modal} ${full ? styles.fullScreen : ""} ${mobile ? styles.mobile : ""}`}
-								key={item.name}>
-								<div onClick={closeModalHandler} className={styles.modalClose}>
-									✖
-								</div>
+							<Modal key={item.name} closeModalHandler={closeModalHandler} item={item} className={toggleClassNames}>
 								<iframe src={item.link} title={item.name}></iframe>
-							</div>
+							</Modal>
 						)
 				)}
 			</div>

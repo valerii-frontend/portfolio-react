@@ -1,9 +1,10 @@
 import React from "react";
 import Folder from "./Folder";
 
-export default function Works({ slideTo, modal, setModal, children }) {
+export default function WorksSidebar({ slideTo, modal, setModal, children }) {
 	const modalHandler = (e) => {
 		setModal(() => {
+			console.log(e);
 			return { toggle: true, [e]: true };
 		});
 	};
