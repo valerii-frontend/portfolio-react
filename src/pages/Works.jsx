@@ -98,7 +98,7 @@ export default function Works() {
 					{modal.toggle && (
 						<div className={styles.modalControls}>
 							<Toggle id='fullscreen' onClick={fullScreenToggle}>
-								fullscreen
+								full size
 							</Toggle>
 							<Toggle id='mobile' onClick={mobileToggle}>
 								mobile view

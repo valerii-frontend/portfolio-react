@@ -2,7 +2,27 @@
 	display: flex;
 	flex: 1 1 auto;
 }
+.textArea {
+	color: var(--text);
+	width: 100%;
+}
+.textArea > div:not(.info) {
+	padding: 30px;
+}
+.textArea h2 {
+	color: var(--code-color-01);
+	font-size: calc(16px + 16 * ((100vw - 320px) / (1920 - 320)));
+}
 .info {
 	padding: 30px;
-	color: var(--text);
+	position: absolute;
+}
+.info h1 {
+	color: var(--code-color-06);
+	font-size: calc(24px + 16 * ((100vw - 320px) / (1920 - 320)));
+	margin-bottom: 1em;
+}
+.info h2 {
+	margin: 0.5em 0;
+	padding-left: 1em;
 }
