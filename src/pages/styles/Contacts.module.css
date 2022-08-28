@@ -33,3 +33,20 @@
 	padding: 30px;
 	color: var(--text);
 }
+.info h1,
+.info h2 {
+	font-size: 24px;
+	margin: 2rem 0;
+	color: var(--code-color-06);
+}
+.info li {
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+}
+.info a {
+	color: var(--code-color-02);
+	font-size: 1.25rem;
+}
+.info a:hover {
+	color: var(--code-color-01);
+}
