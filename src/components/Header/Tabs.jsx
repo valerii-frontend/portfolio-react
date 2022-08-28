@@ -14,26 +14,26 @@ export default function Tabs() {
 		<nav className={styles.tabs}>
 			<ControlBar />
 			<ul>
-				<li className={pathname === "/" ? styles.active : null}>
+				<li className={pathname === "/" ? styles.active : ""}>
 					<NavLink to={"/"}>
 						<img src={reactIcon} alt='react icon jsx' /> main.jsx
 					</NavLink>
 				</li>
-				<li className={pathname === "/works" ? styles.active : null}>
+				<li className={pathname === "/works" ? styles.active : ""}>
 					<NavLink to='/works'>
 						<img src={libIcon} alt='library icon' /> works.lib
 					</NavLink>
 				</li>
-				<li className={pathname === "/about" ? styles.active : null}>
+				<li className={pathname === "/about" ? styles.active : ""}>
 					<NavLink to='/about'>
 						<img src={aboutIcon} alt='about icon' />
 						about.txt
 					</NavLink>
 				</li>
-				<li className={pathname === "/contacts" ? styles.active : null}>
+				<li className={pathname === "/contacts" ? styles.active : ""}>
 					<NavLink to='/contacts'>
 						<img src={contactIcon} alt='user contact icon' />
-						contacts.tel
+						contacts.vcf
 					</NavLink>
 				</li>
 			</ul>

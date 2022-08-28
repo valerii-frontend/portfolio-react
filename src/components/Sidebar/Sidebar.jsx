@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
-import IconsBar from "./IconsBar";
+import IconsBar from "../IconBar/IconsBar";
 
 export default function Sidebar({ children }) {
 	return (

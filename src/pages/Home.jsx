@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./Home.module.css";
+import styles from "./styles/Home.module.css";
 import Model from "../components/Model/Model";
 import Slider from "../components/Slider/Slider";
 import Sidebar from "../components/Sidebar/Sidebar";
-import HomeSidebar from "../components/Sidebar/HomeSidebar";
+import HomeSidebar from "../components/Sidebar/SidebarHomeContent";
 import Readme from "../components/Readme/Readme";
 
 export default function Main() {

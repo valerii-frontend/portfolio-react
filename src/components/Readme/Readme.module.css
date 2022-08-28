@@ -5,6 +5,7 @@
 	padding: 10px;
 	position: relative;
 }
+
 .readmeInfoClose {
 	position: absolute;
 	top: 0;
@@ -14,14 +15,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #000;
-	opacity: 0.2;
-	color: var(--text);
+	background-color: var(--color-active);
+	opacity: 0.5;
+	color: white;
 	font-size: 2rem;
 	transition: 0.3s;
 }
 .readmeInfoClose:hover {
-	opacity: 0.6;
+	opacity: 1;
+	background-color: orangered;
 	cursor: pointer;
 	transition: 0.3s;
 }

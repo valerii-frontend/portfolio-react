@@ -1,5 +1,5 @@
 import React from "react";
-import Folder from "./Folder";
+import Folder from "../Folder/Folder";
 
 export default function WorksSidebar({ slideTo, modal, setModal, children }) {
 	const modalHandler = (e) => {

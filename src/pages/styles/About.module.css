@@ -1,0 +1,8 @@
+.about {
+	display: flex;
+	flex: 1 1 auto;
+}
+.info {
+	padding: 30px;
+	color: var(--text);
+}

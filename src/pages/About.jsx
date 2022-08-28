@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
-import styles from "./About.module.css";
-import AboutSidebar from "../components/Sidebar/AboutSidebar";
+import styles from "./styles/About.module.css";
+import AboutSidebar from "../components/Sidebar/SidebarAboutContent";
 import Modal from "../components/Modal/Modal";
 
 export default function About() {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Modal from "../components/Modal/Modal";
 import Sidebar from "../components/Sidebar/Sidebar";
-import WorksSidebar from "../components/Sidebar/WorksSidebar";
+import WorksSidebar from "../components/Sidebar/SidebarWorksContent";
 import Toggle from "../components/Toggle/Toggle";
-import styles from "./Works.module.css";
+import styles from "./styles/Works.module.css";
 
 export default function Works() {
 	const [full, setFull] = useState(false);

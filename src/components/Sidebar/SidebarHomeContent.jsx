@@ -1,6 +1,6 @@
 import React from "react";
-import Folder from "./Folder";
-import styles from "./HomeSidebar.module.css";
+import Folder from "../Folder/Folder";
+import styles from "./SidebarHomeContent.module.css";
 
 export default function HomeSidebar({ slideTo, setIsReadme, isReadme }) {
 	const skills = [
