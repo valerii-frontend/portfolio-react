@@ -4,7 +4,7 @@ import Folder from "./Folder";
 export default function Works({ slideTo, modal, setModal, children }) {
 	const modalHandler = (e) => {
 		setModal(() => {
-			return { [e]: true };
+			return { toggle: true, [e]: true };
 		});
 	};
 

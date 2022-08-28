@@ -7,9 +7,15 @@ import styles from "./Works.module.css";
 export default function Works() {
 	const [full, setFull] = useState(false);
 	const [mobile, setMobile] = useState(false);
+	const [modal, setModal] = useState({ toggle: false });
 
 	const fullScreenToggle = () => setFull((p) => !p);
 	const mobileToggle = () => setMobile((p) => !p);
+	const closeModalHandler = () => {
+		setModal({ toggle: false });
+		setMobile(false);
+		setFull(false);
+	};
 
 	const iframeLinks = [
 		{ name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
@@ -42,12 +48,12 @@ export default function Works() {
 		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
 		{ name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
 	];
-	const [modal, setModal] = useState({});
+
 	return (
 		<main className={styles.works}>
 			<Sidebar>
 				<WorksSidebar setModal={setModal} modal={modal}>
-					{modal && (
+					{modal.toggle && (
 						<div className={styles.modalControls}>
 							<Toggle id='fullscreen' onClick={fullScreenToggle}>
 								fullscreen
@@ -105,7 +111,7 @@ export default function Works() {
 							<div
 								className={`${styles.modal} ${full ? styles.fullScreen : ""} ${mobile ? styles.mobile : ""}`}
 								key={item.name}>
-								<div onClick={() => setModal({})} className={styles.modalClose}>
+								<div onClick={closeModalHandler} className={styles.modalClose}>
 									✖
 								</div>
 								<iframe src={item.link} title={item.name}></iframe>

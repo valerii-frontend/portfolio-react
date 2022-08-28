@@ -78,6 +78,12 @@
 .api .close:after {
 	background-image: url("../../assets/icons/folder-api.svg");
 }
+.general-info .open:after {
+	background-image: url("../../assets/icons/folder-docs-open.svg");
+}
+.general-info .close:after {
+	background-image: url("../../assets/icons/folder-docs.svg");
+}
 /* arrows folder state */
 .open::before {
 	background-color: var(--text);
@@ -254,4 +260,10 @@
 }
 .chrome:after {
 	content: ".dev.exe";
+}
+.text:before {
+	background-image: url("../../assets/icons/document.svg");
+}
+.text:after {
+	content: ".txt";
 }
