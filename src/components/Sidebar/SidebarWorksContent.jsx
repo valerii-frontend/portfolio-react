@@ -4,7 +4,6 @@ import Folder from "../Folder/Folder";
 export default function WorksSidebar({ slideTo, modal, setModal, children }) {
 	const modalHandler = (e) => {
 		setModal(() => {
-			console.log(e);
 			return { toggle: true, [e]: true };
 		});
 	};
