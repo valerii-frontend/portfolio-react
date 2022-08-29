@@ -12,6 +12,7 @@
 .textArea h2 {
 	color: var(--code-color-01);
 	font-size: calc(16px + 16 * ((100vw - 320px) / (1920 - 320)));
+	text-shadow: var(--shadow);
 }
 .info {
 	padding: 30px;
@@ -21,6 +22,7 @@
 	color: var(--code-color-06);
 	font-size: calc(24px + 16 * ((100vw - 320px) / (1920 - 320)));
 	margin-bottom: 1em;
+	text-shadow: var(--shadow);
 }
 .info h2 {
 	margin: 0.5em 0;

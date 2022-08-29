@@ -105,7 +105,7 @@ export default function Works() {
 			</p>
 			<h3>
 				You can see the source code on my
-				<Text3d deg='60deg' fade>
+				<Text3d deg='60deg'>
 					<a href='https://github.com/valerii-frontend' target='_blank' rel='noreferrer'>
 						github
 					</a>

@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import styles from "./styles/About.module.css";
 import AboutSidebar from "../components/Sidebar/SidebarAboutContent";
 import Modal from "../components/Modal/Modal";
+import Text3d from "../components/Text3d/Text3d";
 
 export default function About() {
 	const aboutMeText = (
@@ -108,21 +109,37 @@ export default function About() {
 			</Sidebar>
 			<div className={styles.textArea}>
 				<div className={styles.info}>
-					<h1>Some information about me</h1>
-					<h2>About me</h2>
+					<div>
+						<Text3d deg='15deg' dept='15px'>
+							<h1>Some information about me</h1>
+						</Text3d>
+					</div>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>About me</h2>
+					</Text3d>
 					<p>Just a story about my life and my way to the programming and IT</p>
-					<h2>Education</h2>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>Education</h2>
+					</Text3d>
 					<p>Information about my university, self-study, courses, as well as my certificates</p>
-					<h2>Expirience</h2>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>Expirience</h2>
+					</Text3d>
 					<p>
 						Here you can get acquainted with my experience in development, I have indicated only relevant places of
 						work, and also briefly described useful skills
 					</p>
-					<h2>Hobby</h2>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>Hobby</h2>
+					</Text3d>
 					<p>not a big description of things that I am fond of and do in my spare time</p>
-					<h2>Languages</h2>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>Languages</h2>
+					</Text3d>
 					<p>Some info about my languages skills</p>
-					<h2>Soft skills</h2>
+					<Text3d deg='15deg' dept='15px'>
+						<h2>Soft skills</h2>
+					</Text3d>
 					<p>The additional not programming skills, which will be useful at the any jobtype and company</p>
 				</div>
 				{about.map(

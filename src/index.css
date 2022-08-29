@@ -21,6 +21,7 @@
 	--color-active: #42a5f5;
 	--icon-color: #c5c5c5;
 	--delay: 500ms;
+	--shadow: 0 0 3px black;
 	--animDuration: calc(2 * var(--delay));
 	--animDelay: calc(var(--delay) / 2);
 	--fadeOut: calc(var(--animDuration) + var(--animDelay) * 2);
