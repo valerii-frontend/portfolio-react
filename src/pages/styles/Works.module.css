@@ -54,18 +54,20 @@
 	right: 0;
 	bottom: 0;
 	color: var(--text);
-	text-shadow: 2px 2px 0 var(--sidebar);
+	text-shadow: 0 0 2px var(--sidebar);
 }
 .info h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1.5rem;
 	color: var(--code-color-04);
+	text-shadow: 2px 2px 0 var(--color-title-shadow);
 }
 
 .info h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
+	text-shadow: 2px 2px 0 var(--color-title-shadow);
 }
 .react {
 	color: #00bcd4;
@@ -108,6 +110,7 @@
 .info h3 a {
 	margin: 0 10px;
 	color: var(--code-color-04);
+	text-shadow: 2px 2px 0 var(--color-title-shadow);
 }
 .info li span {
 	color: var(--code-color-02);

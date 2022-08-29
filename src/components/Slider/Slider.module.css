@@ -21,6 +21,7 @@
 	background-size: 30px;
 	background-repeat: no-repeat;
 	color: var(--code-color-04);
+	text-shadow: 2px 2px 0 var(--color-title-shadow);
 }
 
 .slide p {

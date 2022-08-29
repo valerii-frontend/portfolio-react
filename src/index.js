@@ -13,7 +13,7 @@ root.render(
 					<h1>Valerii Lozghachov</h1>
 				</Text3d>
 				<br />
-				<Text3d>
+				<Text3d reverse>
 					<h2>Frontend Developer</h2>
 				</Text3d>
 			</div>
