@@ -23,38 +23,30 @@ export default function Contacts() {
 				<ul>
 					<li>
 						<a href='https://www.facebook.com/valerii.from.earth'>
-							<Text3d reverse deg='60deg'>
-								<svg className={styles.icon}>
-									<use xlinkHref='#facebook' />
-								</svg>
-							</Text3d>
+							<svg className={styles.icon}>
+								<use xlinkHref='#facebook' />
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href='http://www.linkedin.com/in/valerii-lozghachov'>
-							<Text3d reverse deg='60deg'>
-								<svg className={styles.icon}>
-									<use xlinkHref='#linkedin' />
-								</svg>
-							</Text3d>
+							<svg className={styles.icon}>
+								<use xlinkHref='#linkedin' />
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href='https://t.me/the_earth_citizen'>
-							<Text3d reverse deg='60deg'>
-								<svg className={styles.icon}>
-									<use xlinkHref='#telegram' />
-								</svg>
-							</Text3d>
+							<svg className={styles.icon}>
+								<use xlinkHref='#telegram' />
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href='mailto:v.lozghachov@gmail.com'>
-							<Text3d reverse deg='60deg'>
-								<svg className={styles.icon}>
-									<use xlinkHref='#gmail' />
-								</svg>
-							</Text3d>
+							<svg className={styles.icon}>
+								<use xlinkHref='#gmail' />
+							</svg>
 						</a>
 					</li>
 				</ul>
@@ -66,32 +58,24 @@ export default function Contacts() {
 				<ul>
 					<li>
 						<a href='https://github.com/valerii-frontend'>
-							<Text3d reverse deg='60deg'>
-								<svg className={styles.icon}>
-									<use xlinkHref='#github' />
-								</svg>
-							</Text3d>
+							<svg className={styles.icon}>
+								<use xlinkHref='#github' />
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a href='https://app.codesignal.com/profile/_valerii__'>
-							<Text3d reverse deg='60deg'>
-								<img src={codesignal} alt='codesignal' />
-							</Text3d>
+							<img src={codesignal} alt='codesignal' />
 						</a>
 					</li>
 					<li>
 						<a href='https://www.upwork.com/freelancers/~014ead3e287a0b68a3'>
-							<Text3d reverse deg='60deg'>
-								<img src={upwork} alt='upwork' />
-							</Text3d>
+							<img src={upwork} alt='upwork' />
 						</a>
 					</li>
 					<li>
 						<a href='https://www.codewars.com/users/valerii-frontend'>
-							<Text3d reverse deg='60deg'>
-								<img src={codewars} alt='codewars' />
-							</Text3d>
+							<img src={codewars} alt='codewars' />
 						</a>
 					</li>
 				</ul>
