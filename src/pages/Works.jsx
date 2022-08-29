@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import WorksSidebar from "../components/Sidebar/SidebarWorksContent";
 import Toggle from "../components/Toggle/Toggle";
 import styles from "./styles/Works.module.css";
+import Text3d from "../components/Text3d/Text3d";
 
 export default function Works() {
 	const [full, setFull] = useState(false);
@@ -51,8 +52,15 @@ export default function Works() {
 	];
 	const textInfo = (
 		<>
-			<h1>⬅ Choose a project to preview</h1>
-			<h2>react</h2>
+			<Text3d dept='10px' deg='10deg' fade>
+				<h1>⬅ Choose a project to preview</h1>
+			</Text3d>
+			<div>
+				<Text3d deg='15deg' layers={5} dept='5px'>
+					<h2 className={styles.react}>react</h2>
+				</Text3d>
+			</div>
+
 			<ul>
 				<li>
 					<span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route, hooks,
@@ -70,24 +78,39 @@ export default function Works() {
 					fetching data from it. React hooks, MongoDB.
 				</li>
 			</ul>
-			<h2>library</h2>
+			<Text3d deg='20deg' layers={10} dept='10px'>
+				<h2 className={styles.library}>library</h2>
+			</Text3d>
 			<p>
 				A simple set of various small tasks and components written by me for practice using vanilla javascript, html,
 				scss and css. In the future, for practice, I would like to rewrite the library in React
 			</p>
-			<h2>games</h2>
+			<Text3d deg='25deg' layers={7} dept='7px'>
+				<h2 className={styles.games}>games</h2>
+			</Text3d>
 			<p>Games written in vanilla Javascript with a simple,unique design</p>
-			<h2>api</h2>
+			<Text3d deg='30deg' layers={12} dept='12px'>
+				<h2 className={styles.api}>api</h2>
+			</Text3d>
 			<p>
 				Small apps with vanilla Javascript, simple design and an idea to practice working with api using open source
 				free api.
 			</p>
-			<h2>web-sites</h2>
+			<Text3d deg='35deg' layers={8} dept='8px'>
+				<h2 className={styles.web}>web-sites</h2>
+			</Text3d>
 			<p>
 				Static pages built with Gulp.js using SCSS,HTML and Javascript. All pages have support for popular browsers and
 				responsive web design for devices of different screen sizes.
 			</p>
-			<h3>You can see the source code on my github</h3>
+			<h3>
+				You can see the source code on my
+				<Text3d deg='60deg' fade>
+					<a href='https://github.com/valerii-frontend' target='_blank' rel='noreferrer'>
+						github
+					</a>
+				</Text3d>
+			</h3>
 		</>
 	);
 	const toggleClassNames = `${full ? styles.fullScreen : ""} ${mobile ? styles.mobile : ""}`;

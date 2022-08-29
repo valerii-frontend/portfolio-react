@@ -54,16 +54,41 @@
 	right: 0;
 	bottom: 0;
 	color: var(--text);
+	text-shadow: 2px 2px 0 var(--sidebar);
 }
 .info h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1.5rem;
-	color: var(--code-color-03);
+	color: var(--code-color-04);
 }
+
 .info h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
-	color: var(--code-color-01);
+	text-transform: uppercase;
+}
+.react {
+	color: #00bcd4;
+}
+.library {
+	color: #c0ca33;
+}
+.games {
+	color: #0288d1;
+}
+.api {
+	color: #fbc02d;
+}
+.web {
+	color: #5c6bc0;
+}
+.info h2:before {
+	content: "<";
+	color: var(--text);
+}
+.info h2:after {
+	content: "/>";
+	color: var(--text);
 }
 .info li,
 .info p {
@@ -79,6 +104,10 @@
 	font-size: 1.5rem;
 	line-height: 150%;
 	color: var(--code-color-06);
+}
+.info h3 a {
+	margin: 0 10px;
+	color: var(--code-color-04);
 }
 .info li span {
 	color: var(--code-color-02);
