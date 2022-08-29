@@ -38,6 +38,7 @@
 	--color-title-shadow: grey;
 	--bg: #ffffff; /*  main bg */
 	--sidebar: #f3f3f3;
+	--shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	--sidebar-icons: #e0e0e0;
 	--tab-active: #ffffff;
 	--tab-hover: #e8f8ff;

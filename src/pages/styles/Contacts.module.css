@@ -2,7 +2,9 @@
 	display: flex;
 	flex: 1 1 auto;
 }
-
+.wrapper {
+	text-align: center;
+}
 .file {
 	position: relative;
 	cursor: pointer;
@@ -32,21 +34,46 @@
 .info {
 	padding: 30px;
 	color: var(--text);
+	width: 100%;
+	flex: 1 1 auto;
 }
 .info h1,
 .info h2 {
-	font-size: 24px;
+	font-size: 3rem;
 	margin: 2rem 0;
 	color: var(--code-color-06);
+	text-shadow: var(--shadow);
+	text-align: center;
+}
+.info ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .info li {
-	margin-bottom: 1rem;
-	padding-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-right: 3rem;
+}
+.info svg,
+.info img {
+	margin-bottom: 2rem;
+	max-width: 100px;
+	height: 100px;
+	filter: drop-shadow(0 0 2px rgb(0 0 0 / 0.4));
 }
 .info a {
-	color: var(--code-color-02);
-	font-size: 1.25rem;
+	opacity: 0.75;
+	transition: all 300ms;
 }
 .info a:hover {
-	color: var(--code-color-01);
+	opacity: 1;
+	filter: brightness(1.1);
+}
+
+.svgWrapper {
+	display: none;
 }
