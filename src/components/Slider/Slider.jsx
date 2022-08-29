@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
-import Text3d from "../Text3d/Text3d";
 
 function Slider({ setSwiperEl }) {
 	const sliderContent = [
@@ -172,9 +171,8 @@ function Slider({ setSwiperEl }) {
 				loop>
 				{sliderContent.map((slide) => (
 					<SwiperSlide className={styles.slide} data-swiper-autoplay='5000' key={slide.name}>
-						<Text3d deg='15deg'>
-							<h2 className={styles[`${slide.icon}`]}>{slide.name}</h2>
-						</Text3d>
+						<h2 className={styles[`${slide.icon}`]}>{slide.name}</h2>
+
 						<p>{slide.p1}</p>
 						<p>{slide.p2}</p>
 						<p className={styles.me}>{slide.p3}</p>
