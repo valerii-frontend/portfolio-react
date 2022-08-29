@@ -4,7 +4,7 @@ import styles from "./ControlBar.module.css";
 export default function ControlBar() {
 	return (
 		<div className={styles.filesControl}>
-			<strong>explorer: portfolio: </strong>
+			<strong>explorer: portfolio </strong>
 			<div>
 				<span className={styles.newFile} alt='new-file' />
 				<span className={styles.newFolder} alt='new folder' />

@@ -1,6 +1,6 @@
 import React from "react";
 import Topbar from "./Topbar";
-import Tabs from "./Tabs";
+import Tabs from "../Tabs/Tabs";
 
 export default function Header() {
 	return (

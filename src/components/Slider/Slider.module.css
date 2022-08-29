@@ -90,3 +90,10 @@
 .chrome {
 	background-image: url("../../assets/icons/chrome.svg");
 }
+
+@media (max-width: 1600px) {
+	.slider {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}

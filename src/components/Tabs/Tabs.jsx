@@ -5,7 +5,7 @@ import reactIcon from "../../assets/icons/react-icon.svg";
 import aboutIcon from "../../assets/icons/note-text.svg";
 import libIcon from "../../assets/icons/folder.svg";
 import contactIcon from "../../assets/icons/contacts.svg";
-import ControlBar from "./ControlsBar";
+import ControlBar from "../Header/ControlsBar";
 
 export default function Tabs() {
 	const { pathname } = useLocation();

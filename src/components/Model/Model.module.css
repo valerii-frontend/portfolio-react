@@ -106,3 +106,10 @@
 	bottom: 0;
 	right: 0;
 }
+
+@media (max-width: 1600px) {
+	.model {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
