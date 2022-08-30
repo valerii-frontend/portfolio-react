@@ -5,11 +5,11 @@ import posterLight from "./poster-light.jpg";
 import light from "./light.hdr";
 import styles from "./Model.module.css";
 import Toggle from "../Toggle/Toggle";
-import { ThemeSwitch } from "../../context";
+import { Context } from "../../context";
 
 export default function Model({ slideTo }) {
 	const [pointToggle, setPointToggle] = useState(false);
-	const { themeSwitch } = useContext(ThemeSwitch);
+	const { themeSwitch } = useContext(Context);
 
 	const hotSpotButtons = [
 		{

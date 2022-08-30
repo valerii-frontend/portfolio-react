@@ -34,12 +34,13 @@
 	pointer-events: none;
 }
 .titles {
-	text-shadow: 0 0 5px var(--color-title-shadow);
 	animation: titlesUp var(--animDuration) var(--animDelay) both, titlesDown var(--animDuration) var(--fadeOut) forwards;
 }
 .titles h1 {
 	font-size: 5rem;
 	color: var(--color-title);
+	text-shadow: 1px 1px hsl(0 0% 70%), 2px 2px hsl(0 0% 65%), 3px 3px hsl(0 0% 60%), 4px 4px hsl(0 0% 55%),
+		4px 4px 4px black;
 }
 .titles h2 {
 	font-size: 2rem;
@@ -47,8 +48,14 @@
 	margin-top: 10px;
 	color: var(--code-color-04);
 	animation: titlesUp var(--animDuration) var(--animDelay) both;
+	text-shadow: 0 0 5px var(--color-title-shadow);
 }
 
+@media (max-width: 1600px) {
+	.titles h1 {
+		font-size: 4rem;
+	}
+}
 @keyframes titlesUp {
 	from {
 		opacity: 0;

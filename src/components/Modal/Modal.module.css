@@ -19,6 +19,7 @@
 	color: white;
 	font-size: 2rem;
 	transition: 0.3s;
+	z-index: 99;
 }
 .modalClose:hover {
 	opacity: 1;
@@ -26,9 +27,18 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
-
 .modal iframe {
 	width: 100%;
 	height: 100%;
 	background: var(--text);
+}
+@media (max-width: 1600px) {
+	div[class*="Works"] .modalClose {
+		position: fixed;
+	}
+	.modal iframe {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
 }

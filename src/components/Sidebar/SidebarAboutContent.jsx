@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import Folder from "../Folder/Folder";
+import { Context } from "../../context";
 
 export default function AboutSidebar({ modal, setModal }) {
 	const notepad = [
@@ -11,7 +12,10 @@ export default function AboutSidebar({ modal, setModal }) {
 		{ name: "soft-skills", icon: "text", modal: "soft-skills" },
 	];
 
+	const { setSidebarToggle } = useContext(Context);
+
 	const modalHandler = (e) => {
+		setSidebarToggle(false);
 		setModal(() => {
 			return { [e]: true };
 		});

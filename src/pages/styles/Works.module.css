@@ -19,8 +19,6 @@
 .worksWindow {
 	width: 100%;
 	position: relative;
-	overflow: auto;
-	padding-bottom: 3rem;
 }
 .modalControls {
 	position: absolute;
@@ -108,16 +106,29 @@
 	font-size: 1.5rem;
 	line-height: 150%;
 	color: var(--code-color-06);
+	padding-bottom: 3rem;
 }
 .info h3 a {
 	margin: 0 10px;
+	color: var(--code-color-01);
 	text-shadow: var(--shadow);
-	text-shadow: 0 0 3px var(--code-color-05);
+	transition: 300ms color;
 }
+.info h3 a:hover {
+	color: var(--code-color-04);
+}
+
 .info li span {
 	color: var(--code-color-02);
 	font-size: 1.5rem;
 }
+
+@media (max-width: 1600px) {
+	.worksWindow {
+		overflow: auto;
+	}
+}
+
 @media (max-width: 600px) {
 	.info {
 		padding: 15px;

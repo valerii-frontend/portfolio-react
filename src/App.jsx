@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ThemeSwitch } from "./context";
+import { Context } from "./context";
+
 import { useState } from "react";
 
 import Header from "./components/Header/Header";
@@ -13,12 +14,15 @@ import Home from "./pages/Home";
 
 function App() {
 	const [themeSwitch, setThemeSwitch] = useState(true);
+	const [sidebarToggle, setSidebarToggle] = useState(false);
 
 	return (
-		<ThemeSwitch.Provider
+		<Context.Provider
 			value={{
 				setThemeSwitch,
 				themeSwitch,
+				sidebarToggle,
+				setSidebarToggle,
 			}}>
 			<BrowserRouter>
 				<div className={`App ${themeSwitch ? "" : "light"}`} onContextMenu={(e) => e.preventDefault()}>
@@ -33,7 +37,7 @@ function App() {
 					<Taskbar />
 				</div>
 			</BrowserRouter>
-		</ThemeSwitch.Provider>
+		</Context.Provider>
 	);
 }
 

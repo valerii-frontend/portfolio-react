@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Folder from "../Folder/Folder";
 import styles from "./SidebarHomeContent.module.css";
+import { Context } from "../../context";
 
 export default function HomeSidebar({ slideTo, setIsReadme, isReadme }) {
+	const { setSidebarToggle } = useContext(Context);
+
+	const openReadMeHandler = () => {
+		setSidebarToggle(false);
+		setIsReadme(true);
+	};
+
 	const skills = [
 		{ name: "HTML", icon: "html", slide: 1 },
 		{ name: "CSS", icon: "css", slide: 5 },
@@ -34,7 +42,7 @@ export default function HomeSidebar({ slideTo, setIsReadme, isReadme }) {
 			<Folder items={skills} slideTo={slideTo} title='skills' />
 			<Folder items={apps} slideTo={slideTo} title='apps' />
 			<Folder items={tools} slideTo={slideTo} title='tools' />
-			<p className={`${styles.readme} ${isReadme ? styles.active : ""}`} onClick={() => setIsReadme(true)}>
+			<p className={`${styles.readme} ${isReadme ? styles.active : ""}`} onClick={openReadMeHandler}>
 				README.md
 			</p>
 		</>

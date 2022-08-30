@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import styles from "./Topbar.module.css";
 import vscode from "../../assets/icons/vscode-icon.svg";
 import Toggle from "../Toggle/Toggle";
-import { ThemeSwitch } from "../../context";
+import { Context } from "../../context";
 
 export default function Topbar() {
-	const { setThemeSwitch } = useContext(ThemeSwitch);
+	const { setThemeSwitch } = useContext(Context);
 
 	return (
 		<div className={styles.topbar}>

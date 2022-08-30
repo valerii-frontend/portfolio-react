@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styles from "./Sidebar.module.css";
 import IconsBar from "../IconBar/IconsBar";
-import toggle from "../../assets/icons/files.svg";
+import filesImg from "../../assets/icons/files.svg";
+import { Context } from "../../context";
 
 export default function Sidebar({ children }) {
-	const [sidebarToggle, setSidebarToggle] = useState(false);
+	const { sidebarToggle, setSidebarToggle } = useContext(Context);
+
+	const sideBarHandler = () => setSidebarToggle((p) => !p);
 	return (
 		<div className={`${styles.sidebar} ${sidebarToggle ? styles.active : ""}`}>
-			<div
-				className={`${styles.toggle} ${sidebarToggle ? styles.active : ""}`}
-				onClick={() => setSidebarToggle((p) => !p)}>
-				{!sidebarToggle && <img src={toggle} alt='files icon' />}
+			<div className={`${styles.toggle} ${sidebarToggle ? styles.active : ""}`} onClick={sideBarHandler}>
+				{!sidebarToggle && <img src={filesImg} alt='files icon' />}
 				{sidebarToggle && "✖"}
 			</div>
 			<IconsBar />
