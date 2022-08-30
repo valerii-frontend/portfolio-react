@@ -73,3 +73,9 @@
 .toggle span {
 	transform: translateX(-74px);
 }
+
+@media (max-width: 600px) {
+	.name span {
+		display: none;
+	}
+}

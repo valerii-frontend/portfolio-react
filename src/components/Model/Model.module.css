@@ -109,7 +109,16 @@
 
 @media (max-width: 1600px) {
 	.model {
-		flex: 0 0 50%;
-		max-width: 50%;
+		flex: 0 0 48%;
+		max-width: 48%;
+		order: 2;
+	}
+}
+@media (max-width: 767px) {
+	.model {
+		flex: 0 0 100%;
+		max-width: 100%;
+		order: 0;
+		min-height: 85vh;
 	}
 }

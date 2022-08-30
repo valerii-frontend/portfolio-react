@@ -63,3 +63,8 @@
 		font-size: 0;
 	}
 }
+@media (max-width: 860px) {
+	.filesControl {
+		display: none;
+	}
+}

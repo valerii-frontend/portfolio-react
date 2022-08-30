@@ -1,4 +1,29 @@
 .main {
 	flex: 1 1 auto;
 	display: flex;
+	position: relative;
+}
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 80%;
+	margin-left: auto;
+	display: flex;
+	overflow: auto;
+}
+@media (max-width: 1600px) {
+	.wrapper {
+		max-width: 100%;
+	}
+}
+@media (max-width: 767px) {
+	.main {
+		flex-wrap: wrap;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
 }

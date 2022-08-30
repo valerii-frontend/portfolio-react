@@ -16,9 +16,11 @@ export default function Main() {
 			<Sidebar>
 				<HomeSidebar slideTo={slideTo} setIsReadme={setIsReadme} isReadme={isReadme} />
 			</Sidebar>
-			{!isReadme && <Model slideTo={slideTo} />}
-			{isReadme && <Readme setIsReadme={setIsReadme} />}
-			<Slider setSwiperEl={setSwiperEl} />
+			<div className={styles.wrapper}>
+				{!isReadme && <Model slideTo={slideTo} />}
+				{isReadme && <Readme setIsReadme={setIsReadme} />}
+				<Slider setSwiperEl={setSwiperEl} />
+			</div>
 		</main>
 	);
 }

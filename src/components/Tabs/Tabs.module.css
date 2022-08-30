@@ -7,7 +7,6 @@
 .tabs ul {
 	display: flex;
 	box-shadow: 0 2px 0 0 var(--bg);
-	z-index: 12;
 }
 .tabs li {
 	width: 128px;
@@ -39,4 +38,30 @@
 }
 .active a {
 	color: var(--text-active);
+}
+@media (max-width: 860px) {
+	.tabs ul {
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.tabs li {
+		font-size: 12px;
+		width: 100px;
+	}
+	.tabs a {
+		padding: 5px;
+	}
+	.tabs a img {
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 390px) {
+	.tabs li {
+		font-size: 11px;
+		width: 75px;
+		overflow: hidden;
+	}
 }

@@ -19,6 +19,8 @@
 .worksWindow {
 	width: 100%;
 	position: relative;
+	overflow: auto;
+	padding-bottom: 3rem;
 }
 .modalControls {
 	position: absolute;
@@ -97,10 +99,10 @@
 	font-size: 1.25rem;
 	margin-bottom: 1rem;
 	padding-left: 2rem;
+	line-height: 150%;
 }
 .info p {
 	font-size: 1.5rem;
-	line-height: 150%;
 }
 .info h3 {
 	font-size: 1.5rem;
@@ -115,4 +117,23 @@
 .info li span {
 	color: var(--code-color-02);
 	font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+	.info {
+		padding: 15px;
+	}
+	.info h1 {
+		font-size: 25px;
+	}
+	.info li,
+	.info p {
+		padding-left: 1rem;
+		font-size: 15px;
+	}
+	.info li span {
+		font-size: 18px;
+	}
+	.info h3 {
+		font-size: 17px;
+	}
 }

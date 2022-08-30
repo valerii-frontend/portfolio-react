@@ -105,13 +105,14 @@ textarea {
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
-	border: 1px solid var(--light);
+	border: 1px solid var(--text);
 }
 ::-webkit-scrollbar-track {
 	border-radius: 0;
-	background: var(--light);
+	background: var(--bg);
+	border-left: 1px solid var(--text);
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 0;
-	background: var(--primary);
+	background: var(--text);
 }

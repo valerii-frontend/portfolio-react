@@ -5,6 +5,8 @@
 .textArea {
 	color: var(--text);
 	width: 100%;
+	overflow: auto;
+	position: relative;
 }
 .textArea > div:not(.info) {
 	padding: 30px;
@@ -27,4 +29,25 @@
 .info h2 {
 	margin: 0.5em 0;
 	padding-left: 1em;
+}
+.info li,
+.info p {
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+	line-height: 150%;
+}
+
+@media (max-width: 600px) {
+	.info {
+		padding: 15px;
+	}
+	.info h1 {
+		font-size: 25px;
+	}
+	.info li,
+	.info p {
+		padding-left: 1rem;
+		font-size: 15px;
+	}
 }

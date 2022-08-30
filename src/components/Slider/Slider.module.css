@@ -2,9 +2,8 @@
 	height: 100%;
 }
 .slider {
-	flex: 0 0 20%;
-	max-width: 20%;
-	position: relative;
+	flex: 0 0 40%;
+	max-width: 40%;
 }
 .slide {
 	height: 100%;
@@ -95,5 +94,19 @@
 	.slider {
 		flex: 0 0 50%;
 		max-width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.slider {
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 1rem;
+	}
+	.slide p {
+		font-size: 15px;
+	}
+	.slide h2 {
+		font-size: 24px;
+		margin-bottom: 15px;
 	}
 }

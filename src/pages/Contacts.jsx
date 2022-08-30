@@ -22,28 +22,28 @@ export default function Contacts() {
 
 				<ul>
 					<li>
-						<a href='https://www.facebook.com/valerii.from.earth'>
+						<a rel='noreferrer' target='_blank' href='https://www.facebook.com/valerii.from.earth'>
 							<svg className={styles.icon}>
 								<use xlinkHref='#facebook' />
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href='http://www.linkedin.com/in/valerii-lozghachov'>
+						<a rel='noreferrer' target='_blank' href='http://www.linkedin.com/in/valerii-lozghachov'>
 							<svg className={styles.icon}>
 								<use xlinkHref='#linkedin' />
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href='https://t.me/the_earth_citizen'>
+						<a rel='noreferrer' target='_blank' href='https://t.me/the_earth_citizen'>
 							<svg className={styles.icon}>
 								<use xlinkHref='#telegram' />
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href='mailto:v.lozghachov@gmail.com'>
+						<a rel='noreferrer' target='_blank' href='mailto:v.lozghachov@gmail.com'>
 							<svg className={styles.icon}>
 								<use xlinkHref='#gmail' />
 							</svg>
@@ -57,24 +57,24 @@ export default function Contacts() {
 				</div>
 				<ul>
 					<li>
-						<a href='https://github.com/valerii-frontend'>
+						<a rel='noreferrer' target='_blank' href='https://github.com/valerii-frontend'>
 							<svg className={styles.icon}>
 								<use xlinkHref='#github' />
 							</svg>
 						</a>
 					</li>
 					<li>
-						<a href='https://app.codesignal.com/profile/_valerii__'>
+						<a rel='noreferrer' target='_blank' href='https://app.codesignal.com/profile/_valerii__'>
 							<img src={codesignal} alt='codesignal' />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.upwork.com/freelancers/~014ead3e287a0b68a3'>
+						<a rel='noreferrer' target='_blank' href='https://www.upwork.com/freelancers/~014ead3e287a0b68a3'>
 							<img src={upwork} alt='upwork' />
 						</a>
 					</li>
 					<li>
-						<a href='https://www.codewars.com/users/valerii-frontend'>
+						<a rel='noreferrer' target='_blank' href='https://www.codewars.com/users/valerii-frontend'>
 							<img src={codewars} alt='codewars' />
 						</a>
 					</li>

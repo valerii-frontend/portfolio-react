@@ -1,6 +1,7 @@
 .taskbar {
 	flex: 0 1 auto;
 	color: var(--text);
+	background: var(--sidebar);
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
@@ -12,4 +13,10 @@
 }
 .taskbar span {
 	padding: 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+	.taskbar span:not(.mobile) {
+		display: none;
+	}
 }
