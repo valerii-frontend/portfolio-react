@@ -5,7 +5,7 @@ import Toggle from "../Toggle/Toggle";
 import { Context } from "../../context";
 
 export default function Topbar() {
-	const { setThemeSwitch } = useContext(Context);
+	const { themeSwitch, setThemeSwitch } = useContext(Context);
 
 	return (
 		<div className={styles.topbar}>
@@ -18,8 +18,8 @@ export default function Topbar() {
 				<span className={styles.equals}>=</span>
 				<span className={styles.appClass}>"App"</span>
 			</code>
-			<Toggle id='toggle' onClick={() => setThemeSwitch((p) => !p)} className={styles.toggle}>
-				☀ <span>☾</span>
+			<Toggle id='toggle' onClick={() => setThemeSwitch((p) => !p)} title='Color theme switcher'>
+				{!themeSwitch ? "light" : "dark"}
 			</Toggle>
 		</div>
 	);

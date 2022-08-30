@@ -13,6 +13,18 @@
 }
 .taskbar span {
 	padding: 0 0.5rem;
+	display: flex;
+	align-items: center;
+}
+.svgWrapper {
+	display: none;
+}
+.icon {
+	max-width: 16px;
+	height: 16px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (max-width: 600px) {
