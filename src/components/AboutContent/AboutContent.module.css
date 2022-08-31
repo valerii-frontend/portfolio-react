@@ -1,0 +1,27 @@
+.about {
+	background: var(--bg);
+}
+.about p {
+	font-size: 1.5rem;
+	line-height: 150%;
+	max-width: 80%;
+	margin: 0 auto 1rem;
+}
+.about p::first-letter {
+	color: var(--code-color-01);
+}
+.about h2 {
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 32px;
+	color: var(--code-color-02);
+}
+
+@media (max-width: 767px) {
+	.about {
+		padding-bottom: 3rem;
+	}
+	.about p {
+		max-width: 100%;
+	}
+}

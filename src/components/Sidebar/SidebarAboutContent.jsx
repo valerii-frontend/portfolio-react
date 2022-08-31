@@ -4,7 +4,7 @@ import { Context } from "../../context";
 
 export default function AboutSidebar({ modal, setModal }) {
 	const notepad = [
-		{ name: "about-me", icon: "text", modal: "about-me" },
+		{ name: "biography", icon: "text", modal: "biography" },
 		{ name: "education", icon: "text", modal: "education" },
 		{ name: "experience", icon: "text", modal: "experience" },
 		{ name: "hobby", icon: "text", modal: "hobby" },

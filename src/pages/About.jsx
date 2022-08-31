@@ -5,97 +5,16 @@ import AboutSidebar from "../components/Sidebar/SidebarAboutContent";
 import Modal from "../components/Modal/Modal";
 import Text3d from "../components/Text3d/Text3d";
 
-export default function About() {
-	const aboutMeText = (
-		<>
-			<h2>aboutMeText</h2>
-			<p>
-				I am studying with documentation, free Internet materials, and YouTube, and sometimes take paid courses. I spend
-				my free time learning new things, also I like running and reading and walking with my family. My goal is to find
-				a company where I can unleash my potential, learn and develop together with a team of experienced and motivated
-				people. I am ready to create and improve myself. As well, human qualities are very important to me. I like to
-				solve logic problems and puzzles, sometimes I use CodeSignal, LeetCode, or CodeWars for this.
-			</p>
-		</>
-	);
-	const educationText = (
-		<>
-			<h2>educationText</h2>
-			<ol>
-				<li> University: Donetsk National Technical University (2006-2012)</li>
-				<li> Academic degree: Specialist (engineer) </li>
-				<li> Major: Telecommunication systems and networks. </li>
-				<li> Faculty: Computer Information Technology and Automation</li>
-			</ol>
-			<h2>courses</h2>
-			<ul>
-				<li> edu.fls.guru - advanced course of HTML coding (Sept 2020 – Dec 2020) </li>
-				<li> GeekBrains - Completed the course «HTML & CSS» </li>
-				<li> Udemy —The Complete JavaScript Course: From Zero to Expert! (Oct 2021 – Nov 2021) </li>
-				<li> Udemy — React: The Complete guide! (June 2022 – July 2022) </li>
-			</ul>
-		</>
-	);
-	const experienceText = (
-		<>
-			<h2>experienceText</h2>
-			<ul>
-				<li>
-					Freelancer (January 2021 – February 2022) Responsibilities: creating pages from PSD and Figma layouts, with
-					HTML & CSS;
-				</li>
-				<li>
-					Frontend Developer in “Rolladen Group” (December 2021 – present time) Responsibilities: e-commerce store
-					optimization. Improved performance, implementation of modern technologies, improved styles, and scripts.
-					Correction of errors and bugs in the code. Editing with PHP Smart templates, creating a mobile version for
-					pages. Technology: JavaScript, Jquery, HTML, CSS, PHP, Smarty
-				</li>
-				<li>
-					Freelancer on UpWork (April 2022 – present time) Responsibilities: slice layouts, writing scripts, fixing
-					errors in the code, creating animations
-				</li>
-			</ul>
-		</>
-	);
-	const hobbyText = (
-		<>
-			<h2>hobbyText</h2>
-			<p></p>
-		</>
-	);
-	const languagesText = (
-		<>
-			<h2>languagesText</h2>
-			<ul>
-				<li> Russian—Native C1</li>
-				<li> Ukrainian—Native C1</li>
-				<li> Polish—Intermediate B2</li>
-				<li> English—Intermediate B1 </li>
-			</ul>
-		</>
-	);
-	const softText = (
-		<>
-			<h2>softText</h2>
-			<ul>
-				<li> Experienced PC user;</li>
-				<li> Professional approach, good organization of work;</li>
-				<li> Initiative;</li>
-				<li> Sociable and ready to help; </li>
-				<li> Attention to detail, open to everything new;</li>
-				<li> Involvement in work; </li>
-				<li> Desire to develop & improve.</li>
-			</ul>
-		</>
-	);
+import { Bio, Lang, Edu, Exp, Hobby, Soft } from "../components/AboutContent/AboutContent";
 
+export default function About() {
 	const about = [
-		{ name: "about-me", text: aboutMeText },
-		{ name: "education", text: educationText },
-		{ name: "experience", text: experienceText },
-		{ name: "hobby", text: hobbyText },
-		{ name: "languages", text: languagesText },
-		{ name: "soft-skills", text: softText },
+		{ name: "biography", component: <Bio /> },
+		{ name: "education", component: <Edu /> },
+		{ name: "experience", component: <Exp /> },
+		{ name: "hobby", component: <Hobby /> },
+		{ name: "languages", component: <Lang /> },
+		{ name: "soft-skills", component: <Soft /> },
 	];
 	const [modal, setModal] = useState({});
 
@@ -146,7 +65,7 @@ export default function About() {
 					(e) =>
 						modal[e.name] && (
 							<Modal closeModalHandler={closeModalHandler} key={e.name}>
-								{e.text}
+								{e.component}
 							</Modal>
 						)
 				)}
