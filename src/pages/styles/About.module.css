@@ -16,7 +16,7 @@
 .info h1 {
 	color: var(--code-color-06);
 	font-size: calc(28px + 14 * ((100vw - 320px) / (1920 - 320)));
-	margin: 1em 0;
+	margin-bottom: 1em;
 	text-shadow: var(--shadow);
 }
 .info h2 {

@@ -29,28 +29,28 @@ export function Bio() {
 
 export function Edu() {
 	return (
-		<>
-			<h2>Education & Certificates</h2>
+		<div className={styles.about}>
+			<h2>Education</h2>
 			<ol>
 				<li> University: Donetsk National Technical University (2006-2012)</li>
 				<li> Academic degree: Specialist (engineer) </li>
 				<li> Major: Telecommunication systems and networks. </li>
 				<li> Faculty: Computer Information Technology and Automation</li>
 			</ol>
-			<h2>courses</h2>
+			<h2>Courses</h2>
 			<ul>
 				<li> edu.fls.guru - advanced course of HTML coding (Sept 2020 – Dec 2020) </li>
 				<li> GeekBrains - Completed the course «HTML & CSS» </li>
 				<li> Udemy —The Complete JavaScript Course: From Zero to Expert! (Oct 2021 – Nov 2021) </li>
 				<li> Udemy — React: The Complete guide! (June 2022 – July 2022) </li>
 			</ul>
-		</>
+		</div>
 	);
 }
 
 export function Exp() {
 	return (
-		<>
+		<div className={styles.about}>
 			<h2>Expirience</h2>
 			<ul>
 				<li>
@@ -68,22 +68,22 @@ export function Exp() {
 					errors in the code, creating animations
 				</li>
 			</ul>
-		</>
+		</div>
 	);
 }
 
 export function Hobby() {
 	return (
-		<>
+		<div className={styles.about}>
 			<h2>Hobby</h2>
 			also I like running and reading and walking with my family.
-		</>
+		</div>
 	);
 }
 
 export function Lang() {
 	return (
-		<>
+		<div className={styles.about}>
 			<h2>Languages</h2>
 			<ul>
 				<li> Russian—Native C1</li>
@@ -92,13 +92,13 @@ export function Lang() {
 				<li> English—Intermediate B1 </li>
 			</ul>
 			<iframe src='https://www.efset.org/cert/Gsuc3X' frameborder='0' title='cert'></iframe>
-		</>
+		</div>
 	);
 }
 
 export function Soft() {
 	return (
-		<>
+		<div className={styles.about}>
 			<h2>softText</h2>
 			<ul>
 				<li> Experienced PC user;</li>
@@ -109,6 +109,6 @@ export function Soft() {
 				<li> Involvement in work; </li>
 				<li> Desire to develop & improve.</li>
 			</ul>
-		</>
+		</div>
 	);
 }
