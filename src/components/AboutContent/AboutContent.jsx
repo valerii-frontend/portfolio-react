@@ -1,5 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./AboutContent.module.css";
+import flsImg from "../../assets/certs/fls.png";
+import soloHtml from "../../assets/certs/solo-html.jpg";
+import soloCss from "../../assets/certs/solo-css.jpg";
+import soloJs from "../../assets/certs/solo-js.png";
+import soloReact from "../../assets/certs/solo-react.jpg";
+import gbHtml from "../../assets/certs/gb-html.jpg";
+import gbPro from "../../assets/certs/gb-pro.jpg";
+import udemyJs from "../../assets/certs/udemy-js.jpg";
+import udemyReact from "../../assets/certs/udemy-react.jpg";
 
 export function Bio() {
 	return (
@@ -28,22 +37,64 @@ export function Bio() {
 }
 
 export function Edu() {
+	const certificates = [flsImg, soloHtml, soloCss, soloJs, soloReact, gbHtml, gbPro, udemyJs, udemyReact];
+	const [imgZoom, setImgZoom] = useState("");
 	return (
 		<div className={styles.about}>
 			<h2>Education</h2>
 			<ol>
-				<li> University: Donetsk National Technical University (2006-2012)</li>
-				<li> Academic degree: Specialist (engineer) </li>
-				<li> Major: Telecommunication systems and networks. </li>
-				<li> Faculty: Computer Information Technology and Automation</li>
+				<li>
+					<strong>University</strong>: Donetsk National Technical University (2006-2012)
+				</li>
+				<li>
+					<strong>Academic degree</strong>: Specialist (engineer)
+				</li>
+				<li>
+					<strong>Major</strong>: Telecommunication systems and networks.
+				</li>
+				<li>
+					<strong>Department</strong>: Computer Information Technology and Automation
+				</li>
 			</ol>
-			<h2>Courses</h2>
-			<ul>
-				<li> edu.fls.guru - advanced course of HTML coding (Sept 2020 – Dec 2020) </li>
-				<li> GeekBrains - Completed the course «HTML & CSS» </li>
-				<li> Udemy —The Complete JavaScript Course: From Zero to Expert! (Oct 2021 – Nov 2021) </li>
-				<li> Udemy — React: The Complete guide! (June 2022 – July 2022) </li>
-			</ul>
+			<h2>Courses & certificates</h2>
+			<ol>
+				<li>
+					<strong>SoloLearn</strong> - HTML course (<span>January 2020</span>)
+				</li>
+				<li>
+					<strong>SoloLearn</strong> - CSS course (<span>April 2020</span>)
+				</li>
+				<li>
+					<strong>GeekBrains</strong> - Completed the course «HTML & CSS» (<span>April 2020</span>)
+				</li>
+				<li>
+					<strong>edu.fls.guru</strong> - advanced course of HTML coding (<span>Sept 2020 – Dec 2020</span>)
+				</li>
+				<li>
+					<strong>SoloLearn</strong> - React + Redux (<span>Aug 2021 – Sept 2021</span>)
+				</li>
+				<li>
+					<strong>SoloLearn</strong> - JavaScript (<span>Aug 2021 – Sept 2021</span>)
+				</li>
+				<li>
+					<strong>Udemy</strong> —The Complete JavaScript Course: From Zero to Expert! (<span>Oct 2021 – Nov 2021</span>
+					)
+				</li>
+				<li>
+					<strong>Udemy</strong> — React: The Complete guide! (<span>June 2022 – July 2022</span>)
+				</li>
+			</ol>
+			<div className={styles.cards}>
+				{certificates.map((cert) => (
+					<div className={`${styles.col} ${imgZoom === cert && styles.zoom}`}>
+						<img
+							src={cert}
+							alt={cert.split(".")[0] + " certificate"}
+							onClick={() => (imgZoom === cert ? setImgZoom("") : setImgZoom(cert))}
+						/>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 }

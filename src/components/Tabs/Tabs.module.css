@@ -61,7 +61,15 @@
 @media (max-width: 390px) {
 	.tabs li {
 		font-size: 11px;
-		width: 75px;
+		width: 65px;
 		overflow: hidden;
+	}
+	.tabs a img {
+		width: 12px;
+		height: 12px;
+		margin-right: 2px;
+	}
+	.tabs a {
+		padding: 5px 1px;
 	}
 }
