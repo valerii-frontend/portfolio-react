@@ -9,6 +9,7 @@ import gbHtml from "../../assets/certs/gb-html.jpg";
 import gbPro from "../../assets/certs/gb-pro.jpg";
 import udemyJs from "../../assets/certs/udemy-js.jpg";
 import udemyReact from "../../assets/certs/udemy-react.jpg";
+import engCert from "../../assets/certs/english.jpg";
 
 export function Bio() {
 	return (
@@ -105,18 +106,31 @@ export function Exp() {
 			<h2>Expirience</h2>
 			<ul>
 				<li>
-					Freelancer (January 2021 – February 2022) Responsibilities: creating pages from PSD and Figma layouts, with
-					HTML & CSS;
+					<strong>Freelancer on fl.ru</strong> (January 2021 – February 2022)
+					<div>
+						<span>Tasks and types of work</span>: slice the PSD/Figma/AdobeXD layouts to static HTML\CSS\JS pages.
+						Fixing issues with styles and scripts. Create CSS animations and JS scripts.
+					</div>
 				</li>
 				<li>
-					Frontend Developer in “Rolladen Group” (December 2021 – present time) Responsibilities: e-commerce store
-					optimization. Improved performance, implementation of modern technologies, improved styles, and scripts.
-					Correction of errors and bugs in the code. Editing with PHP Smart templates, creating a mobile version for
-					pages. Technology: JavaScript, Jquery, HTML, CSS, PHP, Smarty
+					<strong>Frontend Developer in “Rolladen Group”</strong> (December 2021 – present time)
+					<div>
+						<span>Responsibilities</span>: e-commerce store optimization. Improved performance, implementation of modern
+						technologies, improved styles, and scripts. Correction of errors and bugs in the code. Editing with PHP
+						Smart templates, creating a mobile version for pages.
+					</div>
+					<div>
+						<span>Technology & Tools</span>: JavaScript, Jquery, HTML, CSS, PHP, Smarty, GitLab, git, PHPStorm,
+						ShopWare.
+					</div>
 				</li>
 				<li>
-					Freelancer on UpWork (April 2022 – present time) Responsibilities: slice layouts, writing scripts, fixing
-					errors in the code, creating animations
+					<strong>Freelancer on UpWork</strong> (April 2022 – present time)
+					<div>
+						<span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM. Writing
+						own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating keyframes
+						CSS animations.
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -127,7 +141,15 @@ export function Hobby() {
 	return (
 		<div className={styles.about}>
 			<h2>Hobby</h2>
-			also I like running and reading and walking with my family.
+			<ul className={styles.marker}>
+				<li>Running, cycling</li>
+				<li>Outdoor sports and activities</li>
+				<li>Solve puzzles and logical tasks</li>
+				<li>Science and high technology</li>
+				<li>RPG/Fantasy videogames and series</li>
+				<li>Spending time with family outdoors and in an urban environment</li>
+				<li>Education and self improvement</li>
+			</ul>
 		</div>
 	);
 }
@@ -137,12 +159,22 @@ export function Lang() {
 		<div className={styles.about}>
 			<h2>Languages</h2>
 			<ul>
-				<li> Russian—Native C1</li>
-				<li> Ukrainian—Native C1</li>
-				<li> Polish—Intermediate B2</li>
-				<li> English—Intermediate B1 </li>
+				<li>
+					<strong>Russian</strong>—Native <span className={styles}>C1</span>
+				</li>
+				<li>
+					<strong>Ukrainian</strong>—Native <span className={styles}>C1</span>
+				</li>
+				<li>
+					<strong>Polish</strong>—Intermediate <span className={styles}>B2</span>
+				</li>
+				<li>
+					<strong>English</strong>—Intermediate <span className={styles}>B1</span>
+				</li>
 			</ul>
-			<iframe src='https://www.efset.org/cert/Gsuc3X' frameborder='0' title='cert'></iframe>
+			<a href='https://www.efset.org/cert/Gsuc3X' target='_blank' rel='noreferrer' className={styles.langImg}>
+				<img src={engCert} alt='english certificate' />
+			</a>
 		</div>
 	);
 }
@@ -150,15 +182,17 @@ export function Lang() {
 export function Soft() {
 	return (
 		<div className={styles.about}>
-			<h2>softText</h2>
-			<ul>
-				<li> Experienced PC user;</li>
-				<li> Professional approach, good organization of work;</li>
-				<li> Initiative;</li>
-				<li> Sociable and ready to help; </li>
-				<li> Attention to detail, open to everything new;</li>
-				<li> Involvement in work; </li>
-				<li> Desire to develop & improve.</li>
+			<h2>Soft skills</h2>
+			<ul className={`${styles.marker} ${styles.marker_2}`}>
+				<li>Professional approach</li>
+				<li>Good organization of work</li>
+				<li>Initiative</li>
+				<li>Responsibility</li>
+				<li>Sociable and ready to help</li>
+				<li>Attention to detail</li>
+				<li>Open to everything new</li>
+				<li>Involvement in work</li>
+				<li>Desire to develop & improve</li>
 			</ul>
 		</div>
 	);

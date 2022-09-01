@@ -4,12 +4,13 @@
 .about p {
 	font-size: 1.5rem;
 	line-height: 150%;
-	max-width: 80%;
-	margin: 0 auto 1rem;
+	max-width: 90%;
+	margin: 0 auto 2rem;
 }
 .about p::first-letter {
-	color: var(--code-color-01);
+	color: var(--code-color-04);
 }
+
 .about h2 {
 	margin-bottom: 2rem;
 	text-align: center;
@@ -22,6 +23,7 @@
 	padding-bottom: 1rem;
 	border-bottom: 1px dashed rgba(100, 100, 100, 0.5);
 	font-size: 1.25rem;
+	line-height: 150%;
 }
 .about li strong {
 	color: var(--code-color-01);
@@ -29,6 +31,33 @@
 }
 .about li span {
 	color: var(--code-color-05);
+}
+.about li span.lang {
+	color: var(--code-color-03);
+}
+.marker li {
+	padding-left: 1rem;
+}
+
+.marker li:before {
+	content: "";
+	display: inline-block;
+	margin-right: 1rem;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--code-color-03);
+}
+.marker_2 li:before {
+	background-color: var(--code-color-05);
+}
+.langImg {
+	display: block;
+	margin: 2rem auto;
+	text-align: center;
+}
+.langImg img {
+	max-width: 100%;
 }
 .cards {
 	display: flex;

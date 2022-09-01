@@ -2,7 +2,7 @@
 :root {
 	--code-color-01: #89c379; /*  css class name*/
 	--code-color-02: #e5c07b; /*  html class name*/
-	--code-color-03: #e06c75; /*  html tag name, css tag name*/
+	--code-color-03: #56b6c2; /*  css properties*/
 	--code-color-04: #ffd71b; /*  js,css parentesis */
 	--code-color-05: #c678dd; /*  css numbers */
 	--code-color-06: #56afef; /*  react components */
@@ -29,11 +29,11 @@
 }
 .App.light {
 	--code-color-01: #b05300; /*  css class name*/
-	--code-color-02: #0000ff; /*  html class name*/
-	--code-color-03: #800000; /*  html tag name, css tag name*/
-	--code-color-04: #0431fb; /*  js,css parentesis */
-	--code-color-05: #588658; /*  css numbers */
-	--code-color-06: #9e0000; /*  react components */
+	--code-color-02: #4500bb; /*  html class name*/
+	--code-color-03: #8f1212; /*  html tag name, css tag name*/
+	--code-color-04: #3253e7; /*  js,css parentesis */
+	--code-color-05: #1e7e1e; /*  css numbers */
+	--code-color-06: #191c67; /*  react components */
 	--color-title: rgb(27, 27, 27);
 	--color-title-shadow: grey;
 	--bg: #ffffff; /*  main bg */
