@@ -10,6 +10,7 @@
 
 ## Tools & dependencies
 
+- Blender
 - Create React App
 - React 18.2+
 - React-dom 18.2+
@@ -22,7 +23,7 @@
 
 ## Preview
 
-[link](link)
+![](./src/components/Model/poster.png)
 
 ## Author
 
