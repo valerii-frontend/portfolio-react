@@ -28,11 +28,11 @@ function App() {
 				<div className={`App ${themeSwitch ? "" : "light"}`} onContextMenu={(e) => e.preventDefault()}>
 					<Header />
 					<Routes>
-						<Route path='/' element={<Home />} exact />
-						<Route path='/contacts' element={<Contacts />} exact />
-						<Route path='/works' element={<Works />} exact />
-						<Route path='/about' element={<About />} exact />
-						<Route path='/portfolio-react' element={<Navigate to='/' replace />} />
+						<Route path='/portfolio-react' element={<Home />} exact />
+						<Route path='/portfolio-react/contacts' element={<Contacts />} exact />
+						<Route path='/portfolio-react/works' element={<Works />} exact />
+						<Route path='/portfolio-react/about' element={<About />} exact />
+						<Route path='*' element={<Navigate to='/portfolio-react' replace />} />
 					</Routes>
 
 					<Taskbar />

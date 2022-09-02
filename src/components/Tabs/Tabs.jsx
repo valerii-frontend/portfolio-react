@@ -14,24 +14,24 @@ export default function Tabs() {
 		<nav className={styles.tabs}>
 			<ControlBar />
 			<ul>
-				<li className={pathname === "/" ? styles.active : ""}>
-					<NavLink to={"/"}>
+				<li className={pathname === "/portfolio-react" ? styles.active : ""}>
+					<NavLink to={"/portfolio-react"}>
 						<img src={reactIcon} alt='react icon jsx' /> main.jsx
 					</NavLink>
 				</li>
-				<li className={pathname === "/works" ? styles.active : ""}>
-					<NavLink to='/works'>
+				<li className={pathname === "/portfolio-react/works" ? styles.active : ""}>
+					<NavLink to='/portfolio-react/works'>
 						<img src={libIcon} alt='library icon' /> works.lib
 					</NavLink>
 				</li>
-				<li className={pathname === "/about" ? styles.active : ""}>
-					<NavLink to='/about'>
+				<li className={pathname === "/portfolio-react/about" ? styles.active : ""}>
+					<NavLink to='/portfolio-react/about'>
 						<img src={aboutIcon} alt='about icon' />
 						about.txt
 					</NavLink>
 				</li>
-				<li className={pathname === "/contacts" ? styles.active : ""}>
-					<NavLink to='/contacts'>
+				<li className={pathname === "/portfolio-react/contacts" ? styles.active : ""}>
+					<NavLink to='/portfolio-react/contacts'>
 						<img src={contactIcon} alt='user contact icon' />
 						contacts.vcf
 					</NavLink>

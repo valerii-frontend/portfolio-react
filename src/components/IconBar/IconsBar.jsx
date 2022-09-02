@@ -13,7 +13,7 @@ export default function IconsBar() {
 				<span className={`${styles.blocksIcon} ${styles.icon}`}></span>
 			</div>
 			<div className={styles.bottom}>
-				<Link to='/about' className={`${styles.userIcon} ${styles.icon}`}></Link>
+				<Link to='/portfolio-react/about' className={`${styles.userIcon} ${styles.icon}`}></Link>
 				<span className={`${styles.settingsIcon} ${styles.icon}`}></span>
 			</div>
 		</div>
