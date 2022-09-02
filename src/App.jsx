@@ -32,7 +32,7 @@ function App() {
 						<Route path='/contacts' element={<Contacts />} exact />
 						<Route path='/works' element={<Works />} exact />
 						<Route path='/about' element={<About />} exact />
-						<Route path='*' element={<Navigate to='/' replace />} />
+						<Route path='/portfolio-react' element={<Navigate to='/' replace />} />
 					</Routes>
 
 					<Taskbar />
