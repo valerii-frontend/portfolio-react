@@ -131,16 +131,17 @@ export default function Model({ slideTo }) {
 				src={gbl}
 				camera-controls
 				disable-zoom
+				disable-pan
 				quick-look
 				poster={themeSwitch ? poster : posterLight}
 				shadow-intensity='0.55'
 				environment-image={light}
 				shadow-softness='0.8'
-				camera-orbit='91deg 90deg 12.50m'
+				camera-orbit='91deg 90deg 17.50m'
 				exposure='0.6'
 				auto-rotate
 				camera-target='-6.201m 6.17m 1.8m'
-				min-camera-orbit='auto 60deg 12.50m'
+				min-camera-orbit='auto 60deg 17.50m'
 				max-camera-orbit='auto 120deg 18.50m'>
 				{pointToggle &&
 					hotSpotButtons.map((btn) => (
