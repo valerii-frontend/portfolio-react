@@ -27,4 +27,4 @@
 
 ## Author
 
-[v.lozghachov](https://www.linkedin.com/feed/)
+### LinkedIn - [v.lozghachov](https://www.linkedin.com/feed/)
