@@ -21,17 +21,17 @@ export default function WorksSidebar({ slideTo, modal, setModal, children }) {
 
 	const library = [
 		{ name: "app-for-drawing", icon: "js", modal: "paint" },
+		{ name: "blur-preloader", icon: "js", modal: "blur" },
 		{ name: "css-animation-loop", icon: "css", modal: "css-night" },
+		{ name: "cubes-css-animation", icon: "css", modal: "cubes" },
+		{ name: "custom-accordion-cards", icon: "js", modal: "cards" },
 		{ name: "dashboard-theme-swicher", icon: "js", modal: "dashboard" },
 		{ name: "full-page-slider", icon: "js", modal: "f-slider" },
-		{ name: "vertical-slider", icon: "js", modal: "v-slider" },
-		{ name: "cubes-css-animation", icon: "css", modal: "cubes" },
-		{ name: "search-input-toggle", icon: "js", modal: "search" },
-		{ name: "scroll-block-animation", icon: "js", modal: "scroll" },
-		{ name: "blur-preloader", icon: "js", modal: "blur" },
-		{ name: "custom-accordion-cards", icon: "js", modal: "cards" },
-		{ name: "progresive-steps", icon: "js", modal: "steps" },
 		{ name: "loader", icon: "css", modal: "loader" },
+		{ name: "progresive-steps", icon: "js", modal: "steps" },
+		{ name: "scroll-block-animation", icon: "js", modal: "scroll" },
+		{ name: "search-input-toggle", icon: "js", modal: "search" },
+		{ name: "vertical-slider", icon: "js", modal: "v-slider" },
 	];
 
 	const games = [
