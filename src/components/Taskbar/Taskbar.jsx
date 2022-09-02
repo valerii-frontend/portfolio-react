@@ -11,7 +11,7 @@ export default function Taskbar() {
 					</svg>
 					vscode
 				</span>
-				<span className={styles.mobile}>
+				<span>
 					<svg className={styles.icon}>
 						<use xlinkHref='#terminal' />
 					</svg>

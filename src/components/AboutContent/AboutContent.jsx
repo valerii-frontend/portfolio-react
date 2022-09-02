@@ -10,6 +10,7 @@ import gbPro from "../../assets/certs/gb-pro.jpg";
 import udemyJs from "../../assets/certs/udemy-js.jpg";
 import udemyReact from "../../assets/certs/udemy-react.jpg";
 import engCert from "../../assets/certs/english.jpg";
+import book from "../../assets/book.jpg";
 
 export function Bio() {
 	return (
@@ -87,10 +88,10 @@ export function Edu() {
 			</ol>
 			<div className={styles.cards}>
 				{certificates.map((cert) => (
-					<div className={`${styles.col} ${imgZoom === cert && styles.zoom}`}>
+					<div className={`${styles.col} ${imgZoom === cert && styles.zoom}`} key={cert}>
 						<img
 							src={cert}
-							alt={cert.split(".")[0] + " certificate"}
+							alt={cert.split(".")[0].split("/")[3] + " certificate"}
 							onClick={() => (imgZoom === cert ? setImgZoom("") : setImgZoom(cert))}
 						/>
 					</div>
@@ -149,7 +150,11 @@ export function Hobby() {
 				<li>RPG/Fantasy videogames and series</li>
 				<li>Spending time with family outdoors and in an urban environment</li>
 				<li>Education and self improvement</li>
+				<li>Reading</li>
 			</ul>
+			<div className={styles.js}>
+				<img src={book} alt='The definitly guide JS' />
+			</div>
 		</div>
 	);
 }
