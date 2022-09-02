@@ -30,11 +30,11 @@ export default function About() {
 				<div className={styles.info}>
 					<div>
 						<Text3d deg='15deg' dept='15px'>
-							<h1>Some information about me</h1>
+							<h1>General information about me</h1>
 						</Text3d>
 					</div>
 					<Text3d deg='15deg' dept='15px'>
-						<h2>About me</h2>
+						<h2>Biography</h2>
 					</Text3d>
 					<p>Just a story about my life and my way to the programming and IT</p>
 					<Text3d deg='15deg' dept='15px'>
