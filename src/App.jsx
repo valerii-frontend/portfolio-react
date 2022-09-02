@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Context } from "./context";
 
 import { useState } from "react";
@@ -32,6 +32,7 @@ function App() {
 						<Route path='/contacts' element={<Contacts />} exact />
 						<Route path='/works' element={<Works />} exact />
 						<Route path='/about' element={<About />} exact />
+						<Route path='*' element={<Navigate to='/' replace />} />
 					</Routes>
 
 					<Taskbar />
