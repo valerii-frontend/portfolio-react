@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular,900&display=swap");
 :root {
 	--code-color-01: #89c379; /*  css class name*/
 	--code-color-02: #e5c07b; /*  html class name*/
@@ -20,12 +19,7 @@
 	--grey: #cccccc;
 	--color-active: #42a5f5;
 	--icon-color: #c5c5c5;
-	--delay: 500ms;
 	--shadow: 0 0 3px black;
-	--animDuration: calc(2 * var(--delay));
-	--animDelay: calc(var(--delay) / 2);
-	--fadeOut: calc(var(--animDuration) + var(--animDelay) * 2);
-	--loadDelay: calc(var(--fadeOut) + var(--delay) * 2);
 }
 .App.light {
 	--code-color-01: #b05300; /*  css class name*/
@@ -85,7 +79,7 @@ body {
 	line-height: 1;
 	height: 100%;
 	background: var(--sidebar);
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	color: var(--text);
 }
 
@@ -116,4 +110,46 @@ textarea {
 ::-webkit-scrollbar-thumb {
 	border-radius: 0;
 	background: var(--text);
+}
+/* titles */
+#root:before,
+#root:after {
+	position: absolute;
+	text-shadow: var(--shadow);
+	z-index: 25;
+}
+#root:before {
+	content: "Valerii Lozghachov";
+	top: 50%;
+	left: calc(50% - 234px);
+	font-size: 4rem;
+	color: var(--color-title);
+	animation: opacity 2s 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) both, textDown 1s 2.4s forwards;
+}
+#root:after {
+	content: "Frontend Developer";
+	top: calc(50% + 60px);
+	left: calc(50% - 119px);
+	font-size: 2rem;
+	font-style: italic;
+	color: var(--code-color-04);
+	animation: opacity 1s 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) both, textDown 1s 2.5s forwards;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes textDown {
+	to {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
 }

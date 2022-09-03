@@ -12,72 +12,17 @@
 	min-height: 100vh;
 	overflow: hidden;
 	background: var(--bg);
-	animation: load 2s linear var(--loadDelay) 1 both;
+	animation: load 2s linear 2s 1 both;
 }
 
 .page {
 	flex: 1 1 auto;
 }
 
-.titlesWrap {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 999;
-	transform: translate(-50%);
-	pointer-events: none;
-}
-.titles {
-	animation: titlesUp var(--animDuration) var(--animDelay) backwards,
-		titlesDown var(--animDuration) linear var(--fadeOut) forwards;
-}
-.titles h1 {
-	font-size: 5rem;
-	color: var(--color-title);
-	text-shadow: var(--shadow);
-}
-.titles h2 {
-	font-size: 2rem;
-	font-style: italic;
-	margin-top: 10px;
-	color: var(--code-color-04);
-	text-shadow: var(--shadow);
-}
-
-@media (max-width: 1600px) {
-	.titles h1 {
-		font-size: 4rem;
-	}
-}
-@keyframes titlesUp {
-	from {
-		opacity: 0;
-		transform: translateY(100%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-@keyframes titlesDown {
-	from {
-		opacity: 1;
-	}
-	50% {
-		opacity: 1;
-	}
-	to {
-		opacity: 0;
-	}
-}
 @keyframes load {
 	from {
 		clip-path: circle(1% at 50% 50%);
 		opacity: 0;
-	}
-	30% {
-		clip-path: circle(30% at 50% 50%);
-		opacity: 1;
 	}
 	to {
 		clip-path: circle(100% at 50% 50%);
