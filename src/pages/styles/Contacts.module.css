@@ -11,7 +11,6 @@
 	cursor: pointer;
 	display: flex;
 	align-items: flex-end;
-	height: 24px;
 	line-height: 24px;
 	color: var(--text);
 	width: 100%;
@@ -79,6 +78,18 @@
 
 .svgWrapper {
 	display: none;
+}
+@media (max-width: 767px) {
+	.file {
+		line-height: 40px;
+		height: 40px;
+	}
+	.file:after {
+		top: 3px;
+		left: 20px;
+		height: 32px;
+		width: 32px;
+	}
 }
 
 @media (max-width: 600px) {
