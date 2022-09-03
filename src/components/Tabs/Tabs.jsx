@@ -14,7 +14,7 @@ export default function Tabs() {
 		<nav className={styles.tabs}>
 			<ControlBar />
 			<ul>
-				<li className={pathname === "/portfolio-react" ? styles.active : ""}>
+				<li className={pathname === "/portfolio-react" || pathname === "/portfolio-react/" ? styles.active : ""}>
 					<NavLink to={"/portfolio-react"}>
 						<img src={reactIcon} alt='react icon jsx' /> main.jsx
 					</NavLink>
