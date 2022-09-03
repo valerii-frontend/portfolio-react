@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.cf03627c.css",
+    "main.css": "/portfolio-react/static/css/main.f4e479ee.css",
     "main.js": "/portfolio-react/static/js/main.2a22cb03.js",
     "static/media/portfolio.glb": "/portfolio-react/static/media/portfolio.9683ce13623a1cece3e2.glb",
     "static/media/light.hdr": "/portfolio-react/static/media/light.c156cce715cd3d1dbe82.hdr",
@@ -33,13 +33,13 @@
     "static/media/react.svg": "/portfolio-react/static/media/react.509d3028d7648d693a30.svg",
     "static/media/sass.svg": "/portfolio-react/static/media/sass.12b253fb53ac0378cb37.svg",
     "static/media/webstorm.svg": "/portfolio-react/static/media/webstorm.4b8305b04ebfbb99c113.svg",
-    "static/media/folder-public.svg": "/portfolio-react/static/media/folder-public.06b0d28ae2c124697aad.svg",
-    "static/media/folder-public-open.svg": "/portfolio-react/static/media/folder-public-open.60ce4bbc05e100a63af4.svg",
     "static/media/folder-config.svg": "/portfolio-react/static/media/folder-config.8977850644703c61ac67.svg",
     "static/media/folder-config-open.svg": "/portfolio-react/static/media/folder-config-open.03175ad3c4e156aa58cf.svg",
     "static/media/gitlab.svg": "/portfolio-react/static/media/gitlab.b99a0bfd1e1931b95140.svg",
     "static/media/pdf.svg": "/portfolio-react/static/media/pdf.7aad12cdb603d0fa2036.svg",
     "index.html": "/portfolio-react/index.html",
+    "static/media/folder-core-open.svg": "/portfolio-react/static/media/folder-core-open.e63f3343708d000c01aa.svg",
+    "static/media/folder-core.svg": "/portfolio-react/static/media/folder-core.f958c9a9251355b03c19.svg",
     "static/media/folder-games.svg": "/portfolio-react/static/media/folder-games.3c149f32a2a975c65731.svg",
     "static/media/folder-games-open.svg": "/portfolio-react/static/media/folder-games-open.e7fc70d6f32f639c3be7.svg",
     "static/media/github.svg": "/portfolio-react/static/media/github.8b0b58575991dee32696.svg",
@@ -83,11 +83,11 @@
     "static/media/note-text.svg": "/portfolio-react/static/media/note-text.f6b5a44a09bc817e1fc0bd64c7a2c494.svg",
     "static/media/document.svg": "/portfolio-react/static/media/document.9f3f648496ada35d5430.svg",
     "static/media/markdown.svg": "/portfolio-react/static/media/markdown.31f4549eb7a5d345319a.svg",
-    "main.cf03627c.css.map": "/portfolio-react/static/css/main.cf03627c.css.map",
+    "main.f4e479ee.css.map": "/portfolio-react/static/css/main.f4e479ee.css.map",
     "main.2a22cb03.js.map": "/portfolio-react/static/js/main.2a22cb03.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf03627c.css",
+    "static/css/main.f4e479ee.css",
     "static/js/main.2a22cb03.js"
   ]
 }
