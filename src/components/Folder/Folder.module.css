@@ -31,10 +31,10 @@
 }
 /* open close states */
 .skills .open:after {
-	background-image: url("../../assets/icons/folder-public-open.svg");
+	background-image: url("../../assets/icons/folder-core-open.svg");
 }
 .skills .close:after {
-	background-image: url("../../assets/icons/folder-public.svg");
+	background-image: url("../../assets/icons/folder-core.svg");
 }
 .apps .open:after {
 	background-image: url("../../assets/icons/folder-app-open.svg");
