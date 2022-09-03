@@ -6,7 +6,6 @@
 	background: var(--bg);
 	width: 100%;
 	min-height: 100%;
-	padding: 30px;
 }
 .readmeInfo a {
 	color: var(--code-color-06);
@@ -58,9 +57,25 @@
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 @media (max-width: 767px) {
 	.readmeInfo {
-		min-height: 150vh;
+		position: fixed;
+		top: 65px;
+		left: 0;
+		overflow: auto;
+	}
+	.wrap {
+		min-height: 100vh;
+		height: 1000px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 30px;
+	}
+	.readmeInfoClose {
+		position: fixed;
+		top: 65px;
 	}
 }
 
@@ -73,9 +88,12 @@
 	.readmeInfo h2 {
 		font-size: 26px;
 	}
+	.wrap {
+		padding: 15px;
+	}
 }
 @media (max-width: 390px) {
-	.readmeInfo {
-		min-height: 175vh;
+	.wrap {
+		height: 1100px;
 	}
 }

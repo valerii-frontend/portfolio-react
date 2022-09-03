@@ -12,7 +12,7 @@
 	min-height: 100vh;
 	overflow: hidden;
 	background: var(--bg);
-	animation: load calc(var(--delay) * 2) linear calc(var(--loadDelay)) 1 both;
+	animation: load calc(var(--delay) * 6) linear calc(var(--loadDelay)) 1 both;
 }
 
 .page {

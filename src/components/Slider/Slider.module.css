@@ -106,6 +106,7 @@
 	}
 	.slide h2 {
 		font-size: 24px;
-		margin-bottom: 15px;
+		margin: 15px 0 15px 15px;
+		background-size: 24px;
 	}
 }
