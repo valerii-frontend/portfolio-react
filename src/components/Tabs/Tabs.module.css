@@ -13,8 +13,6 @@
 	display: flex;
 	align-items: center;
 	color: var(--text);
-	width: 128px;
-	height: 37px;
 }
 
 .tabs a {
