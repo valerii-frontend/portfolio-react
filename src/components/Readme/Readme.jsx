@@ -29,6 +29,9 @@ export default function Readme({ setIsReadme }) {
 				<li>Google model-viewer </li>
 				<li>CSS modules </li>
 			</ul>
+			<a href='https://github.com/valerii-frontend/portfolio-react/' target='_blank' rel='noreferrer'>
+				Link to source code
+			</a>
 			<div onClick={() => setIsReadme(false)} className={styles.readmeInfoClose}>
 				✖
 			</div>
