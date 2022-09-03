@@ -36,7 +36,7 @@
 @media (max-width: 767px) {
 	.about [class*="modalClose"] {
 		position: fixed;
-		top: 50px;
+		top: 61px;
 		right: 0;
 		opacity: 1;
 	}
