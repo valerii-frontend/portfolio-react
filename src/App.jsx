@@ -34,7 +34,6 @@ function App() {
 						<Route path='/portfolio-react/about' element={<About />} exact />
 						<Route path='*' element={<Navigate to='/portfolio-react' replace />} />
 					</Routes>
-
 					<Taskbar />
 				</div>
 			</BrowserRouter>

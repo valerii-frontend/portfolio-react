@@ -12,17 +12,11 @@
 	min-height: 100vh;
 	overflow: hidden;
 	background: var(--bg);
-	animation: load calc(var(--delay) * 6) linear calc(var(--loadDelay)) 1 both;
+	animation: load 2s linear var(--loadDelay) 1 both;
 }
 
 .page {
 	flex: 1 1 auto;
-}
-
-.swiper-slide.swiper-slide-active {
-	opacity: 0;
-	animation: opacity 1s linear 1 forwards !important;
-	transition: opacity 0.5s !important;
 }
 
 .titlesWrap {
@@ -34,21 +28,20 @@
 	pointer-events: none;
 }
 .titles {
-	animation: titlesUp var(--animDuration) var(--animDelay) both, titlesDown var(--animDuration) var(--fadeOut) forwards;
+	animation: titlesUp var(--animDuration) var(--animDelay) backwards,
+		titlesDown var(--animDuration) linear var(--fadeOut) forwards;
 }
 .titles h1 {
 	font-size: 5rem;
 	color: var(--color-title);
-	text-shadow: 1px 1px hsl(0 0% 70%), 2px 2px hsl(0 0% 65%), 3px 3px hsl(0 0% 60%), 4px 4px hsl(0 0% 55%),
-		4px 4px 4px black;
+	text-shadow: var(--shadow);
 }
 .titles h2 {
 	font-size: 2rem;
 	font-style: italic;
 	margin-top: 10px;
 	color: var(--code-color-04);
-	animation: titlesUp var(--animDuration) var(--animDelay) both;
-	text-shadow: 0 0 5px var(--color-title-shadow);
+	text-shadow: var(--shadow);
 }
 
 @media (max-width: 1600px) {
@@ -69,29 +62,25 @@
 @keyframes titlesDown {
 	from {
 		opacity: 1;
-		transform: translateY(0);
 	}
-	to {
-		opacity: 0;
-		display: none;
-		transform: translateY(-100%);
-	}
-}
-@keyframes opacity {
-	from {
-		opacity: 0;
-	}
-	to {
+	50% {
 		opacity: 1;
+	}
+	to {
+		opacity: 0;
 	}
 }
 @keyframes load {
 	from {
-		clip-path: circle(10.4% at 50% 50%);
+		clip-path: circle(1% at 50% 50%);
 		opacity: 0;
 	}
+	30% {
+		clip-path: circle(30% at 50% 50%);
+		opacity: 1;
+	}
 	to {
-		clip-path: circle(200% at 50% 50%);
+		clip-path: circle(100% at 50% 50%);
 		opacity: 1;
 	}
 }
