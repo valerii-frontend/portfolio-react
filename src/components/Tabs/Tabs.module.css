@@ -9,12 +9,12 @@
 	box-shadow: 0 2px 0 0 var(--bg);
 }
 .tabs li {
-	width: 128px;
 	border-right: 1px solid var(--sidebar-icons);
-	height: 37px;
 	display: flex;
 	align-items: center;
 	color: var(--text);
+	width: 128px;
+	height: 37px;
 }
 
 .tabs a {
@@ -46,12 +46,12 @@
 @media (max-width: 600px) {
 	.tabs li {
 		font-size: 12px;
-		width: 100px;
 		overflow: hidden;
 		white-space: nowrap;
 	}
 	.tabs a {
 		padding-left: 5px;
+		width: 100px;
 	}
 	.tabs a img {
 		margin-right: 5px;
@@ -61,8 +61,6 @@
 @media (max-width: 390px) {
 	.tabs li {
 		font-size: 11px;
-		width: 70px;
-		overflow: hidden;
 	}
 	.tabs a img {
 		width: 12px;
@@ -70,5 +68,6 @@
 	}
 	.tabs a {
 		padding: 0.75rem 2px;
+		width: 70px;
 	}
 }
