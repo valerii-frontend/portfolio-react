@@ -146,10 +146,21 @@ textarea {
 		transform: scale(1);
 	}
 }
-
 @keyframes textDown {
 	to {
 		transform: translateY(-100px);
 		opacity: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	#root:before {
+		left: calc(50% - 117px);
+		font-size: 2rem;
+	}
+	#root:after {
+		top: calc(50% + 40px);
+		left: calc(50% - 60px);
+		font-size: 1.25rem;
 	}
 }
