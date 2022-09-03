@@ -117,6 +117,7 @@ textarea {
 	position: absolute;
 	text-shadow: var(--shadow);
 	z-index: 25;
+	pointer-events: none;
 }
 #root:before {
 	content: "Valerii Lozghachov";

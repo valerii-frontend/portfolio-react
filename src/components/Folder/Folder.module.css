@@ -267,3 +267,34 @@
 .text:after {
 	content: ".txt";
 }
+
+@media (max-width: 767px) {
+	.folder p,
+	.folder li {
+		height: 40px;
+		line-height: 40px;
+	}
+	.folder p {
+		padding-left: 65px;
+	}
+	.folder p:before {
+		top: 12px;
+	}
+	.folder p:after {
+		top: 3px;
+		left: 25px;
+		height: 32px;
+		width: 32px;
+	}
+	.folder li {
+		padding-left: 65px;
+		position: relative;
+	}
+
+	.folder li:before {
+		top: 3px;
+		left: 30px;
+		height: 32px;
+		width: 32px;
+	}
+}

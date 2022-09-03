@@ -26,3 +26,17 @@
 .active {
 	background-color: var(--bg);
 }
+
+@media (max-width: 767px) {
+	.readme {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 65px;
+	}
+	.readme:after {
+		top: 0px;
+		left: 25px;
+		height: 40px;
+		width: 40px;
+	}
+}
