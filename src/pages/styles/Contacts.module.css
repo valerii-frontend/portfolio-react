@@ -50,6 +50,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 2rem;
 }
 .info li {
 	display: flex;
@@ -61,7 +62,6 @@
 }
 .info svg,
 .info img {
-	margin-bottom: 2rem;
 	max-width: 100px;
 	height: 100px;
 	filter: drop-shadow(0 0 2px rgb(0 0 0 / 0.4));
@@ -84,7 +84,6 @@
 @media (max-width: 600px) {
 	.info svg,
 	.info img {
-		margin-bottom: 2rem;
 		max-width: 50px;
 		height: 50px;
 	}
