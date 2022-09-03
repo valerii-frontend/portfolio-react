@@ -24,7 +24,7 @@
 
 ## Preview
 
-[live preview](https://valerii-frontend.github.io/portfolio-react/)
+[live preview](https://valerii-frontend.github.io/portfolio-react)
 
 ![](./src/components/Model/poster.png)
 
