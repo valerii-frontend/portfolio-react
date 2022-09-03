@@ -21,6 +21,8 @@
 	padding-left: 10px;
 	display: flex;
 	width: 127px;
+	align-items: center;
+	height: 100%;
 }
 .tabs a img {
 	width: 16px;
