@@ -10,6 +10,7 @@ import gbPro from "../../assets/certs/gb-pro.jpg";
 import udemyJs from "../../assets/certs/udemy-js.jpg";
 import udemyReact from "../../assets/certs/udemy-react.jpg";
 import engCert from "../../assets/certs/english.jpg";
+import scrumCert from "../../assets/certs/scrum.jpg";
 import book from "../../assets/book.jpg";
 
 export function Bio() {
@@ -39,7 +40,7 @@ export function Bio() {
 }
 
 export function Edu() {
-	const certificates = [flsImg, soloHtml, soloCss, soloJs, soloReact, gbHtml, gbPro, udemyJs, udemyReact];
+	const certificates = [flsImg, soloHtml, soloCss, soloJs, soloReact, gbHtml, gbPro, udemyJs, udemyReact, scrumCert];
 	const [imgZoom, setImgZoom] = useState("");
 	return (
 		<div className={styles.about}>
@@ -84,6 +85,9 @@ export function Edu() {
 				</li>
 				<li>
 					<strong>Udemy</strong> — React: The Complete guide! (<span>June 2022 – July 2022</span>)
+				</li>
+				<li>
+					<strong>SkillUP</strong> - Agile Scrum Foundations for Basic Learning(<span>Sept 2022</span>)
 				</li>
 			</ol>
 			<div className={styles.cards}>
