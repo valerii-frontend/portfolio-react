@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.ff79fc6f.css",
-    "main.js": "/portfolio-react/static/js/main.ef23da9f.js",
+    "main.js": "/portfolio-react/static/js/main.2ef4d473.js",
     "static/media/portfolio.glb": "/portfolio-react/static/media/portfolio.9683ce13623a1cece3e2.glb",
     "static/media/light.hdr": "/portfolio-react/static/media/light.c156cce715cd3d1dbe82.hdr",
     "static/media/gb-html.jpg": "/portfolio-react/static/media/gb-html.da75c1287c860461fbee.jpg",
@@ -19,6 +19,7 @@
     "static/media/poster-light.jpg": "/portfolio-react/static/media/poster-light.b6868c45942a055b9f2f.jpg",
     "static/media/load.gif": "/portfolio-react/static/media/load.e1658f1b84de3a1fe498.gif",
     "static/media/poster.png": "/portfolio-react/static/media/poster.a6221043245a3063f952.png",
+    "static/media/scrum.jpg": "/portfolio-react/static/media/scrum.f10c39d8e2d807e9dc8a.jpg",
     "static/media/performance.jpg": "/portfolio-react/static/media/performance.6aa78ee2368c8d300608.jpg",
     "static/media/codewars.png": "/portfolio-react/static/media/codewars.3215ffa487760e454196.png",
     "static/media/gimp.svg": "/portfolio-react/static/media/gimp.9f2a69330aa485362d36.svg",
@@ -85,10 +86,10 @@
     "static/media/document.svg": "/portfolio-react/static/media/document.9f3f648496ada35d5430.svg",
     "static/media/markdown.svg": "/portfolio-react/static/media/markdown.31f4549eb7a5d345319a.svg",
     "main.ff79fc6f.css.map": "/portfolio-react/static/css/main.ff79fc6f.css.map",
-    "main.ef23da9f.js.map": "/portfolio-react/static/js/main.ef23da9f.js.map"
+    "main.2ef4d473.js.map": "/portfolio-react/static/js/main.2ef4d473.js.map"
   },
   "entrypoints": [
     "static/css/main.ff79fc6f.css",
-    "static/js/main.ef23da9f.js"
+    "static/js/main.2ef4d473.js"
   ]
 }
