@@ -7,11 +7,18 @@
 	width: 100%;
 	min-height: 100%;
 }
-.readmeInfo a {
-	color: var(--code-color-06);
-	font-size: 1.5rem;
+.image img {
+	max-width: 100%;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
-.readmeInfo a:hover {
+.link {
+	color: var(--code-color-06);
+	font-size: 1.75rem;
+	display: inline-block;
+	margin-bottom: 3rem;
+}
+.link:hover {
 	color: var(--code-color-05);
 }
 .readmeInfo h1 {

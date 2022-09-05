@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Readme.module.css";
+import performance from "../../assets/performance.jpg";
 
 export default function Readme({ setIsReadme }) {
 	return (
@@ -30,8 +31,16 @@ export default function Readme({ setIsReadme }) {
 					<li>Google model-viewer </li>
 					<li>CSS modules </li>
 				</ul>
-				<a href='https://github.com/valerii-frontend/portfolio-react/' target='_blank' rel='noreferrer'>
-					Link to source code
+				<h2>Lighthouse report & code</h2>
+				<div className={styles.image}>
+					<img src={performance} alt='google lighthouse this app +report' />
+				</div>
+				<a
+					className={styles.link}
+					href='https://github.com/valerii-frontend/portfolio-react/'
+					target='_blank'
+					rel='noreferrer'>
+					Link to source code on github
 				</a>
 			</div>
 			<div onClick={() => setIsReadme(false)} className={styles.readmeInfoClose}>
