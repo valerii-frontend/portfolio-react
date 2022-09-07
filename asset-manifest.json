@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.ff79fc6f.css",
-    "main.js": "/portfolio-react/static/js/main.2ef4d473.js",
+    "main.css": "/portfolio-react/static/css/main.6e31dd9d.css",
+    "main.js": "/portfolio-react/static/js/main.131186ad.js",
     "static/media/portfolio.glb": "/portfolio-react/static/media/portfolio.9683ce13623a1cece3e2.glb",
     "static/media/light.hdr": "/portfolio-react/static/media/light.c156cce715cd3d1dbe82.hdr",
     "static/media/gb-html.jpg": "/portfolio-react/static/media/gb-html.da75c1287c860461fbee.jpg",
@@ -25,7 +25,7 @@
     "static/media/gimp.svg": "/portfolio-react/static/media/gimp.9f2a69330aa485362d36.svg",
     "static/media/chrome.svg": "/portfolio-react/static/media/chrome.ca29d828356d9de6f4ad.svg",
     "static/media/psd.svg": "/portfolio-react/static/media/psd.a9cc5737517a17d3e1d9.svg",
-    "static/media/photoshop.svg": "/portfolio-react/static/media/photoshop.21b3c1e00213c9613773.svg",
+    "static/media/photoshop.svg": "/portfolio-react/static/media/photoshop.60eda61e3cfe863729f8.svg",
     "static/media/folder-react-components.svg": "/portfolio-react/static/media/folder-react-components.27cc88e7a33910855ef1.svg",
     "static/media/folder-react-components-open.svg": "/portfolio-react/static/media/folder-react-components-open.4f30b18e6fba36bc112a.svg",
     "static/media/phpStorm.svg": "/portfolio-react/static/media/phpStorm.e16b04a8085468adf1fa.svg",
@@ -85,11 +85,11 @@
     "static/media/note-text.svg": "/portfolio-react/static/media/note-text.f6b5a44a09bc817e1fc0bd64c7a2c494.svg",
     "static/media/document.svg": "/portfolio-react/static/media/document.9f3f648496ada35d5430.svg",
     "static/media/markdown.svg": "/portfolio-react/static/media/markdown.31f4549eb7a5d345319a.svg",
-    "main.ff79fc6f.css.map": "/portfolio-react/static/css/main.ff79fc6f.css.map",
-    "main.2ef4d473.js.map": "/portfolio-react/static/js/main.2ef4d473.js.map"
+    "main.6e31dd9d.css.map": "/portfolio-react/static/css/main.6e31dd9d.css.map",
+    "main.131186ad.js.map": "/portfolio-react/static/js/main.131186ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff79fc6f.css",
-    "static/js/main.2ef4d473.js"
+    "static/css/main.6e31dd9d.css",
+    "static/js/main.131186ad.js"
   ]
 }
