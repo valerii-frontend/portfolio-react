@@ -12,7 +12,9 @@
 	min-height: 100vh;
 	overflow: hidden;
 	background: var(--bg);
-	animation: load 1.25s 2s 1 both;
+}
+.App.entered {
+	animation: load 2s 1.5s 1 both;
 }
 
 .page {
