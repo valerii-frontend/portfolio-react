@@ -149,13 +149,21 @@ export function Hobby() {
 			<ul className={styles.marker}>
 				<li>Running, cycling</li>
 				<li>Outdoor sports and activities</li>
-				<li>Solve puzzles and logical tasks</li>
+				<li>
+					Solve puzzles and logical tasks{" - "}
+					<img
+						src='https://www.codewars.com/users/valerii-frontend/badges/micro'
+						alt='codewars badge'
+						style={{ filter: "drop-shadow(0 0 2px var(--text))" }}
+					/>
+				</li>
 				<li>Science and high technology</li>
 				<li>RPG/Fantasy videogames and series</li>
 				<li>Spending time with family outdoors and in an urban environment</li>
 				<li>Education and self improvement</li>
 				<li>Reading</li>
 			</ul>
+
 			<div className={styles.js}>
 				<img src={book} alt='The definitly guide JS' />
 			</div>
