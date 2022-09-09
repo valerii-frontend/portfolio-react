@@ -22,7 +22,7 @@ export default function About() {
 		setModal({});
 	};
 	return (
-		<div className={styles.about}>
+		<main className={styles.about}>
 			<Sidebar>
 				<AboutSidebar modal={modal} setModal={setModal} />
 			</Sidebar>
@@ -70,6 +70,6 @@ export default function About() {
 						)
 				)}
 			</div>
-		</div>
+		</main>
 	);
 }

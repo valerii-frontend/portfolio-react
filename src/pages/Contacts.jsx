@@ -8,7 +8,7 @@ import codesignal from "../assets/codesignal.jpg";
 
 export default function Contacts() {
 	return (
-		<div className={styles.contacts}>
+		<main className={styles.contacts}>
 			<Sidebar>
 				<span className={styles.file}>contacts.pdf</span>
 			</Sidebar>
@@ -165,6 +165,6 @@ h62.025v64.622h-44.382c-13.947,0-25.254,11.307-25.254,25.254v49.953h68.521l-9.47
 					</svg>
 				</symbol>
 			</svg>
-		</div>
+		</main>
 	);
 }

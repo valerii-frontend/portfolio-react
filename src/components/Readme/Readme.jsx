@@ -30,6 +30,7 @@ export default function Readme({ setIsReadme }) {
 					<li>Three JS </li>
 					<li>Google model-viewer </li>
 					<li>CSS modules </li>
+					<li>React Transition Group </li>
 				</ul>
 				<h2>Lighthouse report & code</h2>
 				<div className={styles.image}>
