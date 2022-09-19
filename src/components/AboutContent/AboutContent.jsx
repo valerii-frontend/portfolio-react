@@ -11,6 +11,7 @@ import udemyJs from "../../assets/certs/udemy-js.jpg";
 import udemyReact from "../../assets/certs/udemy-react.jpg";
 import engCert from "../../assets/certs/english.jpg";
 import scrumCert from "../../assets/certs/scrum.jpg";
+import meta01 from "../../assets/certs/meta01.jpg";
 import book from "../../assets/book.jpg";
 
 export function Bio() {
@@ -40,7 +41,19 @@ export function Bio() {
 }
 
 export function Edu() {
-	const certificates = [flsImg, soloHtml, soloCss, soloJs, soloReact, gbHtml, gbPro, udemyJs, udemyReact, scrumCert];
+	const certificates = [
+		flsImg,
+		soloHtml,
+		soloCss,
+		soloJs,
+		soloReact,
+		gbHtml,
+		gbPro,
+		udemyJs,
+		udemyReact,
+		scrumCert,
+		meta01,
+	];
 	const [imgZoom, setImgZoom] = useState("");
 	return (
 		<div className={styles.about}>
@@ -88,6 +101,10 @@ export function Edu() {
 				</li>
 				<li>
 					<strong>SkillUP</strong> - Agile Scrum Foundations for Basic Learning(<span>Sept 2022</span>)
+				</li>
+				<li>
+					<strong>Coursera</strong> - Meta Front-End Developer Professional Certificate(
+					<span>Sept 2022 - in progress</span> )
 				</li>
 			</ol>
 			<div className={styles.cards}>
