@@ -17,6 +17,7 @@ export default function WorksSidebar({ slideTo, modal, setModal, children }) {
 		{ name: "chess-game", icon: "jsx", modal: "chess" },
 		{ name: "healthy-food", icon: "jsx", modal: "food" },
 		{ name: "poland-cities", icon: "jsx", modal: "city" },
+		{ name: "currency-converter", icon: "jsx", modal: "currency" },
 	];
 
 	const library = [

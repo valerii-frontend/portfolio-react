@@ -49,6 +49,7 @@ export default function Works() {
 		{ name: "steps", link: "https://valerii-frontend.github.io/library/dist/steps.html" },
 		{ name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
 		{ name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
+		{ name: "currency", link: "https://valerii-frontend.github.io/currency" },
 	];
 	const textInfo = (
 		<>
@@ -76,6 +77,10 @@ export default function Works() {
 				<li>
 					<span>poland-cities</span> - simple project with oportunities to add a new post to external database and
 					fetching data from it. React hooks, MongoDB.
+				</li>
+				<li>
+					<span>currency converter</span> - Work with API to get actual data.
+					React/typescript/axios/react-router,oportunities to save convertsions history to browser local storage.
 				</li>
 			</ul>
 			<Text3d deg='20deg' layers={10} dept='10px'>

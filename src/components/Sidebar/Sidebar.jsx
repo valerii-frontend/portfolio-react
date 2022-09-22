@@ -9,13 +9,13 @@ export default function Sidebar({ children }) {
 
 	const sideBarHandler = () => setSidebarToggle((p) => !p);
 	return (
-		<div className={`${styles.sidebar} ${sidebarToggle ? styles.active : ""}`}>
+		<arside className={`${styles.sidebar} ${sidebarToggle ? styles.active : ""}`}>
 			<div className={`${styles.toggle} ${sidebarToggle ? styles.active : ""}`} onClick={sideBarHandler}>
 				{!sidebarToggle && <img src={filesImg} alt='files icon' />}
 				{sidebarToggle && "✖"}
 			</div>
 			<IconsBar />
 			<div className={styles.files}>{children}</div>
-		</div>
+		</arside>
 	);
 }
