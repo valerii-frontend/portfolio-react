@@ -7,7 +7,7 @@ import styles from "./Model.module.css";
 import Toggle from "../Toggle/Toggle";
 import { Context } from "../../context";
 
-export default function Model({ slideTo }) {
+function Model({ slideTo }) {
 	const [pointToggle, setPointToggle] = useState(false);
 	const { themeSwitch } = useContext(Context);
 
@@ -164,3 +164,5 @@ export default function Model({ slideTo }) {
 		</div>
 	);
 }
+const memoModel = React.memo(Model);
+export default memoModel;
