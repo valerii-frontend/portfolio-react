@@ -13,6 +13,7 @@ import engCert from "../../assets/certs/english.jpg";
 import scrumCert from "../../assets/certs/scrum.jpg";
 import meta01 from "../../assets/certs/meta01.jpg";
 import meta02 from "../../assets/certs/meta02.jpg";
+import meta03 from "../../assets/certs/meta03.jpg";
 import book from "../../assets/book.jpg";
 
 export function Bio() {
@@ -55,6 +56,7 @@ export function Edu() {
 		scrumCert,
 		meta01,
 		meta02,
+		meta03,
 	];
 	const [imgZoom, setImgZoom] = useState("");
 	return (
