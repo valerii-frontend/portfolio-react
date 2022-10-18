@@ -1,6 +1,6 @@
 {
 	"name": "react-portfolio",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"homepage": "https://valerii-frontend.github.io/portfolio-react/",
 	"private": true,
 	"dependencies": {
