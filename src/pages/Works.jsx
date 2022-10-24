@@ -51,11 +51,12 @@ export default function Works() {
     { name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
     { name: "currency", link: "https://valerii-frontend.github.io/currency" },
     { name: "loaders", link: "https://valerii-frontend.github.io/loaders" },
+    { name: "calculator", link: "https://valerii-frontend.github.io/calc-meta/" },
   ];
   const textInfo = (
     <>
       <Text3d dept='10px' deg='10deg' fade>
-        <h1>⬅ Choose a project to preview</h1>
+        <h1>Choose a project in the sidebar to preview</h1>
       </Text3d>
       <div>
         <Text3d deg='15deg' layers={5} dept='5px'>
@@ -84,8 +85,15 @@ export default function Works() {
           React/typescript/axios/react-router,oportunities to save convertsions history to browser local storage.
         </li>
         <li>
-          <span>loaders animation</span> - practice with Storybook and Styled components to create the loaders
+          <span>loaders animation</span> - Storybook and Styled components practicing project. Create the loaders
           animations library with different options
+        </li>
+        <li>
+          <span>simple calculator</span> - Meta React Basic Coursera course final assignment. Unique design and unit
+          testing has been added{" "}
+          <a style={{ color: "var(" }} href='https://github.com/valerii-frontend/calc-meta'>
+            (more info)
+          </a>
         </li>
       </ul>
       <Text3d deg='20deg' layers={10} dept='10px'>

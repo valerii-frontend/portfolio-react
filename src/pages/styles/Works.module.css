@@ -1,150 +1,151 @@
 .works {
-	display: flex;
-	flex: 1 1 auto;
+  display: flex;
+  flex: 1 1 auto;
 }
 .fullScreen {
-	position: fixed !important;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .mobile iframe {
-	max-width: 390px;
+  max-width: 390px;
 }
 .mobile {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .worksWindow {
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 }
 .modalControls {
-	position: absolute;
-	bottom: 1.5rem;
-	padding: 0.5rem;
-	font-size: 1.25rem;
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(var(--bg), 20%);
-	z-index: 12;
+  position: absolute;
+  bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--bg), 20%);
+  z-index: 12;
 }
 .modalControl {
-	margin-bottom: 0.5rem;
-	display: flex;
-	align-items: center;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 .modalControl input {
-	width: 16px;
-	flex: 0 0 16px;
-	height: 16px;
-	margin-right: 0.5rem;
+  width: 16px;
+  flex: 0 0 16px;
+  height: 16px;
+  margin-right: 0.5rem;
 }
 .modalControl label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* INFO */
 .info {
-	position: absolute;
-	padding: 30px;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: var(--text);
-	text-shadow: 0 0 2px var(--sidebar);
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--text);
+  text-shadow: 0 0 2px var(--sidebar);
+  overflow-y: scroll;
 }
 .info h1 {
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--code-color-04);
-	text-shadow: var(--shadow);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--code-color-04);
+  text-shadow: var(--shadow);
 }
 
 .info h2 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-	text-transform: uppercase;
-	text-shadow: var(--shadow);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: var(--shadow);
 }
 .react {
-	color: #00bcd4;
+  color: #00bcd4;
 }
 .library {
-	color: #c0ca33;
+  color: #c0ca33;
 }
 .games {
-	color: #0288d1;
+  color: #0288d1;
 }
 .api {
-	color: #fbc02d;
+  color: #fbc02d;
 }
 .web {
-	color: #5c6bc0;
+  color: #5c6bc0;
 }
 .info h2:before {
-	content: "<";
-	color: var(--text);
+  content: "<";
+  color: var(--text);
 }
 .info h2:after {
-	content: "/>";
-	color: var(--text);
+  content: "/>";
+  color: var(--text);
 }
 .info li,
 .info p {
-	font-size: 1.25rem;
-	margin-bottom: 1rem;
-	padding-left: 2rem;
-	line-height: 150%;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  line-height: 150%;
 }
 .info p {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .info h3 {
-	font-size: 1.5rem;
-	line-height: 150%;
-	color: var(--code-color-06);
-	padding-bottom: 3rem;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--code-color-06);
+  padding-bottom: 3rem;
 }
-.info h3 a {
-	margin: 0 10px;
-	color: var(--code-color-01);
-	text-shadow: var(--shadow);
-	transition: 300ms color;
+.info a {
+  margin: 0 10px;
+  color: var(--code-color-01);
+  text-shadow: var(--shadow);
+  transition: 300ms color;
 }
-.info h3 a:hover {
-	color: var(--code-color-04);
+.info a:hover {
+  color: var(--code-color-04);
 }
 
 .info li span {
-	color: var(--code-color-02);
-	font-size: 1.5rem;
+  color: var(--code-color-02);
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1600px) {
-	.worksWindow {
-		overflow: auto;
-	}
+  .worksWindow {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 600px) {
-	.info {
-		padding: 15px;
-	}
-	.info h1 {
-		font-size: 25px;
-	}
-	.info li,
-	.info p {
-		padding-left: 1rem;
-		font-size: 15px;
-	}
-	.info li span {
-		font-size: 18px;
-	}
-	.info h3 {
-		font-size: 17px;
-	}
+  .info {
+    padding: 15px;
+  }
+  .info h1 {
+    font-size: 25px;
+  }
+  .info li,
+  .info p {
+    padding-left: 1rem;
+    font-size: 15px;
+  }
+  .info li span {
+    font-size: 18px;
+  }
+  .info h3 {
+    font-size: 17px;
+  }
 }
