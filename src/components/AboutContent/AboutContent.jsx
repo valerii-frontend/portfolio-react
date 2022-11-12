@@ -116,6 +116,10 @@ export function Edu() {
           <strong>Coursera</strong> - Meta Front-End Developer Professional Certificate(
           <span>Sept 2022 - in progress</span> )
         </li>
+        <li>
+          <strong>Coursera</strong> - Crash Course on Python by Google(
+          <span>Oct 2022 - Nov 2022</span> )
+        </li>
       </ol>
       <div className={styles.cards}>
         {certificates.map((cert) => (
