@@ -91,7 +91,7 @@ export default function Works() {
         <li>
           <span>simple calculator</span> - Meta React Basic Coursera course final assignment. Unique design and unit
           testing has been added{" "}
-          <a style={{ color: "var(" }} href='https://github.com/valerii-frontend/calc-meta'>
+          <a style={{ color: "var(--code-color-05)" }} href='https://github.com/valerii-frontend/calc-meta'>
             (more info)
           </a>
         </li>
