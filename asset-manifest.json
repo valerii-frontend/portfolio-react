@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.21b2ead3.css",
-    "main.js": "/portfolio-react/static/js/main.826bcf2f.js",
+    "main.css": "/portfolio-react/static/css/main.2199a7e1.css",
+    "main.js": "/portfolio-react/static/js/main.a6f49498.js",
     "static/media/portfolio.glb": "/portfolio-react/static/media/portfolio.9683ce13623a1cece3e2.glb",
     "static/media/light.hdr": "/portfolio-react/static/media/light.c156cce715cd3d1dbe82.hdr",
+    "static/media/python.jpg": "/portfolio-react/static/media/python.9e9b9010514180378593.jpg",
     "static/media/gb-html.jpg": "/portfolio-react/static/media/gb-html.361d653f6259500bf9c7.jpg",
     "static/media/book.jpg": "/portfolio-react/static/media/book.1cd38e6e9d0dd200d0e7.jpg",
     "static/media/udemy-react.jpg": "/portfolio-react/static/media/udemy-react.b0b1fdadb0678035df71.jpg",
@@ -30,7 +31,7 @@
     "static/media/gimp.svg": "/portfolio-react/static/media/gimp.9f2a69330aa485362d36.svg",
     "static/media/chrome.svg": "/portfolio-react/static/media/chrome.ca29d828356d9de6f4ad.svg",
     "static/media/psd.svg": "/portfolio-react/static/media/psd.a9cc5737517a17d3e1d9.svg",
-    "static/media/photoshop.svg": "/portfolio-react/static/media/photoshop.60eda61e3cfe863729f8.svg",
+    "static/media/photoshop.svg": "/portfolio-react/static/media/photoshop.21b3c1e00213c9613773.svg",
     "static/media/folder-react-components.svg": "/portfolio-react/static/media/folder-react-components.27cc88e7a33910855ef1.svg",
     "static/media/folder-react-components-open.svg": "/portfolio-react/static/media/folder-react-components-open.4f30b18e6fba36bc112a.svg",
     "static/media/phpStorm.svg": "/portfolio-react/static/media/phpStorm.e16b04a8085468adf1fa.svg",
@@ -90,11 +91,11 @@
     "static/media/note-text.svg": "/portfolio-react/static/media/note-text.f6b5a44a09bc817e1fc0bd64c7a2c494.svg",
     "static/media/document.svg": "/portfolio-react/static/media/document.9f3f648496ada35d5430.svg",
     "static/media/markdown.svg": "/portfolio-react/static/media/markdown.31f4549eb7a5d345319a.svg",
-    "main.21b2ead3.css.map": "/portfolio-react/static/css/main.21b2ead3.css.map",
-    "main.826bcf2f.js.map": "/portfolio-react/static/js/main.826bcf2f.js.map"
+    "main.2199a7e1.css.map": "/portfolio-react/static/css/main.2199a7e1.css.map",
+    "main.a6f49498.js.map": "/portfolio-react/static/js/main.a6f49498.js.map"
   },
   "entrypoints": [
-    "static/css/main.21b2ead3.css",
-    "static/js/main.826bcf2f.js"
+    "static/css/main.2199a7e1.css",
+    "static/js/main.a6f49498.js"
   ]
 }
