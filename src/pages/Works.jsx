@@ -52,6 +52,7 @@ export default function Works() {
     { name: "currency", link: "https://valerii-frontend.github.io/currency" },
     { name: "loaders", link: "https://valerii-frontend.github.io/loaders" },
     { name: "calculator", link: "https://valerii-frontend.github.io/calc-meta/" },
+    { name: "memory", link: "https://valerii-frontend.github.io/memorize-game/" },
   ];
   const textInfo = (
     <>
@@ -94,6 +95,9 @@ export default function Works() {
           <a style={{ color: "var(--code-color-05)" }} href='https://github.com/valerii-frontend/calc-meta'>
             (more info)
           </a>
+        </li>
+        <li>
+          <span>memorize game</span> - memory cards matching game, using React
         </li>
       </ul>
       <Text3d deg='20deg' layers={10} dept='10px'>

@@ -20,6 +20,7 @@ export default function WorksSidebar({ slideTo, modal, setModal, children }) {
     { name: "currency-converter", icon: "jsx", modal: "currency" },
     { name: "loaders animation", icon: "jsx", modal: "loaders" },
     { name: "simple calculator", icon: "jsx", modal: "calculator" },
+    { name: "memorize game", icon: "jsx", modal: "memory" },
   ];
 
   const library = [
