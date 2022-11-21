@@ -5,6 +5,7 @@ import WorksSidebar from "../components/Sidebar/SidebarWorksContent";
 import Toggle from "../components/Toggle/Toggle";
 import styles from "./styles/Works.module.css";
 import Text3d from "../components/Text3d/Text3d";
+import { iframeLinks as links } from "../data";
 
 export default function Works() {
   const [full, setFull] = useState(false);
@@ -19,41 +20,6 @@ export default function Works() {
     setFull(false);
   };
 
-  const iframeLinks = [
-    { name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
-    { name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
-    { name: "post", link: "https://valerii-frontend.github.io/react-practice/" },
-    { name: "city", link: "https://nextjs-cities.vercel.app/" },
-    { name: "library", link: "https://valerii-frontend.github.io/library/dist/" },
-    { name: "15", link: "https://valerii-frontend.github.io/15game/" },
-    { name: "posting", link: "https://valerii-frontend.github.io/Landing_page--Aspgroup/" },
-    { name: "lesniczowka", link: "https://valerii-frontend.github.io/lesniczowka/" },
-    { name: "arteo", link: "https://valerii-frontend.github.io/arteo-dev/" },
-    { name: "anter", link: "https://valerii-frontend.github.io/AnterSystem/" },
-    { name: "design", link: "https://valerii-frontend.github.io/Corporate_website--ilyin_studio/" },
-    { name: "guess", link: "https://guess-a-word.netlify.app/" },
-    { name: "countries", link: "https://vl-countries.netlify.app/" },
-    { name: "came", link: "https://valerii-frontend.github.io/Landing_page--Came-gates/" },
-    { name: "dashboard", link: "https://valerii-frontend.github.io/dashboardToogle/" },
-    { name: "v-slider", link: "https://valerii-frontend.github.io/verticalSlider/" },
-    { name: "f-slider", link: "https://valerii-frontend.github.io/pureJsSlider/" },
-    { name: "paint", link: "https://valerii-frontend.github.io/DrawingApp/" },
-    { name: "films", link: "https://valerii-frontend.github.io/filmDataBaseApi/" },
-    { name: "css-night", link: "https://valerii-frontend.github.io/City-animation/" },
-    { name: "pig", link: "https://valerii-frontend.github.io/a_pig_game/" },
-    { name: "casino", link: "https://valerii-frontend.github.io/OutComeBet-casino/" },
-    { name: "cubes", link: "https://valerii-frontend.github.io/library/dist/cubes.html" },
-    { name: "scroll", link: "https://valerii-frontend.github.io/library/dist/scroll.html" },
-    { name: "blur", link: "https://valerii-frontend.github.io/library/dist/blur.html" },
-    { name: "cards", link: "https://valerii-frontend.github.io/library/dist/cards.html" },
-    { name: "steps", link: "https://valerii-frontend.github.io/library/dist/steps.html" },
-    { name: "search", link: "https://valerii-frontend.github.io/library/dist/hidden-search.html" },
-    { name: "loader", link: "https://valerii-frontend.github.io/library/dist/loader.html" },
-    { name: "currency", link: "https://valerii-frontend.github.io/currency" },
-    { name: "loaders", link: "https://valerii-frontend.github.io/loaders" },
-    { name: "calculator", link: "https://valerii-frontend.github.io/calc-meta/" },
-    { name: "memory", link: "https://valerii-frontend.github.io/memorize-game/" },
-  ];
   const textInfo = (
     <>
       <Text3d dept='10px' deg='10deg' fade>
@@ -67,8 +33,8 @@ export default function Works() {
 
       <ul>
         <li>
-          <span>blog-page</span> - this is a project with fetching data for jsplaceholder api, using react route, hooks,
-          fake authorization with pretty design and interesting logic.
+          <span>blog-page</span> - this is a project with fetching data for js-placeholder api, using react route,
+          hooks, fake authorization with pretty design and interesting logic.
         </li>
         <li>
           <span>chess-game</span> - the chess board game, using react, typescript
@@ -78,12 +44,12 @@ export default function Works() {
           order payment. React hooks, transition group, firebase database storage.
         </li>
         <li>
-          <span>poland-cities</span> - simple project with oportunities to add a new post to external database and
+          <span>poland-cities</span> - simple project with opportunities to add a new post to external database and
           fetching data from it. React hooks, MongoDB.
         </li>
         <li>
           <span>currency converter</span> - Work with API to get actual data.
-          React/typescript/axios/react-router,oportunities to save convertsions history to browser local storage.
+          React/typescript/axios/react-router,opportunities to save conversions history to browser local storage.
         </li>
         <li>
           <span>loaders animation</span> - Storybook and Styled components practicing project. Create the loaders
@@ -152,7 +118,7 @@ export default function Works() {
       </Sidebar>
       <div className={styles.worksWindow}>
         <div className={styles.info}>{textInfo}</div>
-        {iframeLinks.map(
+        {links.map(
           (item) =>
             modal[item.name] && (
               <Modal key={item.name} closeModalHandler={closeModalHandler} item={item} className={toggleClassNames}>
