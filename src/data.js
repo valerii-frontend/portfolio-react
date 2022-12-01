@@ -1,7 +1,7 @@
 const iframeLinks = [
   { name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
   { name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
-  { name: "post", link: "https://valerii-frontend.github.io/react-practice/" },
+  { name: "blog-app", link: "https://valerii-frontend.github.io/blog-app/" },
   { name: "city", link: "https://nextjs-cities.vercel.app/" },
   { name: "library", link: "https://valerii-frontend.github.io/library/dist/" },
   { name: "15", link: "https://valerii-frontend.github.io/15game/" },
@@ -36,7 +36,7 @@ const iframeLinks = [
 
 const worksCategory = {
   react: [
-    { name: "blog-page", icon: "jsx", modal: "post" },
+    { name: "blog-app", icon: "jsx", modal: "blog-app" },
     { name: "healthy-food", icon: "jsx", modal: "food" },
     { name: "poland-cities", icon: "jsx", modal: "city" },
     { name: "currency-converter", icon: "jsx", modal: "currency" },
