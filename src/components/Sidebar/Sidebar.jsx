@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./Sidebar.module.css";
 import IconsBar from "../IconBar/IconsBar";
 import filesImg from "../../assets/icons/files.svg";
-import { Context } from "../../context";
+import { Context } from "../../helpers/context";
 
 export default function Sidebar({ children }) {
   const { sidebarToggle, setSidebarToggle } = useContext(Context);

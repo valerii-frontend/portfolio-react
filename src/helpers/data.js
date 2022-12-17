@@ -1,3 +1,21 @@
+import flsImg from "../assets/certs/fls.png";
+import soloHtml from "../assets/certs/solo-html.jpg";
+import soloCss from "../assets/certs/solo-css.jpg";
+import soloJs from "../assets/certs/solo-js.png";
+import soloReact from "../assets/certs/solo-react.jpg";
+import gbHtml from "../assets/certs/gb-html.jpg";
+import gbPro from "../assets/certs/gb-pro.jpg";
+import udemyJs from "../assets/certs/udemy-js.jpg";
+import udemyReact from "../assets/certs/udemy-react.jpg";
+import scrumCert from "../assets/certs/scrum.jpg";
+import meta01 from "../assets/certs/meta01.jpg";
+import meta02 from "../assets/certs/meta02.jpg";
+import meta03 from "../assets/certs/meta03.jpg";
+import meta04 from "../assets/certs/meta04.jpg";
+import meta05 from "../assets/certs/meta05.jpg";
+import meta06 from "../assets/certs/meta06.jpg";
+import python from "../assets/certs/python.jpg";
+
 const iframeLinks = [
   { name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
   { name: "food", link: "https://valerii-frontend.github.io/healthy-food/" },
@@ -80,5 +98,23 @@ const worksCategory = {
     { name: "film-data-base", icon: "js", modal: "films" },
   ],
 };
-
-export { worksCategory, iframeLinks };
+const certificates = [
+  flsImg,
+  soloHtml,
+  soloCss,
+  soloJs,
+  soloReact,
+  gbHtml,
+  gbPro,
+  udemyJs,
+  udemyReact,
+  scrumCert,
+  python,
+  meta01,
+  meta02,
+  meta03,
+  meta04,
+  meta05,
+  meta06,
+];
+export { worksCategory, iframeLinks, certificates };

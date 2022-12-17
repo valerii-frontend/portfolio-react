@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Folder from "../Folder/Folder";
-import { Context } from "../../context";
-import { worksCategory as cat } from "../../data";
+import { Context } from "../../helpers/context";
+import { worksCategory as cat } from "../../helpers/data";
 
 export default function WorksSidebar({ slideTo, modal, setModal, children }) {
   const { setSidebarToggle } = useContext(Context);

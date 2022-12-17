@@ -1,22 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AboutContent.module.css";
-import flsImg from "../../assets/certs/fls.png";
-import soloHtml from "../../assets/certs/solo-html.jpg";
-import soloCss from "../../assets/certs/solo-css.jpg";
-import soloJs from "../../assets/certs/solo-js.png";
-import soloReact from "../../assets/certs/solo-react.jpg";
-import gbHtml from "../../assets/certs/gb-html.jpg";
-import gbPro from "../../assets/certs/gb-pro.jpg";
-import udemyJs from "../../assets/certs/udemy-js.jpg";
-import udemyReact from "../../assets/certs/udemy-react.jpg";
+import { certificates } from "../../helpers/data";
 import engCert from "../../assets/certs/english.jpg";
-import scrumCert from "../../assets/certs/scrum.jpg";
-import meta01 from "../../assets/certs/meta01.jpg";
-import meta02 from "../../assets/certs/meta02.jpg";
-import meta03 from "../../assets/certs/meta03.jpg";
-import meta04 from "../../assets/certs/meta04.jpg";
-import meta05 from "../../assets/certs/meta05.jpg";
-import python from "../../assets/certs/python.jpg";
 import book from "../../assets/book.jpg";
 
 export function Bio() {
@@ -53,24 +38,6 @@ export function Bio() {
 }
 
 export function Edu() {
-  const certificates = [
-    flsImg,
-    soloHtml,
-    soloCss,
-    soloJs,
-    soloReact,
-    gbHtml,
-    gbPro,
-    udemyJs,
-    udemyReact,
-    scrumCert,
-    meta01,
-    meta02,
-    meta03,
-    meta04,
-    meta05,
-    python,
-  ];
   const [imgZoom, setImgZoom] = useState("");
   return (
     <div className={styles.about}>
