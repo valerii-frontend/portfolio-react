@@ -4,7 +4,7 @@ import poster from "./poster.png";
 import posterLight from "./poster-light.jpg";
 import light from "./light.hdr";
 import styles from "./Model.module.css";
-import Toggle from "../Toggle/Toggle";
+import Toggle from "../Toggle";
 import { Context } from "../../helpers/context";
 
 function Model({ slideTo }) {

@@ -1,12 +1,12 @@
 import React, { useState, lazy, Suspense } from "react";
 import styles from "./styles/Home.module.css";
 
-import Sidebar from "../components/Sidebar/Sidebar";
+import Sidebar from "../components/Sidebar";
 import HomeSidebar from "../components/Sidebar/SidebarHomeContent";
 
-const Readme = lazy(() => import("../components/Readme/Readme"));
-const Model = lazy(() => import("../components/Model/Model"));
-const Slider = lazy(() => import("../components/Slider/Slider"));
+const Readme = lazy(() => import("../components/Readme"));
+const Model = lazy(() => import("../components/Model"));
+const Slider = lazy(() => import("../components/Slider"));
 
 export default function Main() {
   const [swiperEl, setSwiperEl] = useState(1);

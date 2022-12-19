@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Folder from "../Folder/Folder";
+import Folder from "../Folder";
 import styles from "./SidebarHomeContent.module.css";
 import { Context } from "../../helpers/context";
 

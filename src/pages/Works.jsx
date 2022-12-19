@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Modal from "../components/Modal/Modal";
-import Sidebar from "../components/Sidebar/Sidebar";
+import Modal from "../components/Modal";
+import Sidebar from "../components/Sidebar";
 import WorksSidebar from "../components/Sidebar/SidebarWorksContent";
-import Toggle from "../components/Toggle/Toggle";
+import Toggle from "../components/Toggle";
 import styles from "./styles/Works.module.css";
-import Text3d from "../components/Text3d/Text3d";
+import Text3d from "../components/Text3d/";
 import { iframeLinks as links } from "../helpers/data";
 
 export default function Works() {

@@ -6,9 +6,9 @@ import { Transition } from "react-transition-group";
 import { Context } from "./helpers/context";
 import "./App.css";
 
-import Header from "./components/Header/Header";
-import Taskbar from "./components/Taskbar/Taskbar";
-import LoadAnim from "./components/LoadAnim/LoadAnim";
+import Header from "./components/Header/";
+import Taskbar from "./components/Taskbar";
+import LoadAnim from "./components/LoadAnim";
 import Home from "./pages/Home";
 
 const Contacts = lazy(() => import("./pages/Contacts"));

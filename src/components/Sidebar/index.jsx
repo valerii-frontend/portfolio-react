@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./Sidebar.module.css";
-import IconsBar from "../IconBar/IconsBar";
+import IconsBar from "../IconBar";
 import filesImg from "../../assets/icons/files.svg";
 import { Context } from "../../helpers/context";
 

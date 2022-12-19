@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Folder from "../Folder/Folder";
+import Folder from "../Folder";
 import { Context } from "../../helpers/context";
 import { worksCategory as cat } from "../../helpers/data";
 
