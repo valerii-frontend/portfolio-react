@@ -1,17 +1,19 @@
-import "./App.css";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { Context } from "./helpers/context";
 
-import React, { useState, useEffect } from "react";
 import { Transition } from "react-transition-group";
+
+import { Context } from "./helpers/context";
+import "./App.css";
+
 import Header from "./components/Header/Header";
 import Taskbar from "./components/Taskbar/Taskbar";
-
-import Contacts from "./pages/Contacts";
-import Works from "./pages/Works";
-import About from "./pages/About";
-import Home from "./pages/Home";
 import LoadAnim from "./components/LoadAnim/LoadAnim";
+import Home from "./pages/Home";
+
+const Contacts = lazy(() => import("./pages/Contacts"));
+const Works = lazy(() => import("./pages/Works"));
+const About = lazy(() => import("./pages/About"));
 
 function App() {
   const [themeSwitch, setThemeSwitch] = useState(true);
@@ -41,13 +43,15 @@ function App() {
           {(state) => (
             <div className={`App ${themeSwitch ? "" : "light"} ${state}`} onContextMenu={(e) => e.preventDefault()}>
               <Header />
-              <Routes>
-                <Route path='/portfolio-react' element={<Home />} exact />
-                <Route path='/portfolio-react/contacts' element={<Contacts />} exact />
-                <Route path='/portfolio-react/works' element={<Works />} exact />
-                <Route path='/portfolio-react/about' element={<About />} exact />
-                <Route path='*' element={<Navigate to='/portfolio-react' replace />} />
-              </Routes>
+              <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                  <Route path='/portfolio-react' element={<Home />} exact />
+                  <Route path='/portfolio-react/contacts' element={<Contacts />} exact />
+                  <Route path='/portfolio-react/works' element={<Works />} exact />
+                  <Route path='/portfolio-react/about' element={<About />} exact />
+                  <Route path='*' element={<Navigate to='/portfolio-react' replace />} />
+                </Routes>
+              </Suspense>
               <Taskbar />
             </div>
           )}
