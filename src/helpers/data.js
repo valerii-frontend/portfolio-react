@@ -15,6 +15,7 @@ import meta04 from "../assets/certs/meta04.jpg";
 import meta05 from "../assets/certs/meta05.jpg";
 import meta06 from "../assets/certs/meta06.jpg";
 import python from "../assets/certs/python.jpg";
+import jira from "../assets/certs/jira.png";
 
 const iframeLinks = [
   { name: "chess", link: "https://valerii-frontend.github.io/chess-react/" },
@@ -116,5 +117,6 @@ const certificates = [
   meta04,
   meta05,
   meta06,
+  jira,
 ];
 export { worksCategory, iframeLinks, certificates };
