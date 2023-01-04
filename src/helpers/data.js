@@ -14,6 +14,7 @@ import meta03 from "../assets/certs/meta03.jpg";
 import meta04 from "../assets/certs/meta04.jpg";
 import meta05 from "../assets/certs/meta05.jpg";
 import meta06 from "../assets/certs/meta06.jpg";
+import meta07 from "../assets/certs/meta07.png";
 import python from "../assets/certs/python.jpg";
 import jira from "../assets/certs/jira.png";
 
@@ -117,6 +118,7 @@ const certificates = [
   meta04,
   meta05,
   meta06,
+  meta07,
   jira,
 ];
 export { worksCategory, iframeLinks, certificates };
