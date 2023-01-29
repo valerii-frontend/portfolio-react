@@ -6,7 +6,7 @@ import Text3d from "../components/Text3d/";
 import styles from "./styles/Contacts.module.css";
 
 import codewars from "../assets/codewars.png";
-import upwork from "../assets/upwork.png";
+import instagram from "../assets/instagram.svg";
 import codesignal from "../assets/codesignal.jpg";
 
 export default function Contacts() {
@@ -25,28 +25,28 @@ export default function Contacts() {
 
         <ul>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://www.facebook.com/valerii.from.earth'>
+            <a title='Facebook' rel='noreferrer' target='_blank' href='https://www.facebook.com/valerii.from.earth'>
               <svg className={styles.icon}>
                 <use xlinkHref='#facebook' />
               </svg>
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='http://www.linkedin.com/in/valerii-lozghachov'>
+            <a title='LinkedIn' rel='noreferrer' target='_blank' href='http://www.linkedin.com/in/valerii-lozghachov'>
               <svg className={styles.icon}>
                 <use xlinkHref='#linkedin' />
               </svg>
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://t.me/the_earth_citizen'>
+            <a title='Telegram' rel='noreferrer' target='_blank' href='https://t.me/the_earth_citizen'>
               <svg className={styles.icon}>
                 <use xlinkHref='#telegram' />
               </svg>
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='mailto:v.lozghachov@gmail.com'>
+            <a title='Google Mail' rel='noreferrer' target='_blank' href='mailto:v.lozghachov@gmail.com'>
               <svg className={styles.icon}>
                 <use xlinkHref='#gmail' />
               </svg>
@@ -60,24 +60,24 @@ export default function Contacts() {
         </div>
         <ul>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://github.com/valerii-frontend'>
+            <a title='GitHub' rel='noreferrer' target='_blank' href='https://github.com/valerii-frontend'>
               <svg className={styles.icon}>
                 <use xlinkHref='#github' />
               </svg>
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://app.codesignal.com/profile/_valerii__'>
+            <a title='CodeSignal' rel='noreferrer' target='_blank' href='https://app.codesignal.com/profile/_valerii__'>
               <img src={codesignal} alt='codesignal' />
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://www.upwork.com/freelancers/~014ead3e287a0b68a3'>
-              <img src={upwork} alt='upwork' />
+            <a title='Instagram' rel='noreferrer' target='_blank' href='https://www.instagram.com/v.lozghachov/'>
+              <img src={instagram} alt='instagram' />
             </a>
           </li>
           <li>
-            <a rel='noreferrer' target='_blank' href='https://www.codewars.com/users/valerii-frontend'>
+            <a title='Codewars' rel='noreferrer' target='_blank' href='https://www.codewars.com/users/valerii-frontend'>
               <img src={codewars} alt='codewars' />
             </a>
           </li>
