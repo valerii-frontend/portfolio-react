@@ -145,6 +145,14 @@ export function Exp() {
           </div>
         </li>
         <li>
+          <strong>Freelancer on UpWork</strong> (April 2022 – Oct 2022)
+          <div>
+            <span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM. Writing
+            own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating keyframes
+            CSS animations.
+          </div>
+        </li>
+        <li>
           <strong>Frontend Developer in “Rolladen Group”</strong> (December 2021 – present time)
           <div>
             <span>Responsibilities</span>: e-commerce store optimization. Improved performance, implementation of modern
@@ -154,14 +162,6 @@ export function Exp() {
           <div>
             <span>Technology & Tools</span>: JavaScript, Jquery, HTML, CSS, PHP, Smarty, GitLab, git, PHPStorm,
             ShopWare.
-          </div>
-        </li>
-        <li>
-          <strong>Freelancer on UpWork</strong> (April 2022 – present time)
-          <div>
-            <span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM. Writing
-            own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating keyframes
-            CSS animations.
           </div>
         </li>
       </ul>
