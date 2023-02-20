@@ -5,9 +5,9 @@ import Text3d from "../components/Text3d/";
 
 import styles from "./styles/Contacts.module.css";
 
-import codewars from "../assets/codewars.png";
+import codewars from "../assets/codewars.webp";
 import instagram from "../assets/instagram.svg";
-import codesignal from "../assets/codesignal.jpg";
+import codesignal from "../assets/codesignal.webp";
 
 export default function Contacts() {
   return (

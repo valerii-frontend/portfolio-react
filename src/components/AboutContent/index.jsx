@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./AboutContent.module.css";
 import { certificates } from "../../helpers/data";
-import engCert from "../../assets/certs/english.jpg";
+import engCert from "../../assets/certs/english.webp";
 import book from "../../assets/book.jpg";
 
 export function Bio() {
