@@ -59,40 +59,62 @@ export function Edu() {
       <h2>Courses & certificates</h2>
       <ol>
         <li>
-          <strong>SoloLearn</strong> - HTML course (<span>January 2020</span>)
+          <strong>SoloLearn</strong> — HTML course (<span>January 2020</span>)
         </li>
         <li>
-          <strong>SoloLearn</strong> - CSS course (<span>April 2020</span>)
+          <strong>SoloLearn</strong> — CSS course (<span>April 2020</span>)
         </li>
         <li>
-          <strong>GeekBrains</strong> - Completed the course «HTML & CSS» (<span>April 2020</span>)
+          <strong>GeekBrains</strong> — Completed the course «HTML & CSS» (<span>April 2020</span>)
         </li>
         <li>
-          <strong>edu.fls.guru</strong> - advanced course of HTML coding (<span>Sept 2020 – Dec 2020</span>)
+          <strong>edu.fls.guru</strong> — advanced course of HTML coding (<span>Sept 2020 – Dec 2020</span>)
         </li>
         <li>
-          <strong>SoloLearn</strong> - React + Redux (<span>Aug 2021 – Sept 2021</span>)
+          <strong>SoloLearn</strong> — React + Redux (<span>Aug 2021 – Sept 2021</span>)
         </li>
         <li>
-          <strong>SoloLearn</strong> - JavaScript (<span>Aug 2021 – Sept 2021</span>)
+          <strong>SoloLearn</strong> — JavaScript (<span>Aug 2021 – Sept 2021</span>)
         </li>
         <li>
-          <strong>Udemy</strong> —The Complete JavaScript Course: From Zero to Expert! (<span>Oct 2021 – Nov 2021</span>
-          )
+          <strong>Udemy</strong> —
+          <a
+            target='_blank'
+            href='https://www.udemy.com/certificate/UC-2005ecb8-15a3-42f2-b626-346c81546fa6/'
+            rel='noreferrer'>
+            The Complete JavaScript Course: From Zero to Expert!
+          </a>{" "}
+          (<span>Oct 2021 – Nov 2021</span>)
         </li>
         <li>
-          <strong>Udemy</strong> — React: The Complete guide! (<span>June 2022 – July 2022</span>)
+          <strong>Udemy</strong> —
+          <a href='https://www.udemy.com/certificate/UC-c7dd13ed-5a1e-4787-8f21-41813e55eda9/' rel='noreferrer'>
+            React: The Complete guide!
+          </a>{" "}
+          (<span>June 2022 – July 2022</span>)
         </li>
         <li>
-          <strong>SkillUP</strong> - Agile Scrum Foundations for Basic Learning(<span>Sept 2022</span>)
+          <strong>SkillUP</strong> —
+          <a
+            href='https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzc0NjgzMl8xNjYyMzI4MzExLnBuZyIsInVzZXJuYW1lIjoiVmFsZXJpaSBMb3pnaGFjaG92In0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F2817%2FAgile-Scrum-Foundation%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1156274280829782599&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVzyjxdjMtDo10KUkCAKr72PMlAAAA'
+            rel='noreferrer'>
+            Agile Scrum Foundations for Basic Learning
+          </a>{" "}
+          (<span>Sept 2022</span>)
         </li>
         <li>
-          <strong>Coursera</strong> - Meta Front-End Developer Professional Certificate(
-          <span>Sept 2022 - in progress</span> )
+          <strong>Coursera</strong> —
+          <a href='https://www.coursera.org/account/accomplishments/verify/AWT2X8X25DS7' rel='noreferrer'>
+            Crash Course on Python by Google
+          </a>{" "}
+          (<span>Oct 2022 - Nov 2022</span>)
         </li>
         <li>
-          <strong>Coursera</strong> - Crash Course on Python by Google(
-          <span>Oct 2022 - Nov 2022</span> )
+          <strong>Coursera</strong> —
+          <a href='https://www.udemy.com/certificate/UC-c7dd13ed-5a1e-4787-8f21-41813e55eda9/' rel='noreferrer'>
+            Meta Front-End Developer Professional Certificate
+          </a>{" "}
+          (<span>Sept 2022 - Feb 2023</span> )
         </li>
       </ol>
       <div className={styles.cards}>

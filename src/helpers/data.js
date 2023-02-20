@@ -8,13 +8,7 @@ import gbPro from "../assets/certs/gb-pro.jpg";
 import udemyJs from "../assets/certs/udemy-js.jpg";
 import udemyReact from "../assets/certs/udemy-react.jpg";
 import scrumCert from "../assets/certs/scrum.jpg";
-import meta01 from "../assets/certs/meta01.jpg";
-import meta02 from "../assets/certs/meta02.jpg";
-import meta03 from "../assets/certs/meta03.jpg";
-import meta04 from "../assets/certs/meta04.jpg";
-import meta05 from "../assets/certs/meta05.jpg";
-import meta06 from "../assets/certs/meta06.jpg";
-import meta07 from "../assets/certs/meta07.png";
+import meta from "../assets/certs/meta.png";
 import python from "../assets/certs/python.jpg";
 import jira from "../assets/certs/jira.png";
 
@@ -102,23 +96,17 @@ const worksCategory = {
 };
 const certificates = [
   flsImg,
+  gbHtml,
+  gbPro,
   soloHtml,
   soloCss,
   soloJs,
   soloReact,
-  gbHtml,
-  gbPro,
   udemyJs,
   udemyReact,
   scrumCert,
   python,
-  meta01,
-  meta02,
-  meta03,
-  meta04,
-  meta05,
-  meta06,
-  meta07,
   jira,
+  meta,
 ];
 export { worksCategory, iframeLinks, certificates };

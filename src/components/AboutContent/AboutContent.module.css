@@ -1,146 +1,157 @@
 .about {
-	background: var(--bg);
+  background: var(--bg);
 }
 .about p {
-	font-size: 1.5rem;
-	line-height: 150%;
-	max-width: 90%;
-	margin: 0 auto 2rem;
+  font-size: 1.5rem;
+  line-height: 150%;
+  max-width: 90%;
+  margin: 0 auto 2rem;
 }
 .about p::first-letter {
-	color: var(--code-color-04);
+  color: var(--code-color-04);
 }
 
 .about h2 {
-	margin-bottom: 2rem;
-	text-align: center;
-	font-size: 32px;
-	color: var(--code-color-02);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 32px;
+  color: var(--code-color-02);
 }
 
 .about li {
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-	border-bottom: 1px dashed rgba(100, 100, 100, 0.5);
-	font-size: 1.25rem;
-	line-height: 150%;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed rgba(100, 100, 100, 0.5);
+  font-size: 1.25rem;
+  line-height: 150%;
 }
 .about li strong {
-	color: var(--code-color-01);
-	font-weight: 400;
+  color: var(--code-color-01);
+  font-weight: 400;
 }
 .about li span {
-	color: var(--code-color-05);
+  color: var(--code-color-05);
 }
 .about li span.lang {
-	color: var(--code-color-03);
+  color: var(--code-color-03);
 }
 .marker li {
-	padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .marker li:before {
-	content: "";
-	display: inline-block;
-	margin-right: 1rem;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: var(--code-color-03);
+  content: "";
+  display: inline-block;
+  margin-right: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--code-color-03);
 }
 .marker_2 li:before {
-	background-color: var(--code-color-05);
+  background-color: var(--code-color-05);
 }
 .langImg {
-	display: block;
-	margin: 2rem auto;
-	text-align: center;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
 }
 .langImg img {
-	max-width: 100%;
+  max-width: 100%;
 }
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 2rem -1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem -1rem 0;
 }
 .col {
-	flex: 0 0 25%;
-	padding: 0 1rem;
-	margin-bottom: 2rem;
-	position: relative;
-	transition: all 300ms, padding 0s;
+  flex: 0 0 25%;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  transition: all 300ms, padding 0s;
 }
 
 .col img {
-	max-width: 100%;
-	height: 100%;
-	object-fit: cover;
-	cursor: zoom-in;
-	animation: scaleDown 500ms both;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+  animation: scaleDown 500ms both;
 }
 .js {
-	max-width: 50%;
-	margin: 0 auto;
-	padding: 1rem 0;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 .js img {
-	max-width: 100%;
+  max-width: 100%;
 }
 .zoom {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	z-index: 99;
-	transition: all 300ms, padding 0s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  transition: all 300ms, padding 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 .zoom img {
-	cursor: zoom-out;
-	animation: scale 300ms 300ms both;
+  cursor: zoom-out;
+  animation: scale 300ms 300ms both;
+}
+
+.about a {
+  margin: 0 10px;
+  color: var(--code-color-06);
+  text-shadow: var(--shadow);
+  transition: 300ms color;
+  text-decoration: underline;
+}
+.about a:hover {
+  color: var(--code-color-04);
 }
 @keyframes scale {
-	from {
-		scale: 0;
-		opacity: 0;
-	}
-	to {
-		scale: 1;
-		opacity: 1;
-	}
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 @media (max-width: 1199px) {
-	.col {
-		flex: 0 0 33.333%;
-	}
+  .col {
+    flex: 0 0 33.333%;
+  }
 }
 @media (max-width: 767px) {
-	.about {
-		padding-bottom: 3rem;
-	}
-	.about p {
-		max-width: 100%;
-	}
-	.col {
-		flex: 0 0 50%;
-	}
+  .about {
+    padding-bottom: 3rem;
+  }
+  .about p {
+    max-width: 100%;
+  }
+  .col {
+    flex: 0 0 50%;
+  }
 }
 
 @media (max-width: 540px) {
-	.col {
-		flex: 0 0 100%;
-		padding: 0;
-	}
-	.cards {
-		margin: 3rem 0 0 0;
-	}
-	.js {
-		max-width: 100%;
-	}
+  .col {
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  .cards {
+    margin: 3rem 0 0 0;
+  }
+  .js {
+    max-width: 100%;
+  }
 }
