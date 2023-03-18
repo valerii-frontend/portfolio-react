@@ -111,6 +111,13 @@ export function Edu() {
         </li>
         <li>
           <strong>Coursera</strong> —
+          <a href='https://www.coursera.org/account/accomplishments/verify/C9TP6ZER8MEY' rel='noreferrer'>
+            Agile with Atlassian Jira
+          </a>{" "}
+          (<span>Dec 2022 - Dec 2022</span>)
+        </li>
+        <li>
+          <strong>Coursera</strong> —
           <a href='https://www.udemy.com/certificate/UC-c7dd13ed-5a1e-4787-8f21-41813e55eda9/' rel='noreferrer'>
             Meta Front-End Developer Professional Certificate
           </a>{" "}
