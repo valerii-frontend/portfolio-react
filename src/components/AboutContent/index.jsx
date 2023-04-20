@@ -152,7 +152,7 @@ export function Exp() {
           </div>
         </li>
         <li>
-          <strong>Freelancer on UpWork</strong> (April 2022 – Oct 2022)
+          <strong>Freelancer on UpWork</strong> (April 2022 – present time)
           <div>
             <span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM. Writing
             own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating keyframes
