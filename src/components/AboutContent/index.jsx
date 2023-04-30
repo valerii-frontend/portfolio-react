@@ -118,7 +118,9 @@ export function Edu() {
         </li>
         <li>
           <strong>Coursera</strong> —
-          <a href='https://www.udemy.com/certificate/UC-c7dd13ed-5a1e-4787-8f21-41813e55eda9/' rel='noreferrer'>
+          <a
+            href='https://www.coursera.org/account/accomplishments/specialization/certificate/G6KXQ26PELK5'
+            rel='noreferrer'>
             Meta Front-End Developer Professional Certificate
           </a>{" "}
           (<span>Sept 2022 - Feb 2023</span> )
