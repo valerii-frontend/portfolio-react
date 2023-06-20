@@ -2,6 +2,7 @@ import styles from "./AboutContent.module.css";
 import { certificates } from "../../helpers/data";
 import engCert from "../../assets/certs/EF-SET-Certificate.webp";
 import book from "../../assets/book.jpg";
+import upwork from "../../assets/certs/upwork.png";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -170,6 +171,9 @@ export function Exp() {
           </div>
         </li>
       </ul>
+      <div className={styles.certUpwork}>
+        <img src={upwork} />
+      </div>
     </div>
   );
 }

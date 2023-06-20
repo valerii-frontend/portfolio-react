@@ -114,6 +114,15 @@
 .about a:hover {
   color: var(--code-color-04);
 }
+.certUpwork {
+  text-align: center;
+  padding: 2rem 0;
+}
+.certUpwork img {
+  max-width: 100%;
+  border: 5px solid var(--code-color-01);
+  border-radius: 15px;
+}
 @keyframes scale {
   from {
     scale: 0;
@@ -145,6 +154,14 @@
   .col {
     flex: 0 0 100%;
     padding: 0;
+  }
+  .certUpwork {
+    text-align: center;
+    padding: 1rem 0;
+    overflow-x: auto;
+  }
+  .certUpwork img {
+    max-width: 200%;
   }
   .slides {
     padding: 1rem 0;
