@@ -1,8 +1,9 @@
-import React, { useState } from "react";
 import styles from "./AboutContent.module.css";
 import { certificates } from "../../helpers/data";
 import engCert from "../../assets/certs/EF-SET-Certificate.webp";
 import book from "../../assets/book.jpg";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 export function Bio() {
   return (
@@ -38,7 +39,10 @@ export function Bio() {
 }
 
 export function Edu() {
-  const [imgZoom, setImgZoom] = useState("");
+  const images = certificates.map((i) => ({
+    original: i,
+    thumbnail: i,
+  }));
   return (
     <div className={styles.about}>
       <h2>Education</h2>
@@ -126,16 +130,8 @@ export function Edu() {
           (<span>Sept 2022 - Feb 2023</span> )
         </li>
       </ol>
-      <div className={styles.cards}>
-        {certificates.map((cert) => (
-          <div className={`${styles.col} ${imgZoom === cert && styles.zoom}`} key={cert}>
-            <img
-              src={cert}
-              alt={cert.split(".")[0].split("/")[3] + " certificate"}
-              onClick={() => (imgZoom === cert ? setImgZoom("") : setImgZoom(cert))}
-            />
-          </div>
-        ))}
+      <div className={styles.slides}>
+        <ImageGallery autoPlay items={images} slideInterval={5000} />
       </div>
     </div>
   );

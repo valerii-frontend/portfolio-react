@@ -1,65 +1,65 @@
 :root {
-	--code-color-01: #89c379; /*  css class name*/
-	--code-color-02: #e5c07b; /*  html class name*/
-	--code-color-03: #56b6c2; /*  css properties*/
-	--code-color-04: #ffd71b; /*  js,css parentesis */
-	--code-color-05: #c678dd; /*  css numbers */
-	--code-color-06: #56afef; /*  react components */
-	--color-topbar: #282c34;
-	--color-title-shadow: #000;
-	--color-title: #fff;
-	--text: #a3b0b7;
-	--text-active: #d7dae0;
-	--text-disabled: #72767f;
-	--bg: #282c34; /*  main bg */
-	--sidebar: #21252b;
-	--sidebar-icons: #2f333d;
-	--tab-active: #383e4a;
-	--tab-hover: #33373b;
-	--grey: #cccccc;
-	--color-active: #42a5f5;
-	--icon-color: #c5c5c5;
-	--shadow: 0 0 3px black;
+  --code-color-01: #89c379; /*  css class name*/
+  --code-color-02: #e5c07b; /*  html class name*/
+  --code-color-03: #56b6c2; /*  css properties*/
+  --code-color-04: #ffd71b; /*  js,css parentesis */
+  --code-color-05: #c678dd; /*  css numbers */
+  --code-color-06: #56afef; /*  react components */
+  --color-topbar: #282c34;
+  --color-title-shadow: #000;
+  --color-title: #fff;
+  --text: #a3b0b7;
+  --text-active: #d7dae0;
+  --text-disabled: #72767f;
+  --bg: #282c34; /*  main bg */
+  --sidebar: #21252b;
+  --sidebar-icons: #2f333d;
+  --tab-active: #383e4a;
+  --tab-hover: #33373b;
+  --grey: #cccccc;
+  --color-active: #42a5f5;
+  --icon-color: #c5c5c5;
+  --shadow: 0 0 3px black;
 }
 .App.light {
-	--code-color-01: #b05300; /*  css class name*/
-	--code-color-02: #4500bb; /*  html class name*/
-	--code-color-03: #8f1212; /*  html tag name, css tag name*/
-	--code-color-04: #3253e7; /*  js,css parentesis */
-	--code-color-05: #1e7e1e; /*  css numbers */
-	--code-color-06: #191c67; /*  react components */
-	--color-title: rgb(27, 27, 27);
-	--color-title-shadow: grey;
-	--bg: #ffffff; /*  main bg */
-	--sidebar: #f3f3f3;
-	--shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-	--sidebar-icons: #e0e0e0;
-	--tab-active: #ffffff;
-	--tab-hover: #e8f8ff;
-	--text: #333;
-	--text-active: #000;
-	--color-topbar: #e5e5e5;
-	--icon-color: #333;
-	background: var(--bg);
+  --code-color-01: #b05300; /*  css class name*/
+  --code-color-02: #4500bb; /*  html class name*/
+  --code-color-03: #8f1212; /*  html tag name, css tag name*/
+  --code-color-04: #3253e7; /*  js,css parentesis */
+  --code-color-05: #1e7e1e; /*  css numbers */
+  --code-color-06: #191c67; /*  react components */
+  --color-title: rgb(27, 27, 27);
+  --color-title-shadow: grey;
+  --bg: #ffffff; /*  main bg */
+  --sidebar: #f3f3f3;
+  --shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  --sidebar-icons: #e0e0e0;
+  --tab-active: #ffffff;
+  --tab-hover: #e8f8ff;
+  --text: #333;
+  --text-active: #000;
+  --color-topbar: #e5e5e5;
+  --icon-color: #333;
+  background: var(--bg);
 }
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 ol li,
 ul li {
-	list-style: none;
+  list-style: none;
 }
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -67,50 +67,65 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 html,
 body {
-	font-size: 14px;
-	line-height: 1;
-	height: 100%;
-	background: var(--sidebar);
-	font-family: "Roboto", sans-serif;
-	color: var(--text);
+  font-size: 14px;
+  line-height: 1;
+  height: 100%;
+  background: var(--sidebar);
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input,
 button,
 textarea {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-	border: 1px solid var(--text);
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--text);
 }
 ::-webkit-scrollbar-track {
-	border-radius: 0;
-	background: var(--bg);
-	border-left: 1px solid var(--text);
+  border-radius: 0;
+  background: var(--bg);
+  border-left: 1px solid var(--text);
 }
 ::-webkit-scrollbar-thumb {
-	border-radius: 0;
-	background: var(--text);
+  border-radius: 0;
+  background: var(--text);
 }
+.image-gallery {
+  display: flex;
+  align-items: center;
+}
+.image-gallery-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.image-gallery-thumbnails-wrapper {
+  margin-top: 15px;
+}
+.image-gallery-svg {
+  color: var(--code-color-06);
+}
+
 /* 
 main > div:nth-child(2):before {
 	content: "";
