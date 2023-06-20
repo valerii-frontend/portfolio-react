@@ -218,7 +218,7 @@ export function Lang() {
           <strong>Polish</strong>—Intermediate <span className={styles}>B2</span>
         </li>
         <li>
-          <strong>English</strong>—Intermediate <span className={styles}>B1</span>
+          <strong>English</strong>—Intermediate <span className={styles}>B2</span>
         </li>
       </ul>
       <a href='https://www.efset.org/cert/Gsuc3X' target='_blank' rel='noreferrer' className={styles.langImg}>
