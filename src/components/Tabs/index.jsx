@@ -8,35 +8,35 @@ import contactIcon from "../../assets/icons/contacts.svg";
 import ControlBar from "../Header/ControlsBar";
 
 export default function Tabs() {
-	const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
-	return (
-		<nav className={styles.tabs}>
-			<ControlBar />
-			<ul>
-				<li className={pathname === "/portfolio-react" || pathname === "/portfolio-react/" ? styles.active : ""}>
-					<NavLink to={"/portfolio-react"}>
-						<img src={reactIcon} alt='react icon jsx' /> main.jsx
-					</NavLink>
-				</li>
-				<li className={pathname === "/portfolio-react/works" ? styles.active : ""}>
-					<NavLink to='/portfolio-react/works'>
-						<img src={libIcon} alt='library icon' /> works.lib
-					</NavLink>
-				</li>
-				<li className={pathname === "/portfolio-react/about" ? styles.active : ""}>
-					<NavLink to='/portfolio-react/about'>
-						<img src={aboutIcon} alt='about icon' />
-						about.txt
-					</NavLink>
-				</li>
-				<li className={pathname === "/portfolio-react/contacts" ? styles.active : ""}>
-					<NavLink to='/portfolio-react/contacts'>
-						<img src={contactIcon} alt='user contact icon' />
-						contacts.vcf
-					</NavLink>
-				</li>
-			</ul>
-		</nav>
-	);
+  return (
+    <nav className={styles.tabs}>
+      <ControlBar />
+      <ul>
+        <li className={pathname === "/portfolio-react" || pathname === "/portfolio-react/" ? styles.active : ""}>
+          <NavLink to={"/portfolio-react"}>
+            <img src={reactIcon} alt='react icon jsx' /> main.jsx
+          </NavLink>
+        </li>
+        <li className={pathname === "/portfolio-react/works" ? styles.active : ""}>
+          <NavLink to='/portfolio-react/works'>
+            <img src={libIcon} alt='library icon' /> projects.lib
+          </NavLink>
+        </li>
+        <li className={pathname === "/portfolio-react/about" ? styles.active : ""}>
+          <NavLink to='/portfolio-react/about'>
+            <img src={aboutIcon} alt='about icon' />
+            about.txt
+          </NavLink>
+        </li>
+        <li className={pathname === "/portfolio-react/contacts" ? styles.active : ""}>
+          <NavLink to='/portfolio-react/contacts'>
+            <img src={contactIcon} alt='user contact icon' />
+            contacts.vcf
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 }
