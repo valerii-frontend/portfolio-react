@@ -1,14 +1,19 @@
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 import { certificates } from "../../helpers/data";
-import { BioDescription } from "./contentDescription";
+import { BioDescription } from "./biography";
 
 import engCert from "../../assets/certs/EF-SET-Certificate.webp";
 import book from "../../assets/book.jpg";
 import upwork from "../../assets/certs/upwork.png";
 
-import ImageGallery from "react-image-gallery";
+import freelanceLogo from "../../assets/logos/freelance.jpg";
+import upworkLogo from "../../assets/logos/upwork.jpg";
+import rolladenLogo from "../../assets/logos/rolladen_group.jpg";
+import visaLogo from "../../assets/logos/visa.jpg";
 
 import styles from "./AboutContent.module.css";
-import "react-image-gallery/styles/css/image-gallery.css";
 
 export function Bio() {
   const { title, paragraphs } = BioDescription;
@@ -130,36 +135,61 @@ export function Exp() {
     <div className={styles.about}>
       <h2>Expirience</h2>
       <ul>
-        <li>
-          <strong>Freelancer on fl.ru</strong> (January 2021 – February 2022)
+        <li className={styles.jobItem}>
+          <img className={styles.logo} src={visaLogo} alt='visa company' />
           <div>
-            <span>Tasks and types of work</span>: slice the PSD/Figma/AdobeXD layouts to static HTML\CSS\JS pages.
-            Fixing issues with styles and scripts. Create CSS animations and JS scripts.
+            <strong>Senior Software Engineer at “Visa”</strong> (November 2023 – present time)
+            <div>
+              <span>Responsibilities</span>: Development of complex web applications using React, TypeScript, and
+              Next.js, ensuring high-quality, scalable, and maintainable code. Conduct thorough code reviews to maintain
+              code quality and consistency. Take ownership of feature implementation, from requirements analysis to
+              deployment, ensuring alignment with project goals and timelines.
+            </div>
+            <div>
+              <span>Technology & Tools</span>: JavaScript, TypeScript, HTML, CSS, React, NextJs, GitHu, BitBucket, git,
+              Scrum, Jira, Playwright.
+            </div>
           </div>
         </li>
-        <li>
-          <strong>Freelancer on UpWork</strong> (April 2022 – present time)
+        <li className={styles.jobItem}>
+          <img className={styles.logo} src={rolladenLogo} alt='rolladen group' />
           <div>
-            <span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM. Writing
-            own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating keyframes
-            CSS animations.
+            <strong>Frontend Developer in “Rolladen Group”</strong> (December 2021 – November 2023)
+            <div>
+              <span>Responsibilities</span>: e-commerce store optimization. Improved performance, implementation of
+              modern technologies, improved styles, and scripts. Correction of errors and bugs in the code. Editing with
+              PHP Smart templates, creating a mobile version for pages.
+            </div>
+            <div>
+              <span>Technology & Tools</span>: JavaScript, Jquery, HTML, CSS, PHP, Smarty, GitLab, git, PHPStorm,
+              ShopWare.
+            </div>
           </div>
         </li>
-        <li>
-          <strong>Frontend Developer in “Rolladen Group”</strong> (December 2021 – present time)
+        <li className={styles.jobItem}>
+          <img className={styles.logo} src={upworkLogo} alt='upwork logo' />
           <div>
-            <span>Responsibilities</span>: e-commerce store optimization. Improved performance, implementation of modern
-            technologies, improved styles, and scripts. Correction of errors and bugs in the code. Editing with PHP
-            Smart templates, creating a mobile version for pages.
+            <strong>Freelancer on UpWork</strong> (April 2022 – November 2023)
+            <div>
+              <span>Contracts</span>: Slice layouts from Figma/Adobe Photoshop/XD with Bootstrap 5+ or SCSS + BEM.
+              Writing own scripts, fixing errors in styles, scripts and markup, optimizing page loading speed, creating
+              keyframes CSS animations.
+            </div>
           </div>
+        </li>
+        <li className={styles.jobItem}>
+          <img className={styles.logo} src={freelanceLogo} alt='freelance logo' />
           <div>
-            <span>Technology & Tools</span>: JavaScript, Jquery, HTML, CSS, PHP, Smarty, GitLab, git, PHPStorm,
-            ShopWare.
+            <strong>Freelancer on UA local market</strong> (January 2021 – February 2022)
+            <div>
+              <span>Tasks and types of work</span>: slice the PSD/Figma/AdobeXD layouts to static HTML\CSS\JS pages.
+              Fixing issues with styles and scripts. Create CSS animations and JS scripts.
+            </div>
           </div>
         </li>
       </ul>
       <div className={styles.certUpwork}>
-        <img src={upwork} />
+        <img src={upwork} alt='upwork licence screenshot' />
       </div>
     </div>
   );

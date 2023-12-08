@@ -170,3 +170,13 @@
     max-width: 100%;
   }
 }
+
+.jobItem {
+  display: flex;
+  gap: 16px;
+}
+.logo {
+  flex: 0 0 64px;
+  max-width: 64px;
+  height: 64px;
+}
