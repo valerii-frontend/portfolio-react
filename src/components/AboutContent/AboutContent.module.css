@@ -1,13 +1,13 @@
 .about {
   background: var(--bg);
 }
-.about p {
+.about__text {
   font-size: 1.5rem;
   line-height: 150%;
   max-width: 90%;
   margin: 0 auto 2rem;
 }
-.about p::first-letter {
+.about__text::first-letter {
   color: var(--code-color-04);
 }
 
@@ -142,7 +142,7 @@
   .about {
     padding-bottom: 1rem;
   }
-  .about p {
+  .about__text {
     max-width: 100%;
   }
   .col {

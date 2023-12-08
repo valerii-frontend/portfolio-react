@@ -1,40 +1,27 @@
-import styles from "./AboutContent.module.css";
 import { certificates } from "../../helpers/data";
+import { BioDescription } from "./contentDescription";
+
 import engCert from "../../assets/certs/EF-SET-Certificate.webp";
 import book from "../../assets/book.jpg";
 import upwork from "../../assets/certs/upwork.png";
+
 import ImageGallery from "react-image-gallery";
+
+import styles from "./AboutContent.module.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 export function Bio() {
+  const { title, paragraphs } = BioDescription;
   return (
     <div className={styles.about}>
-      <h2>Biography</h2>
-      <p>
-        Since childhood, I was interested in computers and liked solving puzzles and logic problems. I chose web
-        development because I liked seeing the results of my work right away, and I could start with simple things like
-        HTML and CSS. I am studying with documentation, free Internet materials, YouTube videos, and paid courses. As
-        well I still spend a lot of my free time learning new things.
-        <b>
-          Now my main direction is the JavaScript ecosystem, so I improve my knowledge of different popular technology
-          around it, like ReactJs, NodeJs, Redux, TypeScript, Express, etc.
-        </b>
-      </p>
-      <p>
-        I try to improve myself every day, in different directions. I don't drink alcohol or smoke cigarettes, lead a
-        healthy lifestyle and try to be an example to the people around me.
-      </p>
-      <p>
-        The most important qualities in people for me are kindness and honesty. An honest and kind person will be a a
-        great colleague and a good friend, I think this is much more important than any dishonest professional
-      </p>
-      <p>
-        <strong>
-          My goal is to become a Senior Frontend Engineer and a master of my craft. As well programming is my passion
-          and I would like to be helpful to other people. For this, I improving my knowledge every day. My family
-          getting me power and motivation, and because of that, I must be better tomorrow as I was yesterday.
-        </strong>
-      </p>
+      <h2>{title}</h2>
+      {paragraphs.map((aboutText) => {
+        return (
+          <p key={aboutText.slice(0, 10)} className={styles.about__text}>
+            {aboutText}
+          </p>
+        );
+      })}
     </div>
   );
 }
