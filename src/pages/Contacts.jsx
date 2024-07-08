@@ -7,7 +7,7 @@ import styles from "./styles/Contacts.module.css";
 
 import codewars from "../assets/codewars.webp";
 import instagram from "../assets/instagram.svg";
-import codesignal from "../assets/codesignal.webp";
+import upwork from "../assets/upwork.png";
 
 export default function Contacts() {
   return (
@@ -25,7 +25,7 @@ export default function Contacts() {
 
         <ul>
           <li>
-            <a title='Facebook' rel='noreferrer' target='_blank' href='https://www.facebook.com/valerii.from.earth'>
+            <a title='Facebook' rel='noreferrer' target='_blank' href='https://www.facebook.com/v.lozghachov'>
               <svg className={styles.icon}>
                 <use xlinkHref='#facebook' />
               </svg>
@@ -39,7 +39,7 @@ export default function Contacts() {
             </a>
           </li>
           <li>
-            <a title='Telegram' rel='noreferrer' target='_blank' href='https://t.me/the_earth_citizen'>
+            <a title='Telegram' rel='noreferrer' target='_blank' href='https://t.me/v_lzghchv'>
               <svg className={styles.icon}>
                 <use xlinkHref='#telegram' />
               </svg>
@@ -67,8 +67,12 @@ export default function Contacts() {
             </a>
           </li>
           <li>
-            <a title='CodeSignal' rel='noreferrer' target='_blank' href='https://app.codesignal.com/profile/_valerii__'>
-              <img src={codesignal} alt='codesignal' />
+            <a
+              title='Upwork'
+              rel='noreferrer'
+              target='_blank'
+              href='https://www.upwork.com/freelancers/~014ead3e287a0b68a3'>
+              <img src={upwork} alt='upwork' />
             </a>
           </li>
           <li>
