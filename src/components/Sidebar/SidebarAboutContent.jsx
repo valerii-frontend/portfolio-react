@@ -1,28 +1,14 @@
-import React, { useContext } from "react";
 import Folder from "../Folder";
-import { Context } from "../../helpers/context";
 
-export default function AboutSidebar({ modal, setModal }) {
+export default function AboutSidebar() {
   const notepad = [
-    { name: "biography", icon: "text", modal: "biography" },
-    { name: "education", icon: "text", modal: "education" },
-    { name: "experience", icon: "text", modal: "experience" },
-    { name: "hobby", icon: "text", modal: "hobby" },
-    { name: "languages", icon: "text", modal: "languages" },
-    { name: "soft-skills", icon: "text", modal: "soft-skills" },
+    { name: "biography", icon: "text" },
+    { name: "education", icon: "text" },
+    { name: "experience", icon: "text" },
+    { name: "hobby", icon: "text" },
+    { name: "languages", icon: "text" },
+    { name: "soft-skills", icon: "text" },
   ];
 
-  const { setSidebarToggle } = useContext(Context);
-
-  const modalHandler = (e) => {
-    setSidebarToggle(false);
-    setModal(() => {
-      return { [e]: true };
-    });
-  };
-  return (
-    <>
-      <Folder items={notepad} title='general-info' modalToggle={modalHandler} open />
-    </>
-  );
+  return <Folder items={notepad} title='general-info' open />;
 }

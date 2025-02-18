@@ -48,7 +48,7 @@ function App() {
                   <Route path='/portfolio-react' element={<Home />} exact />
                   <Route path='/portfolio-react/contacts' element={<Contacts />} exact />
                   <Route path='/portfolio-react/works' element={<Works />} exact />
-                  <Route path='/portfolio-react/about' element={<About />} exact />
+                  <Route path='/portfolio-react/about/*' element={<About />} />
                   <Route path='*' element={<Navigate to='/portfolio-react' replace />} />
                 </Routes>
               </Suspense>

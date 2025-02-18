@@ -1,300 +1,304 @@
 .folder {
-	flex: 1 1 auto;
-	color: var(--text);
+  flex: 1 1 auto;
+  color: var(--text);
 }
 /* all lines paddings and hover */
 .folder li,
 .folder p {
-	cursor: pointer;
-	display: flex;
-	align-items: flex-end;
-	height: 24px;
-	line-height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  height: 24px;
+  line-height: 24px;
 }
 .folder li:hover,
 .folder p:hover {
-	background-color: var(--tab-active);
+  background-color: var(--tab-active);
+}
+.folder li a {
+  text-decoration: none;
+  color: inherit;
 }
 /* vertical line */
 .list {
-	position: relative;
+  position: relative;
 }
 .list:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 17px;
-	height: 100%;
-	width: 1px;
-	background-color: var(--text);
-	opacity: 0.3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 17px;
+  height: 100%;
+  width: 1px;
+  background-color: var(--text);
+  opacity: 0.3;
 }
 /* open close states */
 .skills .open:after {
-	background-image: url("../../assets/icons/folder-core-open.svg");
+  background-image: url("../../assets/icons/folder-core-open.svg");
 }
 .skills .close:after {
-	background-image: url("../../assets/icons/folder-core.svg");
+  background-image: url("../../assets/icons/folder-core.svg");
 }
 .apps .open:after {
-	background-image: url("../../assets/icons/folder-app-open.svg");
+  background-image: url("../../assets/icons/folder-app-open.svg");
 }
 .apps .close:after {
-	background-image: url("../../assets/icons/folder-app.svg");
+  background-image: url("../../assets/icons/folder-app.svg");
 }
 .tools .open:after {
-	background-image: url("../../assets/icons/folder-config-open.svg");
+  background-image: url("../../assets/icons/folder-config-open.svg");
 }
 .tools .close:after {
-	background-image: url("../../assets/icons/folder-config.svg");
+  background-image: url("../../assets/icons/folder-config.svg");
 }
 .react .open:after {
-	background-image: url("../../assets/icons/folder-react-components-open.svg");
+  background-image: url("../../assets/icons/folder-react-components-open.svg");
 }
 .react .close:after {
-	background-image: url("../../assets/icons/folder-react-components.svg");
+  background-image: url("../../assets/icons/folder-react-components.svg");
 }
 .library .open:after {
-	background-image: url("../../assets/icons/folder-components-open.svg");
+  background-image: url("../../assets/icons/folder-components-open.svg");
 }
 .library .close:after {
-	background-image: url("../../assets/icons/folder-components.svg");
+  background-image: url("../../assets/icons/folder-components.svg");
 }
 .web-sites .open:after {
-	background-image: url("../../assets/icons/folder-web-open.svg");
+  background-image: url("../../assets/icons/folder-web-open.svg");
 }
 .web-sites .close:after {
-	background-image: url("../../assets/icons/folder-web.svg");
+  background-image: url("../../assets/icons/folder-web.svg");
 }
 .games .open:after {
-	background-image: url("../../assets/icons/folder-games-open.svg");
+  background-image: url("../../assets/icons/folder-games-open.svg");
 }
 .games .close:after {
-	background-image: url("../../assets/icons/folder-games.svg");
+  background-image: url("../../assets/icons/folder-games.svg");
 }
 .api .open:after {
-	background-image: url("../../assets/icons/folder-api-open.svg");
+  background-image: url("../../assets/icons/folder-api-open.svg");
 }
 .api .close:after {
-	background-image: url("../../assets/icons/folder-api.svg");
+  background-image: url("../../assets/icons/folder-api.svg");
 }
 .general-info .open:after {
-	background-image: url("../../assets/icons/folder-docs-open.svg");
+  background-image: url("../../assets/icons/folder-docs-open.svg");
 }
 .general-info .close:after {
-	background-image: url("../../assets/icons/folder-docs.svg");
+  background-image: url("../../assets/icons/folder-docs.svg");
 }
 /* arrows folder state */
 .open::before {
-	background-color: var(--text);
-	mask-image: url("../../assets/icons/chevron-down.svg");
+  background-color: var(--text);
+  mask-image: url("../../assets/icons/chevron-down.svg");
 }
 .close::before {
-	background-color: var(--text);
-	mask-image: url("../../assets/icons/chevron-right.svg");
+  background-color: var(--text);
+  mask-image: url("../../assets/icons/chevron-right.svg");
 }
 .open::before,
 .open::after,
 .close::before,
 .close::after {
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* global folders style */
 .folder p {
-	width: 100%;
-	height: 24px;
-	padding-left: 55px;
-	position: relative;
+  width: 100%;
+  height: 24px;
+  padding-left: 55px;
+  position: relative;
 }
 .folder p:before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 10px;
-	height: 16px;
-	width: 16px;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
 }
 .folder p:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 30px;
-	height: 20px;
-	width: 20px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height: 20px;
+  width: 20px;
 }
 .folder li {
-	padding-left: 65px;
-	position: relative;
+  padding-left: 65px;
+  position: relative;
 }
 
 .folder li:before {
-	content: "";
-	position: absolute;
-	top: 2px;
-	left: 40px;
-	height: 20px;
-	width: 20px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /* icons for files and apps */
 .html:before {
-	background-image: url("../../assets/icons/html.svg");
+  background-image: url("../../assets/icons/html.svg");
 }
 .html:after {
-	content: ".html";
+  content: ".html";
 }
 .css:before {
-	background-image: url("../../assets/icons/css.svg");
+  background-image: url("../../assets/icons/css.svg");
 }
 .css:after {
-	content: ".css";
+  content: ".css";
 }
 .js:before {
-	background-image: url("../../assets/icons/javascript.svg");
+  background-image: url("../../assets/icons/javascript.svg");
 }
 .js:after {
-	content: ".js";
+  content: ".js";
 }
 .bs:before {
-	background-image: url("../../assets/icons/bootstrap.svg");
+  background-image: url("../../assets/icons/bootstrap.svg");
 }
 .bs:after {
-	content: ".min.css";
+  content: ".min.css";
 }
 .bem:before {
-	background-image: url("../../assets/icons/css-map.svg");
+  background-image: url("../../assets/icons/css-map.svg");
 }
 .bem:after {
-	content: ".map.css";
+  content: ".map.css";
 }
 .scss:before {
-	background-image: url("../../assets/icons/sass.svg");
+  background-image: url("../../assets/icons/sass.svg");
 }
 .scss:after {
-	content: ".scss";
+  content: ".scss";
 }
 .ts:before {
-	background-image: url("../../assets/icons/typescript.svg");
+  background-image: url("../../assets/icons/typescript.svg");
 }
 .ts:after {
-	content: ".ts";
+  content: ".ts";
 }
 .jsx:before {
-	background-image: url("../../assets/icons/react.svg");
+  background-image: url("../../assets/icons/react.svg");
 }
 .jsx:after {
-	content: ".jsx";
+  content: ".jsx";
 }
 .figma:before {
-	background-image: url("../../assets/icons/figma.svg");
+  background-image: url("../../assets/icons/figma.svg");
 }
 .figma:after {
-	content: ".fig";
+  content: ".fig";
 }
 .psd:before {
-	background-image: url("../../assets/icons/psd.svg");
+  background-image: url("../../assets/icons/psd.svg");
 }
 .psd:after {
-	content: ".psd";
+  content: ".psd";
 }
 .gimp:before {
-	background-image: url("../../assets/icons/gimp.svg");
+  background-image: url("../../assets/icons/gimp.svg");
 }
 .gimp:after {
-	content: ".xcf";
+  content: ".xcf";
 }
 .vscode:before {
-	background-image: url("../../assets/icons/vscode.svg");
+  background-image: url("../../assets/icons/vscode.svg");
 }
 .vscode:after {
-	content: ".exe";
+  content: ".exe";
 }
 .web:before {
-	background-image: url("../../assets/icons/webstorm.svg");
+  background-image: url("../../assets/icons/webstorm.svg");
 }
 .web:after {
-	content: ".lnk";
+  content: ".lnk";
 }
 .php:before {
-	background-image: url("../../assets/icons/phpStorm.svg");
+  background-image: url("../../assets/icons/phpStorm.svg");
 }
 .php:after {
-	content: ".bin";
+  content: ".bin";
 }
 .gh:before {
-	background-image: url("../../assets/icons/github.svg");
+  background-image: url("../../assets/icons/github.svg");
 }
 .gh:after {
-	content: ".com";
+  content: ".com";
 }
 .git:before {
-	background-image: url("../../assets/icons/git-console.svg");
+  background-image: url("../../assets/icons/git-console.svg");
 }
 .git:after {
-	content: ".ignore";
+  content: ".ignore";
 }
 .gl:before {
-	background-image: url("../../assets/icons/gitlab.svg");
+  background-image: url("../../assets/icons/gitlab.svg");
 }
 .gl:after {
-	content: ".com";
+  content: ".com";
 }
 .npm:before {
-	background-image: url("../../assets/icons/npm.svg");
+  background-image: url("../../assets/icons/npm.svg");
 }
 .npm:after {
-	content: ".run.start";
+  content: ".run.start";
 }
 .gulp:before {
-	background-image: url("../../assets/icons/gulp.svg");
+  background-image: url("../../assets/icons/gulp.svg");
 }
 .gulp:after {
-	content: ".js";
+  content: ".js";
 }
 .chrome:before {
-	background-image: url("../../assets/icons/chrome.svg");
+  background-image: url("../../assets/icons/chrome.svg");
 }
 .chrome:after {
-	content: ".dev.exe";
+  content: ".dev.exe";
 }
 .text:before {
-	background-image: url("../../assets/icons/document.svg");
+  background-image: url("../../assets/icons/document.svg");
 }
 .text:after {
-	content: ".txt";
+  content: ".txt";
 }
 
 @media (max-width: 767px) {
-	.folder p,
-	.folder li {
-		height: 40px;
-		line-height: 40px;
-	}
-	.folder p {
-		padding-left: 65px;
-	}
-	.folder p:before {
-		top: 12px;
-	}
-	.folder p:after {
-		top: 3px;
-		left: 25px;
-		height: 32px;
-		width: 32px;
-	}
-	.folder li {
-		padding-left: 65px;
-		position: relative;
-	}
+  .folder p,
+  .folder li {
+    height: 40px;
+    line-height: 40px;
+  }
+  .folder p {
+    padding-left: 65px;
+  }
+  .folder p:before {
+    top: 12px;
+  }
+  .folder p:after {
+    top: 3px;
+    left: 25px;
+    height: 32px;
+    width: 32px;
+  }
+  .folder li {
+    padding-left: 65px;
+    position: relative;
+  }
 
-	.folder li:before {
-		top: 3px;
-		left: 30px;
-		height: 32px;
-		width: 32px;
-	}
+  .folder li:before {
+    top: 3px;
+    left: 30px;
+    height: 32px;
+    width: 32px;
+  }
 }
